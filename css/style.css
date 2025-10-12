@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Almalik';
+  src: url('../fonts/Almalik.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* BODY GENERALE */
+body {
+  font-family: 'Almalik', sans-serif; /* font principale della pagina */
+  margin: 0; /* rimuove il margine predefinito del browser */
+  padding: 0; /* rimuove il padding predefinito del browser */
+}
+
+/* HEADER: barra superiore */
+.top-bar {
+  color: #EFAF9F;
+  display: flex; /* usa il layout flexbox */
+  justify-content: space-between; /* spinge gli elementi ai lati */
+  align-items: center; /* centra verticalmente gli elementi */
+  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* Bordeaux */
+  padding: 10px 20px; /* spazio interno della barra */
+  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
+}
+
+/* CONTENITORE MENU */
+.menu-container {
+  position: relative; /* necessario per posizionare il menu assoluto */
+}
+
+/* HAMBURGER */
+.hamburger {
+  width: 25px;           /* larghezza hamburger */
+  height: 20px;          /* altezza totale */
+  display: flex;          /* layout verticale */
+  flex-direction: column; /* linee impilate */
+  justify-content: space-between; /* distanza tra linee */
+  cursor: pointer;        /* cursore mano */
+}
+
+.hamburger div { /*linee del menù*/
+  height: 3px;            /* spessore linea */
+  background-color: #EFAF9F;  /* colore linea */
+  border-radius: 2px;      /* angoli arrotondati */
+}
+
+/* MENU A TENDINA CORRETTO */
+.menu {
+  color: #EFAF9F;
+  display: none;           /* nascosto di default */
+  position: absolute;      /* posizione assoluta rispetto al container */
+  top: 15px;               /* distanza verticale dall’hamburger */
+  left: 100%;               /* centro rispetto all’hamburger */
+  transform: translateX(-15%); /* centraggio esatto */
+  background-color: #6B0F1A; /* Bordeaux */
+  border: 1px solid #BFAFAF;
+  padding: 10px;
+  flex-direction: column;  /* link uno sotto l’altro */
+  min-width: 150px;        /* larghezza minima */
+  max-width: 90vw;         /* non esce dallo schermo */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;           /* sempre sopra altri elementi */
+}
+
+/* MOSTRA MENU QUANDO ATTIVO */
+.menu.show {
+  display: flex; /* mostra menu */
+}
+
+/* LINK DENTRO MENU */
+.menu a {
+  text-decoration: none;  /* rimuove sottolineatura */
+  color: #EFAF9F;            /* colore testo */
+  margin: 5px 0;          /* margine tra link */
+}
+
+.menu a:hover {
+  color: #e91e63;         /* colore al passaggio del mouse */
+}
+
+
+/* Applica box-sizing globale per includere padding/border nella larghezza */
+* {
+  box-sizing: border-box;
+}
+
+/* Container principale: due colonne affiancate */
+.container {
+  display: flex;           /* usa flexbox per affiancare le colonne */
+  flex-wrap: nowrap;       /* non andare a capo */
+  gap: 5px;               /* distanza tra main e sidebar */
+  padding: 5px;           /* spazio interno al container */
+  background: linear-gradient(to bottom, #0A0A0A, #000000); /*colore sfondo gradiente*/
+}
+
+/* Colonna principale (75%) */
+.main-content {
+  background-color: black;
+  flex: 0 0 75%;           /* larghezza fissa 75% */
+}
+
+/* Sidebar laterale (25%) */
+.sidebar {
+  flex: 0 0 25%;           /* larghezza fissa 25% */
+  background: linear-gradient(to bottom, #68272F, #1E1E1E); /* grigio antracite */
+  color: #F8F8F8; /* testo chiaro */
+  border: 2px solid #6B0F1A; /* bordino bordeaux per richiamo */
+  border-radius: 8px;
+  height: fit-content;     /* altezza adattata al contenuto */
+  padding: 20px;   /*spazio interno*/
+}
+
+
+/* LOGO */
+.logo {
+  display: block; /* trasforma in blocco */
+  width: 80%; /* larghezza logo */
+  height: auto; /* mantiene proporzioni */
+  margin: 0 auto 20px auto; /* centrato + margine sotto */
+}
+
+/* LOGO */
+.logo-intestazione {
+  display: block; /* trasforma in blocco */
+  width: 80%; /* larghezza logo */
+  height: auto; /* mantiene proporzioni */
+  object-fit: contain; /* mantiene proporzioni corrette */
+  margin: 0 auto 0 auto; /* centrato + margine sotto */
+}
+
+/* GALLERIA */
+.gallery {
+  display: flex; /* flexbox per le righe */
+  flex-direction: column; /* colonna di righe */
+  gap: 20px; /* distanza tra le righe */
+  margin-top: 20px; /* margine superiore */
+}
+
+.row {
+  display: flex; /* flexbox per i riquadri */
+  gap: 20px; /* distanza tra riquadri */
+  justify-content: center; /* centrati orizzontalmente */
+  flex-wrap: wrap; /* vanno a capo se spazio ridotto */
+}
+
+.video-box {
+  position: relative; /* per posizionare immagine e video */
+  width: 250px; /* larghezza riquadro */
+  height: 180px; /* altezza riquadro */
+  overflow: hidden; /* nasconde contenuto in eccesso */
+  border-radius: 10px; /* angoli arrotondati */
+  cursor: pointer; /* cursore a mano */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ombra riquadro */
+}
+
+.video-box img, .video-box video {
+  position: absolute; /* posizione assoluta dentro il box */
+  top: 0; /* inizio dall’alto */
+  left: 0; /* inizio da sinistra */
+  width: 100%; /* riempie tutta la larghezza */
+  height: 100%; /* riempie tutta l’altezza */
+  object-fit: cover; /* adatta immagine/video al box */
+  transition: opacity 0.4s ease; /* transizione morbida */
+}
+
+.video-box video {
+  opacity: 0; /* video invisibile di default */
+  pointer-events: none; /* non interferisce con mouse */
+}
+
+.video-box:hover video {
+  opacity: 1; /* video visibile al passaggio del mouse */
+}
+
+.video-box:hover img {
+  opacity: 0; /* immagine sparisce al passaggio del mouse */
+}
+
+/* CALENDARIO */
+.calendar {
+  margin-top: 20px; /* margine sopra */
+  font-family: 'Almalik', sans-serif; /* font calendario */
+}
+
+.calendar table {
+  width: 100%; /* tabella tutta la larghezza */
+  border-collapse: collapse; /* elimina spazi tra celle */
+  text-align: center; /* testo centrato */
+}
+
+.calendar th, .calendar td {
+  border: 1px solid #ccc; /* bordo celle */
+  padding: 5px; /* spazio interno celle */
+}
+
+.calendar th {
+  background-color: #f8f8f8; /* sfondo intestazioni */
+}
+
+.calendar td:hover {
+  background-color: #e91e63; /* colore cella al passaggio mouse */
+  color: white; /* testo bianco */
+  cursor: pointer; /* cursore a mano */
+}
+
