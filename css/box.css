@@ -1,0 +1,63 @@
+/* ===================== */
+/* BOX NEGLI ANGOLI DELLA HERO */
+/* ===================== */
+.corner-box {
+  position: absolute; /* posizionamento assoluto rispetto alla hero */
+  width: 20%; /* larghezza 20% della hero */
+  max-width: 250px; /* larghezza massima */
+  padding: 10px; /* padding interno */
+  background-color: rgba(107, 15, 26, 0.8); /* bordeaux semi-trasparente */
+  color: #fff; /* testo bianco */
+  border: 2px solid #BFAFAF; /* bordo chiaro */
+  border-radius: 10px; /* angoli arrotondati */
+  text-align: center; /* testo centrato */
+  overflow: hidden; /* nasconde eventuali elementi in eccesso */
+  box-sizing: border-box; /* include padding e bordo nella larghezza */
+  font-size: 0.9rem; /* dimensione testo leggibile */
+}
+
+/* Box Blog in alto a sinistra */
+.blog-box {
+  top: 20px;
+  left: 20px;
+}
+
+
+/* CALENDARIO */
+.calendar {
+  margin: 0; /* niente margini */
+  padding: 10px; /* spazio interno al calendario */
+  font-family: 'Arabian', sans-serif; /* font calendario */
+  background: transparent; /* sfondo trasparente, il box fa il colore */
+}
+
+/* Tabella calendario */
+.calendar table {
+  width: 100%; /* tutta la larghezza del box */
+  border-collapse: collapse; /* elimina spazi tra celle */
+  text-align: center; /* testo centrato */
+}
+
+/* Celle */
+.calendar th, .calendar td {
+  border: 1px solid #ccc; /* bordo grigio chiaro */
+  padding: 5px; /* spazio interno celle */
+}
+
+/* Intestazioni giorni */
+.calendar th {
+  background-color: #f8f8f8; /* sfondo chiaro intestazioni */
+}
+
+/* Effetto hover sulle celle */
+.calendar td:hover {
+  background-color: #e91e63; /* rosa acceso */
+  color: white; /* testo bianco */
+  cursor: pointer; /* cursore a mano */
+}
+
+/* Box Calendario in alto a destra */
+.calendar-box {
+  top: 20px;
+  right: 20px;
+}

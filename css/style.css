@@ -100,32 +100,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Container principale: due colonne affiancate */
-.container {
-  display: flex;           /* usa flexbox per affiancare le colonne */
-  flex-wrap: nowrap;       /* non andare a capo */
-  gap: 5px;               /* distanza tra main e sidebar */
-  padding: 5px;           /* spazio interno al container */
-  background: linear-gradient(to bottom, #0A0A0A, #000000); /*colore sfondo gradiente*/
-}
-
-/* Colonna principale (75%) */
-.main-content {
-  background: radial-gradient(circle at top, #2b1055, #000);
-  flex: 0 0 75%;           /* larghezza fissa 75% */
-}
-
-/* Sidebar laterale (25%) */
-.sidebar {
-  flex: 0 0 25%;           /* larghezza fissa 25% */
-  background: linear-gradient(to bottom, #68272F, #1E1E1E); /* grigio antracite */
-  color: #F8F8F8; /* testo chiaro */
-  border: 2px solid #6B0F1A; /* bordino bordeaux per richiamo */
-  border-radius: 8px;
-  height: fit-content;     /* altezza adattata al contenuto */
-  padding: 20px;   /*spazio interno*/
-}
-
 
 /* LOGO */
 .logo {
@@ -192,32 +166,7 @@ body {
   opacity: 0; /* immagine sparisce al passaggio del mouse */
 }
 
-/* CALENDARIO */
-.calendar {
-  margin-top: 20px; /* margine sopra */
-  font-family: 'Arabian', sans-serif; /* font calendario */
-}
 
-.calendar table {
-  width: 100%; /* tabella tutta la larghezza */
-  border-collapse: collapse; /* elimina spazi tra celle */
-  text-align: center; /* testo centrato */
-}
-
-.calendar th, .calendar td {
-  border: 1px solid #ccc; /* bordo celle */
-  padding: 5px; /* spazio interno celle */
-}
-
-.calendar th {
-  background-color: #f8f8f8; /* sfondo intestazioni */
-}
-
-.calendar td:hover {
-  background-color: #e91e63; /* colore cella al passaggio mouse */
-  color: white; /* testo bianco */
-  cursor: pointer; /* cursore a mano */
-}
 
 /* Nuovi link */
 .extra-links {
@@ -262,3 +211,84 @@ body {
     padding: 10px 0;
   }
 }
+
+
+
+/* SEZIONE HERO */
+.hero {
+  position: relative; /* necessario per posizionare i box agli angoli */
+  width: 100%; /* tutta la larghezza */
+  height: 400px; /* altezza della sezione, puoi regolare */
+
+  display: flex;
+  justify-content: center; /* centrare contenuti opzionali */
+  align-items: center;
+  padding-bottom: 50%;  /* 9/16 = 0.5625, regola in base all’immagine */
+}
+
+/* ===============================
+   Contenitore immagini slider
+   =============================== */
+.hero-slider {
+  width: 100%;               /* prende tutta la larghezza della hero */
+  height: auto;              /* altezza proporzionale alle immagini */
+  position: relative;        /* riferimento per le immagini assolute */
+}
+
+/* ===============================
+   Immagini singole nello slider
+   =============================== */
+.hero-slider img {
+  width: 100%;               /* occupano tutta la larghezza del container */
+  height: auto;              /* mantiene le proporzioni originali */
+  display: none;             /* tutte le immagini nascoste di default */
+  position: absolute;        /* si sovrappongono nello stesso spazio */
+  top: 0;                    /* inizio dall’alto del container */
+  left: 0;                   /* inizio da sinistra del container */
+  object-fit: contain;       /* immagine intera senza tagliare proporzioni */
+  transition: opacity 0.5s ease; /* transizione morbida se vuoi animare */
+}
+
+/* ===============================
+   Immagine attiva
+   =============================== */
+.hero-slider img.active {
+  display: block;            /* solo l’immagine attiva viene mostrata */
+  opacity: 1;                /* piena visibilità */
+}
+
+/* ===============================
+   Frecce avanti e indietro
+   =============================== */
+.hero .arrow {
+  position: absolute;        /* posizionate sopra lo slider */
+  top: 50%;                  /* centrate verticalmente */
+  transform: translateY(-50%); /* centra esattamente l’elemento */
+  font-size: 40px;           /* dimensione carattere delle frecce */
+  color: #fff;               /* colore bianco delle frecce */
+  background-color: rgba(0,0,0,0.4); /* sfondo semitrasparente */
+  border: none;              /* niente bordo */
+  padding: 10px;             /* spazio interno del bottone */
+  cursor: pointer;           /* cursore a mano */
+  z-index: 10;               /* sempre sopra le immagini */
+  border-radius: 5px;        /* angoli arrotondati */
+  transition: background 0.3s; /* effetto hover morbido */
+}
+
+/* ===============================
+   Posizione freccia sinistra
+   =============================== */
+.hero .arrow.left {
+  left: 10px;                /* distanza dal lato sinistro */
+}
+
+/* ===============================
+   Posizione freccia destra
+   =============================== */
+.hero .arrow.right {
+  right: 10px;               /* distanza dal lato destro */
+}
+
+
+
+
