@@ -5,11 +5,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Arabian';
+  src: url('../fonts/XXII\ ARABIAN-ONENIGHTSTAND.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 
 /* BODY GENERALE */
 body {
-  font-family: 'Almalik', sans-serif; /* font principale della pagina */
+  font-family: 'Arabian', sans-serif; /* font principale della pagina */
   margin: 0; /* rimuove il margine predefinito del browser */
   padding: 0; /* rimuove il padding predefinito del browser */
 }
@@ -27,7 +35,13 @@ body {
 
 /* CONTENITORE MENU */
 .menu-container {
-  position: relative; /* necessario per posizionare il menu assoluto */
+  
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: space-between; /* mette spazio tra hamburger/menu e extra-links */
+  gap: rel; /* opzionale, spazio tra elementi */
+  flex: 1; /*prende tutta la lunghezza disponibile*/
+  position: relative;
 }
 
 /* HAMBURGER */
@@ -52,7 +66,7 @@ body {
   display: none;           /* nascosto di default */
   position: absolute;      /* posizione assoluta rispetto al container */
   top: 15px;               /* distanza verticale dall’hamburger */
-  left: 100%;               /* centro rispetto all’hamburger */
+  left: 0%;               /* centro rispetto all’hamburger */
   transform: translateX(-15%); /* centraggio esatto */
   background-color: #6B0F1A; /* Bordeaux */
   border: 1px solid #BFAFAF;
@@ -97,7 +111,7 @@ body {
 
 /* Colonna principale (75%) */
 .main-content {
-  background-color: black;
+  background: radial-gradient(circle at top, #2b1055, #000);
   flex: 0 0 75%;           /* larghezza fissa 75% */
 }
 
@@ -116,7 +130,7 @@ body {
 /* LOGO */
 .logo {
   display: block; /* trasforma in blocco */
-  width: 80%; /* larghezza logo */
+  width: 100%; /* larghezza logo */
   height: auto; /* mantiene proporzioni */
   margin: 0 auto 20px auto; /* centrato + margine sotto */
 }
@@ -181,7 +195,7 @@ body {
 /* CALENDARIO */
 .calendar {
   margin-top: 20px; /* margine sopra */
-  font-family: 'Almalik', sans-serif; /* font calendario */
+  font-family: 'Arabian', sans-serif; /* font calendario */
 }
 
 .calendar table {
@@ -205,3 +219,46 @@ body {
   cursor: pointer; /* cursore a mano */
 }
 
+/* Nuovi link */
+.extra-links {
+  display: flex; /* flexbox */
+  flex: 1; /* prende tutto lo spazio */
+  justify-content: space-evenly; /* distribuzione equa */
+  gap: 20px; /* distanza tra link */
+}
+
+.extra-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.extra-links a:hover {
+  color: #ffd700;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu,
+  .extra-links {
+    display: flex;
+    flex: 1; /* ogni sezione prende uguale spazio */
+    justify-content: space-evenly; /* distribuisce equamente tutti i link al suo interno */
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    background: rgba(30, 0, 50, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
