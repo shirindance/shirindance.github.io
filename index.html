@@ -1,172 +1,264 @@
-<!DOCTYPE html>
-<!-- Dichiara che il documento è HTML5 -->
+@font-face {
+  font-family: 'Almalik';
+  src: url('../fonts/Almalik.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-<html lang="it">
-<!-- Imposta la lingua della pagina su italiano -->
+@font-face {
+  font-family: 'Arabian';
+  src: url('../fonts/XXII\ ARABIAN-ONENIGHTSTAND.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <!-- Imposta la codifica dei caratteri -->
-  <!-- altro commento a caso -->
+
+
+
+/* BODY GENERALE */
+body {
+  font-family: 'Arabian', sans-serif; /* font principale della pagina */
+  margin: 0; /* rimuove il margine predefinito del browser */
+  padding: 0; /* rimuove il padding predefinito del browser */
+}
+
+/* HEADER: barra superiore */
+.top-bar {
+  color: #EFAF9F;
+  display: flex; /* usa il layout flexbox */
+  justify-content: space-between; /* spinge gli elementi ai lati */
+  align-items: center; /* centra verticalmente gli elementi */
+  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* Bordeaux */
+  padding: 10px 20px; /* spazio interno della barra */
+  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
+}
+
+/* CONTENITORE MENU */
+.menu-container {
   
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: space-between; /* mette spazio tra hamburger/menu e extra-links */
+  gap: rel; /* opzionale, spazio tra elementi */
+  flex: 1; /*prende tutta la lunghezza disponibile*/
+  position: relative;
+}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Rende la pagina responsive su mobile -->
+/* HAMBURGER */
+.hamburger {
+  width: 25px;           /* larghezza hamburger */
+  height: 20px;          /* altezza totale */
+  display: flex;          /* layout verticale */
+  flex-direction: column; /* linee impilate */
+  justify-content: space-between; /* distanza tra linee */
+  cursor: pointer;        /* cursore mano */
+}
 
-  <title>Shirin Dance</title>
-  <!-- Titolo che appare nella scheda del browser -->
+.hamburger div { /*linee del menù*/
+  height: 3px;            /* spessore linea */
+  background-color: #EFAF9F;  /* colore linea */
+  border-radius: 2px;      /* angoli arrotondati */
+}
 
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Collega il file CSS esterno -->
-</head>
+/* MENU A TENDINA CORRETTO */
+.menu {
+  color: #EFAF9F;
+  display: none;           /* nascosto di default */
+  position: absolute;      /* posizione assoluta rispetto al container */
+  top: 15px;               /* distanza verticale dall’hamburger */
+  left: 0%;               /* centro rispetto all’hamburger */
+  transform: translateX(-15%); /* centraggio esatto */
+  background-color: #6B0F1A; /* Bordeaux */
+  border: 1px solid #BFAFAF;
+  padding: 10px;
+  flex-direction: column;  /* link uno sotto l’altro */
+  min-width: 150px;        /* larghezza minima */
+  max-width: 90vw;         /* non esce dallo schermo */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;           /* sempre sopra altri elementi */
+}
 
-<body>
-  <!-- CORPO DELLA PAGINA -->
+/* MOSTRA MENU QUANDO ATTIVO */
+.menu.show {
+  display: flex; /* mostra menu */
+}
 
-  <!-- HEADER: contiene logo e menu -->
-  <header>
-    <div class="top-bar">
-      <!-- Barra superiore del sito -->
+/* LINK DENTRO MENU */
+.menu a {
+  text-decoration: none;  /* rimuove sottolineatura */
+  color: #EFAF9F;            /* colore testo */
+  margin: 5px 0;          /* margine tra link */
+}
 
-      <div class="menu-container">
-        <!-- Contenitore per hamburger e menu -->
+.menu a:hover {
+  color: #e91e63;         /* colore al passaggio del mouse */
+}
 
-        <!-- MENU HAMBURGER -->
-        <div class="hamburger" onclick="toggleMenu()">
-          <!-- Cliccandolo, apre/chiude il menu -->
-          <div></div> <!-- Linea 1 -->
-          <div></div> <!-- Linea 2 -->
-          <div></div> <!-- Linea 3 -->
-        </div>
 
-        <!-- MENU A TENDINA -->
-        <nav id="menu" class="menu">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contacts.html">Contacts</a>
-          <a href="contacts.html">Contacts</a>
-        </nav>
-        <div class="extra-links">
-          <a href="corsi.html">Corsi</a>
-          <a href="eventi.html">Eventi</a>
-          <a href="galleria.html">Galleria</a>
-          <a href="blog.html">Blog</a>
-          <a href="contacts.html">Contacts</a>
-        </div>
-      </div>
-    </div>
-  </header>
+/* Applica box-sizing globale per includere padding/border nella larghezza */
+* {
+  box-sizing: border-box;
+}
 
-  <!-- MAIN: diviso in due colonne -->
-  <main class="container">
-    <!-- Contenitore principale -->
-     
+/* Container principale: due colonne affiancate */
+.container {
+  display: flex;           /* usa flexbox per affiancare le colonne */
+  flex-wrap: nowrap;       /* non andare a capo */
+  gap: 5px;               /* distanza tra main e sidebar */
+  padding: 5px;           /* spazio interno al container */
+  background: linear-gradient(to bottom, #0A0A0A, #000000); /*colore sfondo gradiente*/
+}
 
-    <!-- SEZIONE PRINCIPALE (75%) -->
-    <section class="main-content">
-      <img src="img/logo colorato.jpeg" alt="Logo Shirin Dance" class="logo">
-      <!-- Logo principale -->
+/* Colonna principale (75%) */
+.main-content {
+  background: radial-gradient(circle at top, #2b1055, #000);
+  flex: 0 0 75%;           /* larghezza fissa 75% */
+}
 
-      
+/* Sidebar laterale (25%) */
+.sidebar {
+  flex: 0 0 25%;           /* larghezza fissa 25% */
+  background: linear-gradient(to bottom, #68272F, #1E1E1E); /* grigio antracite */
+  color: #F8F8F8; /* testo chiaro */
+  border: 2px solid #6B0F1A; /* bordino bordeaux per richiamo */
+  border-radius: 8px;
+  height: fit-content;     /* altezza adattata al contenuto */
+  padding: 20px;   /*spazio interno*/
+}
 
-      <!-- GALLERIA VIDEO CON HOVER -->
-      <div class="gallery">
-        <!-- Riga 1 -->
-        <div class="row">
-          <a href="corsi.html">
-            <div class="video-box">
-              <img src="img/logo.corsi.qd.jpeg" alt="Foto 1">
-              <video src="video/clip1.mp4" muted loop preload="none"></video>
-            </div>
-          </a>
 
-          <a href="fcbd.html">
-            <div class="video-box">
-              <img src="img/logo.fcbd.qd.jpeg" alt="Foto 2">
-              <video src="video/clip.fcbd.mp4" muted loop preload="none"></video>
-            </div>
-          </a>
+/* LOGO */
+.logo {
+  display: block; /* trasforma in blocco */
+  width: 100%; /* larghezza logo */
+  height: auto; /* mantiene proporzioni */
+  margin: 0 auto 20px auto; /* centrato + margine sotto */
+}
 
-          <a href="compagnia.html">
-            <div class="video-box">
-              <img src="img/logo.compagnia.qd.jpeg" alt="Foto 3">
-              <video src="video/clip.compagnia.mp4" muted loop preload="none"></video>
-            </div>
-          </a>
-        </div>
+/* LOGO */
+.logo-intestazione {
+  display: block; /* trasforma in blocco */
+  width: 80%; /* larghezza logo */
+  height: auto; /* mantiene proporzioni */
+  object-fit: contain; /* mantiene proporzioni corrette */
+  margin: 0 auto 0 auto; /* centrato + margine sotto */
+}
 
-        <!-- Riga 2 -->
-        <div class="row">
-          <a href="eventi.html">
-            <div class="video-box">
-              <img src="img/logo.eventi.qd.jpeg" alt="Foto 4">
-              <video src="video/clip4.mp4" muted loop preload="none"></video>
-            </div>
-          </a>
+/* GALLERIA */
+.gallery {
+  display: flex; /* flexbox per le righe */
+  flex-direction: column; /* colonna di righe */
+  gap: 20px; /* distanza tra le righe */
+  margin-top: 20px; /* margine superiore */
+}
 
-          <a href="unica.html">
-            <div class="video-box">
-              <img src="img/logo.unica.qd.jpeg" alt="Foto 5">
-              <video src="video/clip5.mp4" muted loop preload="none"></video>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- Fine galleria -->
-    </section>
+.row {
+  display: flex; /* flexbox per i riquadri */
+  gap: 20px; /* distanza tra riquadri */
+  justify-content: center; /* centrati orizzontalmente */
+  flex-wrap: wrap; /* vanno a capo se spazio ridotto */
+}
 
-    <!-- SEZIONE LATERALE (25%) -->
-    <aside class="sidebar">
+.video-box {
+  position: relative; /* per posizionare immagine e video */
+  width: 250px; /* larghezza riquadro */
+  height: 180px; /* altezza riquadro */
+  overflow: hidden; /* nasconde contenuto in eccesso */
+  border-radius: 10px; /* angoli arrotondati */
+  cursor: pointer; /* cursore a mano */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ombra riquadro */
+}
 
-      <!-- CALENDARIO -->
-      <div class="calendar">
-        <h3>Calendario Eventi</h3>
+.video-box img, .video-box video {
+  position: absolute; /* posizione assoluta dentro il box */
+  top: 0; /* inizio dall’alto */
+  left: 0; /* inizio da sinistra */
+  width: 100%; /* riempie tutta la larghezza */
+  height: 100%; /* riempie tutta l’altezza */
+  object-fit: cover; /* adatta immagine/video al box */
+  transition: opacity 0.4s ease; /* transizione morbida */
+}
 
-        <!-- Controlli mese -->
-        <div class="calendar-controls">
-          <button id="prevMonth">&lt;</button>
-          <span id="monthYear"></span>
-          <button id="nextMonth">&gt;</button>
-        </div>
+.video-box video {
+  opacity: 0; /* video invisibile di default */
+  pointer-events: none; /* non interferisce con mouse */
+}
 
-        <!-- Tabella calendario -->
-        <table id="calendar">
-          
-            <tr>
-              <th>Lun</th>
-              <th>Mar</th>
-              <th>Mer</th>
-              <th>Gio</th>
-              <th>Ven</th>
-              <th>Sab</th>
-              <th>Dom</th>
-            </tr>
-          
-          <tbody>
-            <!-- Giorni generati da JavaScript -->
-          </tbody>
-        </table>
-      </div>
+.video-box:hover video {
+  opacity: 1; /* video visibile al passaggio del mouse */
+}
 
-      <!-- Collega lo script del calendario -->
-      <script src="js/calendar.js"></script>
-    </aside>
-  </main>
+.video-box:hover img {
+  opacity: 0; /* immagine sparisce al passaggio del mouse */
+}
 
-  <!-- SCRIPT PER MENU E VIDEO -->
-  <script>
-    // MENU HAMBURGER: mostra/nasconde il menu
-    function toggleMenu() {
-      const menu = document.getElementById('menu'); // Seleziona il menu
-      menu.classList.toggle('show'); // Aggiunge o rimuove la classe 'show'
-    }
+/* CALENDARIO */
+.calendar {
+  margin-top: 20px; /* margine sopra */
+  font-family: 'Arabian', sans-serif; /* font calendario */
+}
 
-    // VIDEO HOVER: parte il video al passaggio del mouse
-    document.querySelectorAll('.video-box').forEach(box => {
-      const video = box.querySelector('video');
-      box.addEventListener('mouseenter', () => { video.play(); }); // parte il video
-      box.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; }); // si ferma e torna all'inizio
-    });
-  </script> <!-- ✅ CHIUSURA SCRIPT MANCANTE -->
-</body>
-</html>
+.calendar table {
+  width: 100%; /* tabella tutta la larghezza */
+  border-collapse: collapse; /* elimina spazi tra celle */
+  text-align: center; /* testo centrato */
+}
+
+.calendar th, .calendar td {
+  border: 1px solid #ccc; /* bordo celle */
+  padding: 5px; /* spazio interno celle */
+}
+
+.calendar th {
+  background-color: #f8f8f8; /* sfondo intestazioni */
+}
+
+.calendar td:hover {
+  background-color: #e91e63; /* colore cella al passaggio mouse */
+  color: white; /* testo bianco */
+  cursor: pointer; /* cursore a mano */
+}
+
+/* Nuovi link */
+.extra-links {
+  display: flex; /* flexbox */
+  flex: 1; /* prende tutto lo spazio */
+  justify-content: space-evenly; /* distribuzione equa */
+  gap: 20px; /* distanza tra link */
+}
+
+.extra-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.extra-links a:hover {
+  color: #ffd700;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu,
+  .extra-links {
+    display: flex;
+    flex: 1; /* ogni sezione prende uguale spazio */
+    justify-content: space-evenly; /* distribuisce equamente tutti i link al suo interno */
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    background: rgba(30, 0, 50, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
