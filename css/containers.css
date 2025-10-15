@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Almalik';
+  src: url('../fonts/Almalik.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arabian';
+  src: url('../fonts/XXII\ ARABIAN-ONENIGHTSTAND.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+ 
+ 
+ /* Stili per i container hover */
+    .hoverContainer {
+      position: relative;
+      width: 100%;
+      margin: 0;
+    }
+
+
+
+    .hoverBox {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    
+    .hoverContent {
+      display: none;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0; 
+    }
+
+    .hoverContainer2 {
+      color: #EFAF9F;
+      position: relative;
+      display: inline-block; /* in linea con contenuti top-bar */
+      /* non imposto larghezza fissa, si adatta al contenuto */
+      width: auto;
+      margin: 0;
+    }
+
+    .hoverContainer2, .hoverContainer2 * {
+      color: #EFAF9F;
+    }
+
+    .hoverBox2 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    
+/* MENU nascosto di default */
+.hoverContent2 {
+  display: none;
+  position: absolute;
+  top: 100%; /* subito sotto l’hamburger */
+  left: 0;
+  white-space: nowrap;  /* forza il testo su una sola riga */
+  background: #6B0F1A;
+  border: 1px solid #BFAFAF;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* sopra tutto */
+  min-width: 150px;
+}
+
+.hoverContent2 a {
+  display: block;
+  color: #EFAF9F;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.hoverContent2 a:hover {
+  background: #555;
+}
+
+
+

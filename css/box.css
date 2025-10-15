@@ -18,8 +18,15 @@
 
 /* Box Blog in alto a sinistra */
 .blog-box {
-  top: 20px;
-  left: 20px;
+  width: 20%; /* larghezza 20% della hero */
+  top: 10px;
+  left: 10px;
+}
+/* Box Calendario in alto a destra */
+.calendar-box {
+  width: 20%; /* larghezza 20% della hero */
+  top: 10px;
+  right: 10px;
 }
 
 
@@ -56,8 +63,3 @@
   cursor: pointer; /* cursore a mano */
 }
 
-/* Box Calendario in alto a destra */
-.calendar-box {
-  top: 20px;
-  right: 20px;
-}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Almalik';
+  src: url('../fonts/Almalik.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arabian';
+  src: url('../fonts/XXII\ ARABIAN-ONENIGHTSTAND.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* BODY GENERALE */
+body {
+  font-family: 'Arabian', sans-serif; /* font principale della pagina */
+  margin: 0; /* rimuove il margine predefinito del browser */
+  padding: 0; /* rimuove il padding predefinito del browser */
+}
+
+/* HEADER: barra superiore */
+.top-bar {
+  color: #EFAF9F;
+  display: flex; /* usa il layout flexbox */
+  justify-content: space-between; /* spinge gli elementi ai lati */
+  align-items: center; /* centra verticalmente gli elementi */
+  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* Bordeaux */
+  padding: 10px 20px; /* spazio interno della barra */
+  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
+}

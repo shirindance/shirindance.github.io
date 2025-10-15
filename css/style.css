@@ -26,7 +26,7 @@ body {
 .top-bar {
   color: #EFAF9F;
   display: flex; /* usa il layout flexbox */
-  justify-content: space-between; /* spinge gli elementi ai lati */
+  justify-content: space-evenly; /* spinge gli elementi ai lati */
   align-items: center; /* centra verticalmente gli elementi */
   background: linear-gradient(to right, #6B0F1A, #3A0A10); /* Bordeaux */
   padding: 10px 20px; /* spazio interno della barra */
@@ -35,10 +35,9 @@ body {
 
 /* CONTENITORE MENU */
 .menu-container {
-  
   display: flex;
   align-items: center; /* centra verticalmente */
-  justify-content: space-between; /* mette spazio tra hamburger/menu e extra-links */
+  justify-content: space-evenly; /* mette spazio tra hamburger/menu e extra-links */
   gap: rel; /* opzionale, spazio tra elementi */
   flex: 1; /*prende tutta la lunghezza disponibile*/
   position: relative;
@@ -77,6 +76,7 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 1000;           /* sempre sopra altri elementi */
 }
+
 
 /* MOSTRA MENU QUANDO ATTIVO */
 .menu.show {
@@ -177,13 +177,13 @@ body {
 }
 
 .extra-links a {
-  color: #fff;
+  color: #EFAF9F;;
   text-decoration: none;
   font-weight: 500;
 }
 
 .extra-links a:hover {
-  color: #ffd700;
+  color: #e91e63;
 }
 
 /* Mobile */
