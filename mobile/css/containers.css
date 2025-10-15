@@ -42,6 +42,13 @@
       margin: 0;
       cursor: pointer;               /* mano al passaggio */
     }
+
+.hoverBox2 a {
+  color: #EFAF9F;;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: clamp(10px, 2vw, 16px); /* riduce automaticamente se spazio stretto */
+}
     
 /* MENU nascosto di default */
 .hoverContent2 {
@@ -76,4 +83,5 @@
 /* Classe active per mostrare il menu */
 .hoverContent2.active {
   left: 0; /* porta il menu in vista */
+
 }
