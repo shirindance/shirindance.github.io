@@ -62,7 +62,7 @@
 }
 
 .hoverContent2 a {
-  font-size: clamp(14px, 2.5vw, 18px); /* min 14px, proporzionale, max 18px */
+  font-size: clamp(18px, 2.5vw, 24px); /* min 18px, proporzionale, max 24px */
   display: block;
   color: #EFAF9F;
   text-decoration: none;
@@ -80,5 +80,6 @@
   left: 0; /* porta il menu in vista */
 
 }
+
 
 
