@@ -38,7 +38,6 @@
   display: flex; /* flexbox */
   flex: 1; /* prende tutto lo spazio */
   gap: 20px; /* distanza tra link */
-  width:auto;
   flex-wrap: nowrap;         /* evita che vadano a capo */
   min-width: 0;              /* 🔹 permette ai figli di ridursi */
 }
@@ -57,4 +56,5 @@
   flex: 1;             /* ogni link prende lo stesso spazio */
   text-align: center;  /* centra il testo nel suo “blocco” */
 }
+
 
