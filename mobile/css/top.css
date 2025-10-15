@@ -20,25 +20,18 @@ body {
 }
 
 /* HEADER: barra superiore */
-.top-bar {
-  color: #EFAF9F;
-  display: flex; /* usa il layout flexbox */
-  justify-content: space-between; /* spinge gli elementi ai lati */
-  align-items: center; /* centra verticalmente gli elementi */
-  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* Bordeaux */
-  padding: 10px 20px; /* spazio interno della barra */
-  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
 
-}
 
 /* ===============================
    Top bar mobile
    =============================== */
 .top-bar-mobile {
+  color: #EFAF9F;                /*colore del carattere*/
   display: flex;                 /* posiziona hamburger e logo in orizzontale */
-  align-items: center;           /* centra verticalmente */
-  justify-content: space-between;/* spazio tra hamburger e logo */
-  background-color: #333;        /* sfondo scuro */
+  justify-content: space-between; /* spinge gli elementi ai lati */
+  align-items: center; /* centra verticalmente gli elementi */
+  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* Bordeaux */
+  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
   height: 50px;                  /* altezza top bar */
   padding: 0 10px;               /* margini laterali */
   color: #fff;                   /* colore testo */
