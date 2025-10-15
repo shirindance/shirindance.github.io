@@ -1,1 +1,116 @@
+@font-face {
+  font-family: 'Almalik';
+  src: url('../fonts/Almalik.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Arabian';
+  src: url('../fonts/XXII\ ARABIAN-ONENIGHTSTAND.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* BODY GENERALE */
+body {
+  font-family: 'Arabian', sans-serif; /* font principale della pagina */
+  margin: 0; /* rimuove il margine predefinito del browser */
+  padding: 0; /* rimuove il padding predefinito del browser */
+}
+
+/* HEADER: barra superiore */
+.top-bar {
+  color: #EFAF9F;
+  display: flex; /* usa il layout flexbox */
+  justify-content: space-between; /* spinge gli elementi ai lati */
+  align-items: center; /* centra verticalmente gli elementi */
+  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* Bordeaux */
+  padding: 10px 20px; /* spazio interno della barra */
+  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
+
+}
+
+/* ===============================
+   Top bar mobile
+   =============================== */
+.top-bar-mobile {
+  display: flex;                 /* posiziona hamburger e logo in orizzontale */
+  align-items: center;           /* centra verticalmente */
+  justify-content: space-between;/* spazio tra hamburger e logo */
+  background-color: #333;        /* sfondo scuro */
+  height: 50px;                  /* altezza top bar */
+  padding: 0 10px;               /* margini laterali */
+  color: #fff;                   /* colore testo */
+}
+
+/* ===============================
+   Hamburger
+   =============================== */
+.hamburger {
+  display: flex;                 /* linee in colonna */
+  flex-direction: column;
+  justify-content: space-between;/* distribuisce le linee verticalmente */
+  width: 25px;
+  height: 18px;
+  cursor: pointer;               /* mano al passaggio */
+}
+
+.hamburger div {
+  height: 3px;                   /* spessore linea */
+  background-color: #EFAF9F;     /* colore linea */
+  border-radius: 2px;            /* bordi arrotondati */
+}
+
+/* ===============================
+   Menu laterale
+   =============================== */
+.side-menu {
+  position: fixed;               /* fisso rispetto alla finestra */
+  top: 0;                        /* inizia dall’alto */
+  left: -250px;                  /* nascosto fuori schermo a sinistra */
+  width: 250px;                  /* larghezza del menu */
+  height: 100%;                  /* occupa tutta l’altezza */
+  background-color: #444;        /* sfondo del menu */
+  display: flex;                 
+  flex-direction: column;        /* link in colonna */
+  padding: 60px 20px;            /* spazio interno, sotto la top bar */
+  transition: left 0.3s ease;    /* animazione apertura/chiusura */
+  z-index: 1000;                 /* sopra gli altri elementi */
+}
+
+/* Link menu */
+.side-menu a, .side-menu .hoverBox2 {
+  color: #fff;                   /* colore link */
+  text-decoration: none;         /* rimuove sottolineatura */
+  padding: 10px 0;               /* spazio sopra/sotto */
+  cursor: pointer;               /* mano al passaggio */
+}
+
+.side-menu a:hover, .side-menu .hoverBox2:hover {
+  color: #ffd700;                /* colore link al passaggio */
+}
+
+/* Mostra il menu quando la classe 'open' è attiva */
+.side-menu.open {
+  left: 0;                       /* porta il menu visibile a sinistra */
+}
+
+/* ===============================
+   Dropdown interno CHI SIAMO
+   =============================== */
+.hoverContainer2 {
+  position: relative;            /* necessario per il dropdown assoluto */
+}
+
+.hoverContent2 {
+  display: none;                 /* nascosto inizialmente */
+  flex-direction: column;        /* link in colonna */
+  position: relative;            /* posizione relativa all’hoverContainer2 */
+  padding-left: 10px;            /* spostamento interno */
+}
+
+/* Mostra il dropdown quando la classe 'open' è attiva */
+.hoverContainer2.open .hoverContent2 {
+  display: flex;
+}
