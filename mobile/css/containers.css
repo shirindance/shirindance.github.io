@@ -1,0 +1,79 @@
+ /* Stili per i container hover */
+    .hoverContainer {
+      position: relative;
+      width: 100%;
+      margin: 0;
+    }
+
+
+
+    .hoverBox {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    
+    .hoverContent {
+      display: none;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0; 
+    }
+
+    .hoverContainer2 {
+      color: #EFAF9F;
+      position: relative;
+      display: inline-block; /* in linea con contenuti top-bar */
+      /* non imposto larghezza fissa, si adatta al contenuto */
+      width: auto;
+      margin: 0;
+    }
+
+    .hoverContainer2, .hoverContainer2 * {
+      color: #EFAF9F;
+    }
+
+    .hoverBox2 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      cursor: pointer;               /* mano al passaggio */
+    }
+    
+/* MENU nascosto di default */
+.hoverContent2 {
+  position: fixed;            /* fisso sulla pagina */
+  top: 0;
+  left: -75%;                /* nascosto fuori dalla pagina a destra */
+  width: 75%;                 /* occupa 3/4 della larghezza */
+  height: 100vh;              /* altezza totale della finestra */
+  background: #6B0F1A;
+  border-left: 2px solid #BFAFAF;
+  padding: 20px;
+  box-sizing: border-box;
+  display: block;
+  flex-direction: column;
+  gap: 10px;
+  transition: right 0.3s ease; /* animazione apertura/chiusura */
+  z-index: 9999;
+}
+
+.hoverContent2 a {
+  display: block;
+  color: #EFAF9F;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.hoverContent2 a:hover {
+  background: #555;
+}
+
+
+/* Classe active per mostrare il menu */
+.hoverContent2.active {
+  left: 0; /* porta il menu in vista */
+}

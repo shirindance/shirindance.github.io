@@ -1,0 +1,57 @@
+/* HEADER: barra superiore */
+
+
+/* ===============================
+   Top bar mobile
+   =============================== */
+.top-bar-mobile {
+  color: #EFAF9F;                /*colore del carattere*/
+  display: flex;                 /* posiziona hamburger e logo in orizzontale */
+  justify-content: space-evenly; /* spinge gli elementi ai lati */
+  align-items: center; /* centra verticalmente gli elementi */
+  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* Bordeaux */
+  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
+  height: 50px;                  /* altezza top bar */
+  padding: 0 10px;               /* margini laterali */
+}
+
+/* ===============================
+   Hamburger
+   =============================== */
+.hamburger {
+  display: flex;                 /* linee in colonna */
+  flex-direction: column;
+  justify-content: space-between;/* distribuisce le linee verticalmente */
+  width: 25px;
+  height: 18px;
+  cursor: pointer;               /* mano al passaggio */
+}
+
+.hamburger div {
+  height: 3px;                   /* spessore linea */
+  background-color: #EFAF9F;     /* colore linea */
+  border-radius: 2px;            /* bordi arrotondati */
+}
+
+.extra-links {
+  justify-content: space-evenly;
+  display: flex; /* flexbox */
+  flex: 1; /* prende tutto lo spazio */
+  gap: 20px; /* distanza tra link */
+  width:auto;
+}
+
+.extra-links a {
+  color: #EFAF9F;;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.extra-links a:hover {
+  color: #e91e63;
+}
+
+.extra-links > * {
+  flex: 1;             /* ogni link prende lo stesso spazio */
+  text-align: center;  /* centra il testo nel suo “blocco” */
+}
