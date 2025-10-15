@@ -46,6 +46,7 @@
   color: #EFAF9F;;
   text-decoration: none;
   font-weight: 500;
+  font-size: clamp(10px, 2vw, 16px); /* riduce automaticamente se spazio stretto */
 }
 
 .extra-links a:hover {
@@ -56,6 +57,7 @@
   flex: 1;             /* ogni link prende lo stesso spazio */
   text-align: center;  /* centra il testo nel suo “blocco” */
 }
+
 
 
 
