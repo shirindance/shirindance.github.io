@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- Dichiara che il documento è HTML5 -->
+
+<html lang="it">
+<!-- Imposta la lingua della pagina su italiano -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Imposta la codifica dei caratteri -->
+  <!-- altro commento a caso -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Rende la pagina responsive su mobile -->
+
+  <title>Shirin Dance</title>
+  <!-- Titolo che appare nella scheda del browser -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/box.css">
+  <!-- Collega il file CSS esterno -->
+
+  <link rel="stylesheet" href="css/containers.css">
+  <!-- Collega il file CSS esterno -->
+
+  <script src="js/mobile.js"></script>
+  <!--indirizza la pagina alla versione mobile se siamo su telefono-->
+</head>
+
+<body>
+  <!-- CORPO DELLA PAGINA -->
+
+  <!-- HEADER: contiene logo e menu -->
+  <!-- HEADER: contiene logo e menu -->
+  <header>
+    <div class="top-bar">
+      <!-- Barra superiore del sito -->
+      <script src="js/containerstop.js"></script> 
+
+      <div class="menu-container">
+      <!-- Contenitore per hamburger e menu -->
+
+        <div class="hoverContainer2">
+          <div class="hoverBox2">
+
+              <!-- MENU HAMBURGER -->
+            <div class="hamburger">
+            <!-- Cliccandolo, apre/chiude il menu -->
+              <div></div> <!-- Linea 1 -->
+              <div></div> <!-- Linea 2 -->
+              <div></div> <!-- Linea 3 -->
+            </div>
+          </div>
+          <div class="hoverContent2">              
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+          </div>
+        </div>
+        
+        
+        <div class="extra-links">
+          <a href="index.html">HOME</a>
+          <div class="hoverContainer2">
+            <div class="hoverBox2">
+              CHI SIAMO
+            </div>
+            <div class="hoverContent2">              
+              <a href="presentazione.html">La nostra storia</a>
+              <a href="scuola.html">La nostra scuola</a>
+              <a href="compagnia.html">La nostra compagnia</a>
+              <a href="fcbd.html">La nostra Rainbow Tribe</a>
+            </div>
+          </div>
+          
+          <div class="hoverContainer2">
+            <div class="hoverBox2">
+              GALLERY
+            </div>
+            <div class="hoverContent2">              
+              <a href="foto.html">Foto</a>
+              <a href="video.html">Video</a>
+              <a href="interviste.html">Racconti</a>
+            </div>
+          </div>
+          <div class="hoverContainer2">
+            <div class="hoverBox2">
+              BLOG
+            </div>
+            <div class="hoverContent2">              
+              <a href="articoli.html">Articoli</a>
+              <a href="reel.html">Reel</a>
+              <a href="storie.html">Storie</a>
+            </div>
+          </div>
+          <div class="hoverContainer2">
+            <div class="hoverBox2">
+              CONTATTI
+            </div>
+            <div class="hoverContent2">              
+              <a href="contatti.html">Contatti</a>
+              <a href="sedi.html">Sedi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN-->
+  <main class="container">
+    <!-- Contenitore principale -->
+     
+
+    <!-- SEZIONE PRINCIPALE -->
+    <main>
+  <!-- Sezione 1: Hero con logo come sfondo -->
+      <section class="hero">
+        <script src="js/sliderimg.js"></script>
+
+        <script src="js/containers.js"></script> 
+          <!-- Se vuoi sovrapporre contenuti sul logo, li metti qui -->
+        <div class="corner-box blog-box">
+          <div class="hoverContainer">
+            <div class="hoverBox">
+              <h3>News</h3>
+            </div>
+            <div class="hoverContent">
+              <h3>Anteprima della news da decidere come impostarla</h3>
+            </div>
+          </div> <!--fine hover-->
+        </div><!--fine blogbox-->
+
+
+        <div class="corner-box calendar-box">
+        <!-- Contenitore calendario -->
+          <div class="hoverContainer">
+            <div class="hoverBox">
+              <h3>Calendario</h3>
+            </div>
+            <div class="hoverContent">
+              <div class="calendar">
+      
+              <!-- Controlli mese -->
+                <div class="calendar-controls">
+                  <button id="prevMonth">&lt;</button> <!-- Pulsante mese precedente -->
+                  <span id="monthYear"></span> <!-- Mostra mese e anno correnti -->
+                  <button id="nextMonth">&gt;</button> <!-- Pulsante mese successivo -->
+                </div>
+
+                <!-- Tabella calendario -->
+                <table id="calendar">
+                  <tr>
+                    <th>Lun</th>
+                    <th>Mar</th>
+                    <th>Mer</th>
+                    <th>Gio</th>
+                    <th>Ven</th>
+                    <th>Sab</th>
+                    <th>Dom</th>
+                  </tr>
+                  <tbody>
+                  <!-- Giorni generati da JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Collega lo script del calendario -->
+              <script src="js/calendar.js"></script>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Sezione 2: Contenuto sotto il logo -->
+      <section class="main-content2">
+    <!-- Qui metti gallery, video-box, testi ecc. --><!-- GALLERIA VIDEO CON HOVER -->
+        <div class="gallery">
+        <!-- Riga 1 -->
+          <div class="row">
+            <a href="corsi.html">
+              <div class="video-box">
+                <img src="img/logo.corsi.qd.jpeg" alt="Foto 1">
+                <video src="video/clip1.mp4" muted loop preload="none"></video>
+              </div>
+            </a>
+
+           <a href="fcbd.html">
+              <div class="video-box">
+                <img src="img/logo.fcbd.qd.jpeg" alt="Foto 2">
+                <video src="video/clip.fcbd.mp4" muted loop preload="none"></video>
+              </div>
+            </a>
+
+            <a href="compagnia.html">
+              <div class="video-box">
+                <img src="img/logo.compagnia.qd.jpeg" alt="Foto 3">
+                <video src="video/clip.compagnia.mp4" muted loop preload="none"></video>
+              </div>
+            </a>
+          </div>
+
+        <!-- Riga 2 -->
+          <div class="row">
+            <a href="eventi.html">
+              <div class="video-box">
+                <img src="img/logo.eventi.qd.jpeg" alt="Foto 4">
+                <video src="video/clip4.mp4" muted loop preload="none"></video>
+              </div>
+            </a>
+
+            <a href="unica.html">
+              <div class="video-box">
+                <img src="img/logo.unica.qd.jpeg" alt="Foto 5">
+                <video src="video/clip5.mp4" muted loop preload="none"></video>
+              </div>
+            </a>
+          </div>
+        </div>
+      <!-- Fine galleria -->
+      </section>
+
+    
+
+      
+
+  <!-- SCRIPT PER MENU E VIDEO -->
+  <script>
+    // MENU HAMBURGER: mostra/nasconde il menu
+    function toggleMenu() {
+      const menu = document.getElementById('menu'); // Seleziona il menu
+      menu.classList.toggle('show'); // Aggiunge o rimuove la classe 'show'
+    }
+
+    // VIDEO HOVER: parte il video al passaggio del mouse
+    document.querySelectorAll('.video-box').forEach(box => {
+      const video = box.querySelector('video');
+      box.addEventListener('mouseenter', () => { video.play(); }); // parte il video
+      box.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; }); // si ferma e torna all'inizio
+    });
+  </script> <!-- ✅ CHIUSURA SCRIPT MANCANTE -->
+</body>
+</html>
