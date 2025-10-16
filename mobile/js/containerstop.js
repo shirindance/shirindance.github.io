@@ -1,40 +1,61 @@
-// Attende che il DOM sia completamente caricato
+// Attende che tutto l'HTML della pagina (il DOM) sia stato caricato
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("JS caricato");
 
+  // Seleziona tutti gli elementi che hanno la classe .hoverContainer2
+  // (cioè i contenitori principali dei tuoi box interattivi)
   const hoverContainers = document.querySelectorAll('.hoverContainer2');
-  console.log("hoverContainers trovati:", hoverContainers.length);
 
+  // Per ogni container trovato...
   hoverContainers.forEach(container => {
+
+    // Dentro ogni container, cerca il "trigger" (il bottone o area cliccabile)
     const trigger = container.querySelector('.hoverBox2');
+
+    // ...e il "content", cioè il contenuto da mostrare/nascondere
     const content = container.querySelector('.hoverContent2');
 
-    console.log("Trigger trovato:", trigger);
-    console.log("Content trovato:", content);
-
+    // Se in questo container manca uno dei due, esci e passa al successivo
     if (!trigger || !content) {
-      console.warn("Elemento trigger o content non trovato per un container", container);
       return;
     }
 
+    // Aggiunge un "ascoltatore" per l'evento click sul trigger
     trigger.addEventListener('click', (e) => {
-      e.stopPropagation();
-      content.classList.toggle('active');
-      console.log("Toggle attivato", content.classList);
-    });
 
+      // Ferma la propagazione del click, per evitare che arrivi al document
+      e.stopPropagation();
+
+      // 🔹 CHIUSURA DI TUTTI GLI ALTRI CONTENUTI
+      // Scorre tutti i container e chiude quelli che non sono quello cliccato
+      hoverContainers.forEach(otherContainer => {
+        const otherContent = otherContainer.querySelector('.hoverContent2');
+        if (otherContainer !== container) {
+          // Rimuove la classe "active" per chiudere gli altri
+          otherContent.classList.remove('active');
+        }
+      });
+
+      // 🔹 ATTIVA o DISATTIVA il contenuto del container cliccato
+      // Se non è attivo, lo attiva; se è già attivo, lo chiude
+      content.classList.toggle('active');
+    });
 
   });
 
+  // Aggiunge un listener al documento intero
+  // Serve per chiudere tutti i menu se clicchi fuori da qualsiasi container
   document.addEventListener('click', (e) => {
+
+    // Scorre tutti i container
     hoverContainers.forEach(container => {
       const content = container.querySelector('.hoverContent2');
 
-      // Se il click NON è dentro il container, chiudi il menu
+      // Se il click NON è dentro questo container...
       if (!container.contains(e.target)) {
+        // ...rimuove la classe "active", chiudendo il contenuto
         content.classList.remove('active');
       }
     });
   });
 
-}); // fine del DOMContentLoaded
+}); // 🔚 Fine del listener DOMContentLoaded
