@@ -30,7 +30,7 @@ function createHeader() {
             <div class="hoverContainer2">
               <div class="hoverBox2">CHI SIAMO</div>
               <div class="hoverContent2">
-                <a href="../chi siamo/base.html">La nostra storia</a>
+                <a href="../chi siamo/lanostrastoria.html">La nostra storia</a>
                 <a href="../chi siamo/base.html">La Scuola</a>
                 <a href="../chi siamo/base.html">La Compagnia</a>
                 <a href="../chi siamo/base.html">Rainbow Tribe</a>
