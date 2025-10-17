@@ -181,22 +181,22 @@
           <div class="row">
             <a href="corsi.html">
               <div class="video-box">
-                <img src="img/logo.corsi.qd.jpeg" alt="Foto 1">
+                <img src="img/logo.corsi.qd.jpeg" alt="La Scuola">
                 <video src="video/clip1.mp4" muted loop preload="none"></video>
               </div>
             </a>
 
            <a href="fcbd.html">
               <div class="video-box">
-                <img src="img/logo.fcbd.qd.jpeg" alt="Foto 2">
-                <video src="video/clip.fcbd.mp4" muted loop preload="none"></video>
+                <img src="img/logo.compagnia.qd.jpeg" alt="La Compagnia">
+                <video src="video/clip.compagnia.mp4" muted loop preload="none"></video>
               </div>
             </a>
 
             <a href="compagnia.html">
               <div class="video-box">
-                <img src="img/logo.compagnia.qd.jpeg" alt="Foto 3">
-                <video src="video/clip.compagnia.mp4" muted loop preload="none"></video>
+                <img src="img/logo.fcbd.qd.jpg" alt="Rainbow Tribe">
+                <video src="video/clip.fcbd.mp4" muted loop preload="none"></video>
               </div>
             </a>
           </div>
@@ -205,14 +205,14 @@
           <div class="row">
             <a href="eventi.html">
               <div class="video-box">
-                <img src="img/logo.eventi.qd.jpeg" alt="Foto 4">
+                <img src="img/logo.eventi.qd.jpeg" alt="Eventi">
                 <video src="video/clip4.mp4" muted loop preload="none"></video>
               </div>
             </a>
 
             <a href="unica.html">
               <div class="video-box">
-                <img src="img/logo.unica.qd.jpeg" alt="Foto 5">
+                <img src="img/logo.unica.qd.jpeg" alt="Unica shop">
                 <video src="video/clip5.mp4" muted loop preload="none"></video>
               </div>
             </a>
@@ -228,17 +228,13 @@
   <!-- SCRIPT PER MENU E VIDEO -->
   <script>
     // MENU HAMBURGER: mostra/nasconde il menu
-    function toggleMenu() {
-      const menu = document.getElementById('menu'); // Seleziona il menu
-      menu.classList.toggle('show'); // Aggiunge o rimuove la classe 'show'
-    }
+    //function toggleMenu() {
+      //const menu = document.getElementById('menu'); // Seleziona il menu
+      //menu.classList.toggle('show'); // Aggiunge o rimuove la classe 'show'
+   // }
 
-    // VIDEO HOVER: parte il video al passaggio del mouse
-    document.querySelectorAll('.video-box').forEach(box => {
-      const video = box.querySelector('video');
-      box.addEventListener('mouseenter', () => { video.play(); }); // parte il video
-      box.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; }); // si ferma e torna all'inizio
-    });
+
   </script> <!-- ✅ CHIUSURA SCRIPT MANCANTE -->
 </body>
+<script src="js/videohover.js"></script>
 </html>
