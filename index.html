@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="css/containers.css">
   <!-- Collega il file CSS esterno -->
 
+  <link rel="stylesheet" href="css/slidering.css">
+  <!-- Collega il file CSS esterno -->
+
   <script src="js/mobile.js"></script>
   <!--indirizza la pagina alla versione mobile se siamo su telefono-->
 </head>
@@ -31,9 +34,7 @@
 <body>
   <!-- CORPO DELLA PAGINA -->
 
-  <!-- HEADER: contiene logo e menu -->
-  <!-- HEADER: contiene logo e menu -->
-  <header>
+<header>
     <div class="top-bar">
       <!-- Barra superiore del sito -->
       <script src="js/containerstop.js"></script> 
@@ -117,9 +118,19 @@
     <main>
   <!-- Sezione 1: Hero con logo come sfondo -->
       <section class="hero">
-        <script src="js/sliderimg.js"></script>
+        <div class="hero-slider">
+          <img src="img/home/slidering/logo.colorato.jpeg" alt="Logo colorato" class="active">
+          <img src="img/home/slidering/scuola.JPG" alt="Shirin Dance Scuola">
+          <img src="img/home/slidering/ats .jpg" alt="Rainbow Tribe">
+          <img src="img/home/slidering/spada comp .jpg" alt="Shirin Dance Company">
+          <img src="img/home/slidering/KHALIJI.jpg" alt="Eventi">
+          <img src="img/home/slidering/logo.colorato.jpeg" alt="Logo colorato">
+          <img src="img/home/slidering/SPADA DSC_5954.jpg" alt="Eventi">
+        </div>
 
-        <script src="js/containers.js"></script> 
+        <script src="js/slidering2.js" defer></script>
+
+
           <!-- Se vuoi sovrapporre contenuti sul logo, li metti qui -->
         <div class="corner-box blog-box">
           <div class="hoverContainer">
@@ -127,9 +138,17 @@
               <h3>News</h3>
             </div>
             <div class="hoverContent">
-              <h3>Anteprima della news da decidere come impostarla</h3>
+              <a href="pagine/Eventi/figlidellaterra.html"; style="color:rgb(160, 80, 235); font-size:120%">
+                <h3>Figli della Terra</h3>
+                </a>
+              <a class="pretesto">Sono aperte le iscrizioni per partecipare a <em>Figli della Terra</em>, laboratorio di Oriental Fusion: Danze e Musica del Sud Italia.
+                Con Silvana Difalco, Silvia De Ronzo e Maurizio Messore</a>
+              <br><br>
+              <a href="news.html"; style="color:rgb(160, 80, 235)">Altre News</a>
+
             </div>
           </div> <!--fine hover-->
+          <script src="js/containers.js"></script> 
         </div><!--fine blogbox-->
 
 
@@ -168,6 +187,7 @@
 
               <!-- Collega lo script del calendario -->
               <script src="js/calendar.js"></script>
+              <script src="js/containers.js"></script> 
           </div>
         </div>
       </section>
@@ -181,7 +201,7 @@
           <div class="row">
             <a href="corsi.html">
               <div class="video-box">
-                <img src="img/logo.corsi.qd.jpeg" alt="La Scuola">
+                <img src="img/logo.scuola.qd.jpg" alt="La Scuola">
                 <video src="video/clip1.mp4" muted loop preload="none"></video>
               </div>
             </a>
@@ -203,7 +223,7 @@
 
         <!-- Riga 2 -->
           <div class="row">
-            <a href="eventi.html">
+            <a href="pagine/Eventi/base.html">
               <div class="video-box">
                 <img src="img/logo.eventi.qd.jpeg" alt="Eventi">
                 <video src="video/clip4.mp4" muted loop preload="none"></video>
@@ -235,6 +255,24 @@
 
 
   </script> <!-- ✅ CHIUSURA SCRIPT MANCANTE -->
+          <footer>
+            <div class="row">
+                <div class="footer-left">
+                    <img src="img/home/logofoot.png" >
+                </div>
+                <div class="footer-center">
+                    <a style="font-size: 150%">®Shirin Dance di Silvana Difalco
+                    <span style="display: block; line-height: 2;">Compagnia di Danza Orientale, Folklore, Fusion, FCBD®, Bollywood.</a>
+                </div>
+                <div class="footer-right">
+                    <br><br>Sito a cura di
+                    <br>Laura Porceddu
+                </div>
+            </div>
+        </footer>
+  <script src="js/videohover.js"></script>
+<script src="/linkesterni.js" ></script>
+<script src="js/base.js"></script>
 </body>
-<script src="js/videohover.js"></script>
+ 
 </html>

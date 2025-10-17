@@ -1,22 +1,29 @@
 // ===============================
 // Slider immagini dinamico dentro .hero
 // ===============================
+// Attende che tutto l'HTML sia stato caricato prima di eseguire il codice
+document.addEventListener('DOMContentLoaded', () => { //+
 
-// Seleziona la sezione .hero presente nell'HTML
-const hero = document.querySelector('.hero'); // prende il div/section con classe 'hero'
+  // Seleziona la sezione .hero presente nell'HTML
+  const hero = document.querySelector('.hero'); // prende il div/section con classe 'hero' +
+  if (!hero) return; // Se non esiste nessun .hero, il codice si interrompe +
 
 // Array contenente i percorsi delle immagini da mostrare nello slider
-const images = [
-  'img/logo.colorato.jpeg', // prima immagine: logo
-  '/img/img2.jpeg',           // seconda immagine
-  '/img/img3.jpeg',           // terza immagine
-  '/img/img4.jpeg',           // quarta immagine
-  '/img/img5.jpeg',           // quinta immagine
-  '/img/img6.jpeg'            // sesta immagine
-];
+//const images = [
+  //'img/logo.colorato.jpeg', // prima immagine: logo
+  //'/img/img2.jpeg',           // seconda immagine
+  //'/img/img3.jpeg',           // terza immagine
+  //'/img/img4.jpeg',           // quarta immagine
+  //'/img/img5.jpeg',           // quinta immagine
+  //'/img/img6.jpeg'            // sesta immagine
+//];
 
+  // Seleziona il contenitore delle immagini all'interno della sezione .hero
+  const sliderContainer = hero.querySelector('.hero-slider');
+  if (!sliderContainer) return; // Se manca il contenitore, non fa nulla
+  
 // Crea il contenitore delle immagini
-const sliderContainer = document.createElement('div'); // crea un div
+//const sliderContainer = document.createElement('div'); // crea un div
 sliderContainer.classList.add('hero-slider');          // aggiunge la classe 'hero-slider' al div
 hero.appendChild(sliderContainer);                     // aggiunge il div creato dentro .hero
 
@@ -92,3 +99,5 @@ showSlide(currentSlide);
 
 // Avanzamento automatico ogni 5 secondi (opzionale)
 setInterval(nextSlide, 5000);
+
+}) //+

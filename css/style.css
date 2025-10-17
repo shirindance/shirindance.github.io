@@ -11,16 +11,106 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Arabiantext';
+  src: url('../fonts/Arabian\ Knight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 
 
 /* BODY GENERALE */
+
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-content2 {
+  margin:0
+
+}
+
+
 body {
   font-family: 'Arabian', sans-serif; /* font principale della pagina */
   margin: 0; /* rimuove il margine predefinito del browser */
   padding: 0; /* rimuove il padding predefinito del browser */
 }
+
+main {
+  background: linear-gradient(to right, #4F0B13, #240508); /* Bordeaux profondo */
+  color: #EFAF9F;
+  align-items: center;     /* centro verticale */
+  text-align: center;
+  margin-bottom:0;
+  
+}
+
+.pretesto {
+  font-family: 'Arabiantext', sans-serif; /*font dei testi*/
+  font-size: 1.2em; /* 1.2 volte il font del genitore*/
+  margin-bottom: 20px; /* Spazio tra i paragrafi */
+  line-height: 1.6; /* Spazio tra le righe per leggibilità */
+  text-align: justify; /* opzionale: rende i paragrafi allineati ai bordi */
+  margin-top: 7px;
+  margin-left: 5%;
+  margin-right:5%;
+  margin-bottom:0;
+}
+
+.sinistra, .destra {
+  flex: 1;               /* entrambe si espandono equamente */
+}
+.sinistra {
+  overflow-y: auto;
+}
+
+footer{
+  color: #EFAF9F;
+  display: flex; /* usa il layout flexbox */
+  justify-content: center; /* spinge gli elementi ai lati */
+  align-items: center; /* centra verticalmente gli elementi */
+  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* Bordeaux */
+  padding: 10px 20px; /* spazio interno della barra */
+  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
+  text-align: center;
+
+}
+
+
+
+footer .row {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Spinge i lati verso l’esterno */
+  align-items: center;           /* Centra verticalmente */
+  text-align: center;
+}
+
+footer .footer-center {
+  flex: 1;                       /* Occupa tutto lo spazio tra i lati */
+  text-align: center;
+}
+
+footer img {
+  max-height: 100px;              /* Dimensione del logo */
+}
+
+
+footer .footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: end; /* spinge il contenuto in basso */
+  text-align: right;          /* allinea il testo a destra */
+}
+
+
+
 
 /* HEADER: barra superiore */
 .top-bar {
@@ -211,84 +301,6 @@ body {
     padding: 10px 0;
   }
 }
-
-
-
-/* SEZIONE HERO */
-.hero {
-  position: relative; /* necessario per posizionare i box agli angoli */
-  width: 100%; /* tutta la larghezza */
-  height: 400px; /* altezza della sezione, puoi regolare */
-
-  display: flex;
-  justify-content: center; /* centrare contenuti opzionali */
-  align-items: center;
-  padding-bottom: 50%;  /* 9/16 = 0.5625, regola in base all’immagine */
-}
-
-/* ===============================
-   Contenitore immagini slider
-   =============================== */
-.hero-slider {
-  width: 100%;               /* prende tutta la larghezza della hero */
-  height: auto;              /* altezza proporzionale alle immagini */
-  position: relative;        /* riferimento per le immagini assolute */
-}
-
-/* ===============================
-   Immagini singole nello slider
-   =============================== */
-.hero-slider img {
-  width: 100%;               /* occupano tutta la larghezza del container */
-  height: auto;              /* mantiene le proporzioni originali */
-  display: none;             /* tutte le immagini nascoste di default */
-  position: absolute;        /* si sovrappongono nello stesso spazio */
-  top: 0;                    /* inizio dall’alto del container */
-  left: 0;                   /* inizio da sinistra del container */
-  object-fit: contain;       /* immagine intera senza tagliare proporzioni */
-  transition: opacity 0.5s ease; /* transizione morbida se vuoi animare */
-}
-
-/* ===============================
-   Immagine attiva
-   =============================== */
-.hero-slider img.active {
-  display: block;            /* solo l’immagine attiva viene mostrata */
-  opacity: 1;                /* piena visibilità */
-}
-
-/* ===============================
-   Frecce avanti e indietro
-   =============================== */
-.hero .arrow {
-  position: absolute;        /* posizionate sopra lo slider */
-  top: 50%;                  /* centrate verticalmente */
-  transform: translateY(-50%); /* centra esattamente l’elemento */
-  font-size: 40px;           /* dimensione carattere delle frecce */
-  color: #fff;               /* colore bianco delle frecce */
-  background-color: rgba(0,0,0,0.4); /* sfondo semitrasparente */
-  border: none;              /* niente bordo */
-  padding: 10px;             /* spazio interno del bottone */
-  cursor: pointer;           /* cursore a mano */
-  z-index: 10;               /* sempre sopra le immagini */
-  border-radius: 5px;        /* angoli arrotondati */
-  transition: background 0.3s; /* effetto hover morbido */
-}
-
-/* ===============================
-   Posizione freccia sinistra
-   =============================== */
-.hero .arrow.left {
-  left: 10px;                /* distanza dal lato sinistro */
-}
-
-/* ===============================
-   Posizione freccia destra
-   =============================== */
-.hero .arrow.right {
-  right: 10px;               /* distanza dal lato destro */
-}
-
 
 
 

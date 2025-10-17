@@ -14,6 +14,7 @@
   overflow: hidden; /* nasconde eventuali elementi in eccesso */
   box-sizing: border-box; /* include padding e bordo nella larghezza */
   font-size: 0.9rem; /* dimensione testo leggibile */
+  z-index: 10;
 }
 
 /* Box Blog in alto a sinistra */

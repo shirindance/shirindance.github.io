@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
     "2025-10-14": { text: "Livello intermedio-avanzato Longara", category: "LezioneLongara"},
     "2025-10-18": "Seminario di danza moderna",
     "2025-10-25": "Festa di fine corso",
-    "2025-11-01": "Evento novembre"
+    "2025-11-01": "Evento novembre",
+    "2026-01-25": {text: "Figli della Terra", url: "pagine/Eventi/figlidellaterra.html", category: "Eventi"}
   };
 
   // Colori per ogni categoria
