@@ -51,6 +51,17 @@ main {
   
 }
 
+/* Tutto il sito */
+body.dyslexia-font, 
+body.dyslexia-font * {
+  font-family: Arial, sans-serif !important;
+}
+
+/* Forza in modo specifico le classi che hanno font definiti nel CSS */
+body.dyslexia-font .pretesto {
+  font-family: Arial, sans-serif !important;
+}
+
 .pretesto {
   font-family: 'Arabiantext', sans-serif; /*font dei testi*/
   font-size: 1.2em; /* 1.2 volte il font del genitore*/

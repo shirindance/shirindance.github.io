@@ -1,6 +1,3 @@
-    // =====================================
-    // FUNZIONE CREATEHEADER
-    // =====================================
 function createHeader() {
   const headerHTML = `
     <header>
@@ -63,6 +60,18 @@ function createHeader() {
               </div>
             </div>
 
+            <!-- BLOCCO PER CAMBIO FONT -->
+          <div class="hoverContainer2">
+            <div class="hoverBox2" style="font-family: Arial, Helvetica, sans-serif">
+              Leggibilità
+            </div>
+            <div class="hoverContent2" style="font-family: Arial, Helvetica, sans-serif; margin-left: -60%;">              
+              <span id="toggleFont" style="cursor:pointer; text-decoration: underline; text-align: center">
+                Aumenta la leggibilità
+              </span>
+            </div>
+          </div>
+
           </div> <!-- fine extra-links -->
 
         </div> <!-- fine menu-container -->
@@ -70,30 +79,29 @@ function createHeader() {
     </header>
   `;
 
-  // Inserisce l'HTML
+  // Inserisce l'HTML nel DOM
   const headerEl = document.getElementById("header");
   headerEl.innerHTML = headerHTML;
 
   // =====================================
-  // EVENT DELEGATION: intercettiamo i click sugli hamburger
+  // GESTIONE HOVER MENU
   // =====================================
   const dropdowns = headerEl.querySelectorAll('.hoverContainer2');
 
-dropdowns.forEach(container => {
-  const box = container.querySelector('.hoverBox2');
-  const content = container.querySelector('.hoverContent2');
+  dropdowns.forEach(container => {
+    const box = container.querySelector('.hoverBox2');
+    const content = container.querySelector('.hoverContent2');
 
-  // Mouse entra → apri
-  box.addEventListener('mouseenter', () => {
-    content.style.display = 'block';
-  });
+    box.addEventListener('mouseenter', () => {
+      content.style.display = 'block';
+    });
 
-  // Mouse esce dall'intero container → chiudi
-  container.addEventListener('mouseleave', () => {
-    content.style.display = 'none';
+    container.addEventListener('mouseleave', () => {
+      content.style.display = 'none';
+    });
   });
-});;
 }
+
 
 
 
