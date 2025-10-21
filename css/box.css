@@ -64,3 +64,19 @@
   cursor: pointer; /* cursore a mano */
 }
 
+
+.box-centrale {
+  border: 2px solid #5d45a0;     /* bordo colorato */
+  border-radius: 10px;           /* angoli arrotondati */
+  padding: 20px 30px;            /* spazio interno */
+  margin: 20px auto;             /* distanziamento tra i box e centrato */
+  width: 90%;                    /* larghezza fluida */
+  box-sizing: border-box;        /* include il padding nel calcolo della larghezza */
+  background: linear-gradient(to right, #3a0848, #4F0B13, #3a0848);
+}
+
+.box-centrale .titolo-centrale {
+    text-align: center; /* centra il testo orizzontalmente */
+    margin-bottom: 20px; /* spazio tra titolo e contenuto */
+}
+
