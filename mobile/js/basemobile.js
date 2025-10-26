@@ -62,7 +62,7 @@ function createHeader() {
         <div class="hoverContainer2">
           <div class="hoverBox2" style="font-family: Arial, Helvetica, sans-serif">Leggibilità</div>
           <div class="hoverContent2" style="font-family: Arial, Helvetica, sans-serif;">              
-            <span id="toggleFont" style="cursor:pointer; text-decoration: underline; text-align: center">
+            <span id="toggleFont" style="cursor:pointer; text-decoration: underline; text-align: center; font-size: 150%">
               Aumenta la leggibilità
             </span>
           </div>
