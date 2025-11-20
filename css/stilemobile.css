@@ -39,7 +39,7 @@ body {
   align-items: center;           /* centra verticalmente */
   justify-content: space-between;/* spazio tra hamburger e logo */
   background-color: #333;        /* sfondo scuro */
-  height: 50px;                  /* altezza top bar */
+  height: 100px;                  /* altezza top bar */
   padding: 0 10px;               /* margini laterali */
   color: #fff;                   /* colore testo */
 }
