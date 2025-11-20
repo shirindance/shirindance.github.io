@@ -14,15 +14,13 @@ function createHeader() {
           </div>
         </div>
         <div class="hoverContent2">              
-          <a href="index.html">Home</a>
+          <a href="../../index.html">Home</a>
           <a href="about.html">About</a>
           <a href="contacts.html">Contacts</a>
         </div>
       </div>
 
       <div class="extra-links">
-        <a href="index.html">HOME</a>
-
         <div class="hoverContainer2">
           <div class="hoverBox2"><a>CHI SIAMO</a></div>
           <div class="hoverContent2">              
@@ -51,13 +49,6 @@ function createHeader() {
           </div>
         </div>
 
-        <div class="hoverContainer2">
-          <div class="hoverBox2"><a>CONTATTI</a></div>
-          <div class="hoverContent2">              
-            <a href="contatti.html">Contatti</a>
-            <a href="sedi.html">Sedi</a>
-          </div>
-        </div>
 
         <div class="hoverContainer2">
           <div class="hoverBox2" style="font-family: Arial, Helvetica, sans-serif">Leggibilità</div>

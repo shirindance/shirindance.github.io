@@ -12,11 +12,76 @@
   font-style: normal;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* blocca lo scroll della pagina */
+}
+
 /* BODY GENERALE */
 body {
   font-family: 'Arabian', sans-serif; /* font principale della pagina */
   margin: 0; /* rimuove il margine predefinito del browser */
   padding: 0; /* rimuove il padding predefinito del browser */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-content2 {
+  margin:0
+
+}
+
+
+body {
+  font-family: 'Arabian', sans-serif; /* font principale della pagina */
+  margin: 0; /* rimuove il margine predefinito del browser */
+  padding: 0; /* rimuove il padding predefinito del browser */
+}
+
+main {
+  background: linear-gradient(to right, #4F0B13, #240508); /* Bordeaux profondo */
+  color: #EFAF9F;
+  align-items: center;     /* centro verticale */
+  text-align: center;
+  margin-bottom:0;
+  position: absolute;
+  top: var(--header-h);
+  bottom: var(--footer-h);
+  left: 0;
+  right: 0;
+  
+  overflow-y: auto;       /* il main scorre */
+  -webkit-overflow-scrolling: touch; /* scrolling fluido su mobile */
+  
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.pretesto {
+  font-family: 'Arabiantext', sans-serif; /*font dei testi*/
+  font-size: 1.2em; /* 1.2 volte il font del genitore*/
+  margin-bottom: 20px; /* Spazio tra i paragrafi */
+  line-height: 1.6; /* Spazio tra le righe per leggibilità */
+  text-align: justify; /* opzionale: rende i paragrafi allineati ai bordi */
+  margin-top: 7px;
+  margin-left: 5%;
+  margin-right:5%;
+  margin-bottom:0;
+}
+
+.sinistra, .destra {
+  flex: 1;               /* entrambe si espandono equamente */
+}
+.sinistra {
+  overflow-y: auto;
 }
 
 /* CONTENITORE MENU */
@@ -40,3 +105,72 @@ body.dyslexia-font * {
 body.dyslexia-font .pretesto {
   font-family: Arial, sans-serif !important;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #EFAF9F;
+  background: linear-gradient(to right, #6B0F1A, #3A0A10);
+  padding: 10px 10px;
+  border-bottom: 2px solid #BFAFAF;
+  text-align: center;
+  z-index: 9999;
+
+  /* permette al footer di espandersi senza tagliare il contenuto */
+  display: block;
+}
+
+/* Layout interno */
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;              /* <-- evita il taglio! */
+  gap: 10px;                    /* spazio naturale tra le sezioni */
+  padding: 0 15px;
+}
+
+/* Elementi interni */
+footer .footer-left img {
+  max-width: 120px;             /* impedisce al logo di uscire fuori */
+  width: 100%;
+  height: auto;
+}
+
+footer .footer-center {
+  max-width: 80%;               /* evita linee troppo lunghe */
+}
+
+footer .footer-right {
+  white-space: nowrap;          /* evita che le parole vadano a capo male */
+}
+
+/* Evita che il footer copra il contenuto */
+body {
+  padding-bottom: 150px;        /* aumentato per dare margine al footer */
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  footer {
+    padding: 15px 20px;
+  }
+
+  body {
+    padding-bottom: 180px;      /* più spazio per il footer mobile */
+  }
+
+  footer .footer-center {
+    max-width: 100%;
+  }
+}
+
