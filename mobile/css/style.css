@@ -59,7 +59,7 @@ header {
 main {
   margin-top: var(--header-h);             /* lascia spazio all’header fisso */
   padding: 20px;                           /* spazio interno */
-  min-height: calc(100vh - var(--header-h) - var(--footer-h)); /* minimo tutta finestra */
+  min-height: calc(100% - var(--header-h) - var(--footer-h)); /* minimo tutta finestra */
   background: linear-gradient(to right, #4F0B13, #240508); /* sfondo */
   color: #EFAF9F;                          /* colore testo */
   text-align: center;                       /* centro orizzontale */
