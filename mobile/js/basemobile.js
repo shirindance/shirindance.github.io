@@ -14,7 +14,7 @@ function createHeader() {
           </div>
         </div>
         <div class="hoverContent2">              
-          <a href="../../index.html">Home</a>
+          <a href="../1Home/index.html">Home</a>
           <a href="about.html">About</a>
           <a href="contacts.html">Contacts</a>
         </div>
@@ -42,7 +42,8 @@ function createHeader() {
 
         <div class="hoverContainer2">
           <div class="hoverBox2"><a>BLOG</a></div>
-          <div class="hoverContent2">              
+          <div class="hoverContent2"> 
+            <a href="../Blog/base.html">Base</a>             
             <a href="articoli.html">Articoli</a>
             <a href="reel.html">Reel</a>
             <a href="storie.html">Storie</a>
@@ -80,7 +81,7 @@ function createFooter() {
 <footer>
   <div class="row">
     <div class="footer-left">
-      <img src="../../img/home/logofoot.png">
+      <img src="../../../img/home/logofoot.png">
     </div>
     <div class="footer-center">
       <a style="font-size: 150%">®Shirin Dance di Silvana Difalco

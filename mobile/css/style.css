@@ -1,176 +1,178 @@
+/* ===============================
+   FONT PERSONALIZZATI
+   =============================== */
 @font-face {
-  font-family: 'Almalik';
-  src: url('../../fonts/Almalik.ttf') format('truetype');
+  font-family: 'Almalik'; /* nome font */
+  src: url('../../fonts/Almalik.ttf') format('truetype'); /* percorso font */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Arabian';
+  font-family: 'Arabian'; /* nome font principale */
   src: url('../../fonts/XXII\ ARABIAN-ONENIGHTSTAND.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
+/* ===============================
+   VARIABILI CSS
+   =============================== */
+:root {
+  --header-h: 70;  /* altezza dell'header fisso */
+  --footer-h: 150px; /* altezza footer (utile solo se serve) */
+}
+
+/* ===============================
+   RESET GENERALE
+   =============================== */
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* blocca lo scroll della pagina */
+  height: 100%;        /* altezza totale finestra */
+  margin: 0;           /* rimuove margini browser */
+  padding: 0;          /* rimuove padding browser */
+  overflow-x: hidden;  /* previene scroll orizzontale */
+  font-family: 'Arabian', sans-serif; /* font di base */
 }
 
-/* BODY GENERALE */
-body {
-  font-family: 'Arabian', sans-serif; /* font principale della pagina */
-  margin: 0; /* rimuove il margine predefinito del browser */
-  padding: 0; /* rimuove il padding predefinito del browser */
-}
-
-
+/* RESET COMPLETO PER TUTTI GLI ELEMENTI */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* include padding e border nelle dimensioni */
 }
 
-.main-content2 {
-  margin:0
-
-}
-
-
-body {
-  font-family: 'Arabian', sans-serif; /* font principale della pagina */
-  margin: 0; /* rimuove il margine predefinito del browser */
-  padding: 0; /* rimuove il padding predefinito del browser */
-}
-
-main {
-  background: linear-gradient(to right, #4F0B13, #240508); /* Bordeaux profondo */
-  color: #EFAF9F;
-  align-items: center;     /* centro verticale */
-  text-align: center;
-  margin-bottom:0;
-  position: absolute;
-  top: var(--header-h);
-  bottom: var(--footer-h);
+/* ===============================
+   HEADER FISSO
+   =============================== */
+header {
+  position: fixed;      /* header sempre visibile */
+  top: 0;               /* in alto */
   left: 0;
-  right: 0;
-  
-  overflow-y: auto;       /* il main scorre */
-  -webkit-overflow-scrolling: touch; /* scrolling fluido su mobile */
-  
-  padding: 20px;
-  box-sizing: border-box;
-  
+  width: 100%;          /* occupa tutta la larghezza */
+  z-index: 9999;        /* sopra altri elementi */
+  height: var(--header-h); /* altezza dichiarata */
 }
 
+/* ===============================
+   MAIN CONTENT
+   =============================== */
+main {
+  margin-top: var(--header-h);             /* lascia spazio all’header fisso */
+  padding: 20px;                           /* spazio interno */
+  min-height: calc(100vh - var(--header-h) - var(--footer-h)); /* minimo tutta finestra */
+  background: linear-gradient(to right, #4F0B13, #240508); /* sfondo */
+  color: #EFAF9F;                          /* colore testo */
+  text-align: center;                       /* centro orizzontale */
+  -webkit-overflow-scrolling: touch;        /* scroll fluido mobile */
+}
+
+/* ===============================
+   PARAGRAFI SPECIALI
+   =============================== */
 .pretesto {
-  font-family: 'Arabiantext', sans-serif; /*font dei testi*/
-  font-size: 1.2em; /* 1.2 volte il font del genitore*/
-  margin-bottom: 20px; /* Spazio tra i paragrafi */
-  line-height: 1.6; /* Spazio tra le righe per leggibilità */
-  text-align: justify; /* opzionale: rende i paragrafi allineati ai bordi */
+  font-family: 'Arabiantext', sans-serif; /* font testi */
+  font-size: 1.2em;                        /* leggermente più grande */
   margin-top: 7px;
   margin-left: 5%;
-  margin-right:5%;
-  margin-bottom:0;
+  margin-right: 5%;
+  margin-bottom: 0;                        /* no extra spazio sotto */
+  line-height: 1.6;                        /* leggibilità */
+  text-align: justify;                      /* testo giustificato */
 }
 
+/* ===============================
+   COLONNE SINISTRA / DESTRA
+   =============================== */
 .sinistra, .destra {
-  flex: 1;               /* entrambe si espandono equamente */
+  flex: 1;         /* occupano spazio equamente */
 }
+
 .sinistra {
-  overflow-y: auto;
+  overflow-y: auto; /* permette scroll interno se necessario */
 }
 
-/* CONTENITORE MENU */
+/* ===============================
+   CONTENITORE MENU
+   =============================== */
 .menu-container {
-  display: flex;
-  white-space: nowrap;
-  align-items: center;          /* centra verticalmente */
-  justify-content: space-between; /* hamburger a sinistra, link a destra */
-  width: 100%;                  /* prende tutta la larghezza */
-  gap: 20px;                    /* spazio opzionale tra elementi */
-  position: relative;
+  display: flex;                 /* layout flex orizzontale */
+  align-items: center;           /* centro verticale */
+  justify-content: space-between;/* hamburger a sinistra, link a destra */
+  width: 100%;                   /* tutta la larghezza */
+  white-space: nowrap;            /* evita andare a capo */
+  gap: 20px;                      /* spazio tra elementi */
+  position: relative;             /* per eventuali absolute figli */
 }
 
-/* Tutto il sito */
+/* ===============================
+   FONT DYSLEXIA (toggle)
+   =============================== */
 body.dyslexia-font, 
 body.dyslexia-font * {
-  font-family: Arial, sans-serif !important;
+  font-family: Arial, sans-serif !important; /* forza font leggibile */
 }
 
-/* Forza in modo specifico le classi che hanno font definiti nel CSS */
 body.dyslexia-font .pretesto {
   font-family: Arial, sans-serif !important;
 }
 
+/* ===============================
+   FOOTER NORMALE
+   =============================== */
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  color: #EFAF9F;
-  background: linear-gradient(to right, #6B0F1A, #3A0A10);
-  padding: 10px 10px;
-  border-bottom: 2px solid #BFAFAF;
-  text-align: center;
-  z-index: 9999;
-
-  /* permette al footer di espandersi senza tagliare il contenuto */
-  display: block;
+  width: 100%; /* occupa tutta la larghezza */
+  color: #EFAF9F; /* colore testo */
+  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* sfondo */
+  padding: 10px 20px; /* interno */
+  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
+  text-align: center; /* centro testo */
+  display: block; /* assicura espansione */
 }
 
-/* Layout interno */
+/* ===============================
+   LAYOUT INTERNO FOOTER
+   =============================== */
 footer .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;              /* <-- evita il taglio! */
-  gap: 10px;                    /* spazio naturale tra le sezioni */
-  padding: 0 15px;
+  display: flex;                 /* layout orizzontale interno */
+  justify-content: space-between;/* spaziatura tra sezioni */
+  align-items: center;           /* centratura verticale */
+  flex-wrap: wrap;               /* va a capo su schermi piccoli */
+  gap: 10px;                     /* spazio naturale tra sezioni */
+  padding: 0 15px;               /* padding laterale */
 }
 
-/* Elementi interni */
 footer .footer-left img {
-  max-width: 120px;             /* impedisce al logo di uscire fuori */
+  max-width: 120px; /* logo non esce fuori */
   width: 100%;
   height: auto;
 }
 
 footer .footer-center {
-  max-width: 80%;               /* evita linee troppo lunghe */
+  max-width: 80%; /* evita linee troppo lunghe */
 }
 
 footer .footer-right {
-  white-space: nowrap;          /* evita che le parole vadano a capo male */
+  white-space: nowrap; /* evita a capo sbagliati */
 }
 
-/* Evita che il footer copra il contenuto */
-body {
-  padding-bottom: 150px;        /* aumentato per dare margine al footer */
-}
-
-/* MOBILE */
+/* ===============================
+   MOBILE RESPONSIVE
+   =============================== */
 @media (max-width: 768px) {
-
   footer .row {
-    flex-direction: column;
+    flex-direction: column; /* colonne verticali */
     text-align: center;
-    gap: 12px;
+    gap: 12px;             /* più spazio tra sezioni */
   }
 
   footer {
-    padding: 15px 20px;
-  }
-
-  body {
-    padding-bottom: 180px;      /* più spazio per il footer mobile */
+    padding: 15px 20px;    /* padding aumentato su mobile */
   }
 
   footer .footer-center {
-    max-width: 100%;
+    max-width: 100%;       /* larghezza piena su mobile */
   }
 }
-
+main *:first-child {
+  margin-top: 0;
+}
