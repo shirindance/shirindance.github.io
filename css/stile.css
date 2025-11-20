@@ -142,16 +142,19 @@ header {
   color: #EFAF9F;
 }
 .hoverContent2 {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: -100%; /* nascosto fuori schermo */
+  width: 75%;
+  height: 100vh;
   background: #6B0F1A;
-  border: 1px solid #BFAFAF;
-  padding: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: left 0.3s ease;
   z-index: 9999;
-  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .hoverContent2 a {
   display: block;
@@ -163,7 +166,7 @@ header {
   background: #555;
 }
 .hoverContent2.active {
-  left: 0;
+  left: 0; /* porta il menu in vista */
 }
 
 /* ===============================

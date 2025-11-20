@@ -1,5 +1,5 @@
 // ==================================================
-// HEADER, FOOTER, MENU MOBILE/DESKTOP, TOGGLE FONT, SLIDER
+// HEADER, FOOTER, MENU MOBILE/DESKTOP, TOGGLE FONT, HERO SLIDER
 // ==================================================
 
 // ===============================
@@ -11,6 +11,7 @@ function createHeaderDesktop() {
   <div class="top-bar">
     <div class="menu-container">
 
+      <!-- HAMBURGER + MENU -->
       <div class="hoverContainer2">
         <div class="hoverBox2">
           <div class="hamburger"><div></div><div></div><div></div></div>
@@ -22,8 +23,11 @@ function createHeaderDesktop() {
         </div>
       </div>
 
+      <!-- EXTRA LINKS -->
       <div class="extra-links">
         <a href="../../index.html">HOME</a>
+
+        <!-- Chi siamo -->
         <div class="hoverContainer2">
           <div class="hoverBox2">CHI SIAMO</div>
           <div class="hoverContent2">
@@ -33,6 +37,8 @@ function createHeaderDesktop() {
             <a href="../chi siamo/base.html">Rainbow Tribe</a>
           </div>
         </div>
+
+        <!-- Gallery -->
         <div class="hoverContainer2">
           <div class="hoverBox2">GALLERY</div>
           <div class="hoverContent2">
@@ -41,6 +47,8 @@ function createHeaderDesktop() {
             <a href="../Gallery/base.html">Racconti</a>
           </div>
         </div>
+
+        <!-- Blog -->
         <div class="hoverContainer2">
           <div class="hoverBox2">BLOG</div>
           <div class="hoverContent2">
@@ -49,6 +57,8 @@ function createHeaderDesktop() {
             <a href="../Blog/base.html">Storie</a>
           </div>
         </div>
+
+        <!-- Toggle font leggibilità -->
         <div class="hoverContainer2">
           <div class="hoverBox2" style="font-family: Arial, Helvetica, sans-serif">Leggibilità</div>
           <div class="hoverContent2" style="font-family: Arial, Helvetica, sans-serif; margin-left: -60%;">
@@ -56,22 +66,24 @@ function createHeaderDesktop() {
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </header>
   `;
   const headerEl = document.getElementById("header");
-  if(headerEl) headerEl.innerHTML = headerHTML;
+  if (headerEl) headerEl.innerHTML = headerHTML;
 
-  // Hover desktop (apertura al passaggio del mouse)
+  // Dropdown desktop (hover)
   const dropdowns = headerEl.querySelectorAll('.hoverContainer2');
   dropdowns.forEach(container => {
     const box = container.querySelector('.hoverBox2');
     const content = container.querySelector('.hoverContent2');
-    box.addEventListener('mouseenter', () => content.style.display='block');
-    container.addEventListener('mouseleave', () => content.style.display='none');
+    box.addEventListener('mouseenter', () => content.style.display = 'block');
+    container.addEventListener('mouseleave', () => content.style.display = 'none');
   });
 
+  // Inizializza toggle font
   initDyslexiaToggle();
 }
 
@@ -83,6 +95,8 @@ function createHeaderMobile() {
 <header>
   <div class="top-bar-mobile">
     <div class="menu-container">
+
+      <!-- HAMBURGER -->
       <div class="hoverContainer2">
         <div class="hoverBox2">
           <div class="hamburger"><div></div><div></div><div></div></div>
@@ -93,7 +107,10 @@ function createHeaderMobile() {
           <a href="contacts.html">Contacts</a>
         </div>
       </div>
+
+      <!-- EXTRA LINKS MOBILE -->
       <div class="extra-links">
+        <!-- Chi siamo -->
         <div class="hoverContainer2">
           <div class="hoverBox2">CHI SIAMO</div>
           <div class="hoverContent2">
@@ -103,6 +120,8 @@ function createHeaderMobile() {
             <a href="fcbd.html">Rainbow Tribe</a>
           </div>
         </div>
+
+        <!-- Gallery -->
         <div class="hoverContainer2">
           <div class="hoverBox2">GALLERY</div>
           <div class="hoverContent2">
@@ -111,6 +130,8 @@ function createHeaderMobile() {
             <a href="interviste.html">Racconti</a>
           </div>
         </div>
+
+        <!-- Blog -->
         <div class="hoverContainer2">
           <div class="hoverBox2">BLOG</div>
           <div class="hoverContent2">
@@ -119,6 +140,8 @@ function createHeaderMobile() {
             <a href="storie.html">Storie</a>
           </div>
         </div>
+
+        <!-- Toggle font leggibilità -->
         <div class="hoverContainer2">
           <div class="hoverBox2" style="font-family: Arial, Helvetica, sans-serif">Leggibilità</div>
           <div class="hoverContent2" style="font-family: Arial, Helvetica, sans-serif;">
@@ -126,15 +149,18 @@ function createHeaderMobile() {
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </header>
   `;
   const headerEl = document.getElementById("header");
-  if(headerEl) headerEl.innerHTML = headerHTML;
+  if (headerEl) headerEl.innerHTML = headerHTML;
 
-  // Menu cliccabile mobile
-  initMobileMenu();
+  // Inizializza click menu mobile
+  initMobileMenuInteractions();
+
+  // Inizializza toggle font
   initDyslexiaToggle();
 }
 
@@ -146,11 +172,11 @@ function createFooter() {
 <footer>
   <div class="row">
     <div class="footer-left">
-      <img src="../../img/home/logofoot.png" >
+      <img src="../../img/home/logofoot.png">
     </div>
     <div class="footer-center">
       <a style="font-size: 150%">®Shirin Dance di Silvana Difalco
-        <span style="display: block; line-height: 2;">Compagnia di Danza Orientale, Folklore, Fusion, FCBD®, Bollywood.</span>
+        <span style="display:block; line-height:2;">Compagnia di Danza Orientale, Folklore, Fusion, FCBD®, Bollywood.</span>
       </a>
     </div>
     <div class="footer-right">
@@ -160,39 +186,38 @@ function createFooter() {
 </footer>
   `;
   const footerEl = document.getElementById("footer");
-  if(footerEl) footerEl.innerHTML = footerHTML;
+  if (footerEl) footerEl.innerHTML = footerHTML;
 }
 
 // ===============================
-// MENU MOBILE CLICK + CHIUSURA ALTRE TENDINE
+// FUNZIONE: MENU MOBILE CLICK
 // ===============================
-function initMobileMenu() {
+function initMobileMenuInteractions() {
   const hoverContainers = document.querySelectorAll('.hoverContainer2');
 
   hoverContainers.forEach(container => {
     const trigger = container.querySelector('.hoverBox2');
     const content = container.querySelector('.hoverContent2');
-    if(!trigger || !content) return;
+    if (!trigger || !content) return;
 
     trigger.addEventListener('click', e => {
       e.stopPropagation();
-      // chiude tutte le altre tendine
+      // Chiude tutte le altre tendine aperte
       hoverContainers.forEach(other => {
-        if(other !== container) {
+        if (other !== container) {
           const otherContent = other.querySelector('.hoverContent2');
-          if(otherContent) otherContent.classList.remove('active');
+          if (otherContent) otherContent.classList.remove('active');
         }
       });
-      // apre/chiude la tendina cliccata
-      content.classList.toggle('active');
+      content.classList.toggle('active'); // apre/chiude quella cliccata
     });
   });
 
-  // Cliccare fuori chiude tutte le tendine
+  // Click fuori chiude tutte
   document.addEventListener('click', e => {
     hoverContainers.forEach(container => {
       const content = container.querySelector('.hoverContent2');
-      if(content && !container.contains(e.target)) content.classList.remove('active');
+      if (!container.contains(e.target)) content.classList.remove('active');
     });
   });
 }
@@ -203,7 +228,7 @@ function initMobileMenu() {
 function initHeroSlider() {
   const slides = document.querySelectorAll('.hero-slider img');
   let current = 0;
-  if(!slides.length) return;
+  if (!slides.length) return;
 
   slides[current].classList.add('active');
 
@@ -223,18 +248,20 @@ function initDyslexiaToggle() {
   const toggleBtn = document.getElementById("toggleFont");
 
   function applyFontSetting() {
-    if(dyslexiaMode){
+    if (dyslexiaMode) {
       body.classList.add("dyslexia-font");
-      if(toggleBtn) toggleBtn.textContent = "Torna alle carattere predefinito";
+      if (toggleBtn) toggleBtn.textContent = "Torna alle carattere predefinito";
     } else {
       body.classList.remove("dyslexia-font");
-      if(toggleBtn) toggleBtn.textContent = "Aumenta la leggibilità";
+      if (toggleBtn) toggleBtn.textContent = "Aumenta la leggibilità";
     }
   }
 
+  // Applica subito il font corretto
   applyFontSetting();
 
-  if(toggleBtn){
+  // Evento click sul pulsante
+  if (toggleBtn) {
     toggleBtn.addEventListener("click", () => {
       dyslexiaMode = !dyslexiaMode;
       localStorage.setItem("dyslexiaFont", dyslexiaMode);
@@ -248,7 +275,7 @@ function initDyslexiaToggle() {
 // ===============================
 function initHeaderFooter() {
   const isMobile = window.innerWidth <= 768;
-  if(isMobile){
+  if (isMobile) {
     createHeaderMobile();
   } else {
     createHeaderDesktop();
