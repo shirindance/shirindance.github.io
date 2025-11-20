@@ -349,3 +349,83 @@ footer .footer-right {
     padding: 0.4rem 0.8rem;
   }
 }
+
+/* ===============================
+   MOBILE OVERRIDES
+   =============================== */
+@media (max-width: 768px) {
+
+  /* Top bar mobile */
+  .top-bar {
+    display: none; /* nasconde la barra desktop */
+  }
+
+  .top-bar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #6B0F1A, #3A0A10);
+    border-bottom: 2px solid #BFAFAF;
+    height: 50px;
+    padding: 0 10px;
+  }
+
+  /* Hamburger mobile */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    height: 3px;
+    background-color: #EFAF9F;
+    border-radius: 2px;
+  }
+
+  /* Extra links mobile */
+  .extra-links {
+    justify-content: space-evenly;
+    flex: 1;
+    gap: 10px;
+    flex-wrap: nowrap;
+    min-width: 0;
+  }
+
+  .extra-links a {
+    font-size: clamp(10px, 2vw, 16px);
+  }
+
+  /* Hero slider adattivo */
+  .hero {
+    height: auto; /* non fissiamo altezza */
+  }
+
+  .hero-slider img {
+    width: 100%;  /* larghezza piena */
+    height: auto; /* altezza proporzionata */
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Footer responsive */
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  footer {
+    padding: 15px 20px;
+  }
+
+  footer .footer-center {
+    max-width: 100%;
+  }
+}
