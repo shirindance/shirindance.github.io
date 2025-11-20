@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- Dichiara che il documento è HTML5 -->
+
+<html lang="it">
+<!-- Imposta la lingua della pagina su italiano -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Imposta la codifica dei caratteri -->
+  <!-- altro commento a caso -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Rende la pagina responsive su mobile -->
+
+  <title>La nostra storia</title>
+  <!-- Titolo che appare nella scheda del browser -->
+
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <link rel="stylesheet" href="../../css/box.css">
+  <!-- Collega il file CSS esterno -->
+
+  <link rel="stylesheet" href="../../css/containers.css">
+  <!-- Collega il file CSS esterno -->
+
+  <script src="../../js/mobile.js"></script>
+  <!--indirizza la pagina alla versione mobile se siamo su telefono-->
+</head>
+
+<body>
+  <!-- CORPO DELLA PAGINA -->
+  
+  <div id="header"></div>
+
+  <main>
+    <h1 style="margin-bottom: 20px; font-size: 400%"><em>La nostra storia</em></h1>
+      <div class="evento-container" style="display: flex; gap: 0; align-items: flex-start;">
+    
+    <!-- Colonna testo -->
+        <div class="evento-testo" style="flex: 2;">
+            <h2 style="margin-bottom: 10px; margin-top: 0;">
+            </h2>
+            <p class="pretesto"; style="font-size: 120%"> <i>SHIRIN DANCE</i> è una Scuola e una Compagnia di Danza nata nel 2015, attiva a Bologna e provincia, diretta da Silvana Difalco, insegnante, danzatrice e coreografa.
+                <br>L'insegnamento delle discipline comprende: Danza Orientale, Folklore Mediorientale, Fusion, Bollywood, FCBD®Style, Show Dance e Danza col Fuoco.
+                <br>Non di rado all'interno della programmazione annuale sono ospitati incontri dedicati a danze ed espressioni artistiche affini, ampliando così l’offerta formativa e performativa.
+                <br>Grande attenzione viene riservata alla musica, con l'insegnamento della ritmica e dei cimbali, alla corretta differenziazione dei numerosi stili di questa disciplina, alla storia, alla cultura, alla conoscenza che deve esserci dietro ogni proposta coreografica o didattica.
+                <br>Ai Corsi settimanali per tutti i livelli si aggiungono Seminari e Laboratori tematici, oltre alla produzione di Spettacoli, Videoclip e performance dal vivo in occasione di Festival, eventi, feste, rievocazioni storiche, cerimonie ecc.
+            </p>
+        </div>
+        <!-- Colonna immagine -->
+        <div class="evento-immagine" style="flex: 1; text-align: center;">
+            <br>
+            <br><img src="../../img/logoSD.jpg" style="width: 100%; height: auto; max-width: 400px;">
+        </div>
+      </div>
+
+      <div class="evento-container" style="display: flex; gap: 0; align-items: flex-start;">    
+    <!-- Colonna testo -->
+        <!-- Colonna immagine -->
+        <div class="evento-immagine" style="flex: 1; text-align: center;">
+            <img src="../../img/pagine/Chisiamo/locandinaHator.jpeg" style="width: 100%; height: auto; max-width: 400px;">
+        </div>
+        <div class="evento-testo" style="flex: 2;">
+            <h2 style="margin-bottom: 10px; margin-top: 0;">Spettacoli
+      </h2>
+            <p class="pretesto"; style="font-size: 120%"> Una o due volte l'anno la Compagnia si esibisce a Teatro con produzioni sempre nuove e originali, con la Regia di Silvana Difalco.
+                <br>Dal 2017 al 2022 è stato portato a Teatro lo spettacolo dedicato alle Donne del Mondo e alla lotta contro la violenza sulle donne “Una Nessuna Centomila”, in occasione del 25 novembre e dell’8 marzo. Lo spettacolo ha avuto 4 diverse edizioni e 6 spettacoli in 5 anni, con più di 50 coreografie originali, musica dal vivo e artisti ospiti esterni.
+                <br>Nel 2023-24 è stato portato in scena lo spettacolo “Ishtar” dedicato alle fusioni tra Danza Orientale e discipline affini, al FCBD®Style, e alle fusioni con la Danza moderna e contemporanea.
+                <br>L'ultima produzione teatrale del 2025 è lo spettacolo “Hator”, interamente dedicato al Folklore Mediorientale, un viaggio lungo il Mediterraneo, dalla Spagna alla Palestina, dall’Egitto alla Turchia, dalla Nubia alla Persia.
+            </p>
+        </div>
+      </div>
+      <div class="evento-container" style="display: flex; gap: 0; align-items: flex-start; margin-right: 2%;">
+        <div class="evento-testo" style="flex: 2;">
+            <br>
+            <h2 style="margin-bottom: 10px; margin-top: 0;">Videoclip
+            </h2>
+            <p class="pretesto"; style="font-size: 120%">La Compagnia realizza da qualche anno anche dei Videoclip dedicati alle coreografie più belle e particolari, con la serie “Dance On Location” , un progetto artistico grazie al quale la Danza Orientale incontra il territorio. Le più belle coreografie degli Spettacoli teatrali vengono portate in luoghi particolari, conosciuti o meno, del territorio Bolognese, ma non solo.
+                <br>Sul canale YT della Compagnia è possibile trovare, oltre alla serie “Dance On Location”, anche i Demo di tutti gli spettacoli fatti, i “Best-Of”, i Flash Mob di FCBD®Style, e tanto altro.
+                <br><br>
+            </p>
+        </div>
+        <!-- Colonna immagine -->
+        <div class="video-container" id="videoBox">
+            <iframe
+            id="ytPlayer"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/iZM72wx_ttc?si=BHPKJ1HLlWMGEf4z&enablejsapi=1&mute=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+            </iframe>
+        </div>
+      </div>
+
+  </main>
+
+  <div id="footer"></div>
+  <script src="../../js/videoyt.js"></script>
+  <script src="../../js/linkesterni.js" ></script>
+  <script src="../../js/1headerfooter.js"></script> 
+  <script src="../../js/dislessia.js"></script>
+
+</body>
+</html>
