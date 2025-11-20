@@ -355,77 +355,345 @@ footer .footer-right {
    =============================== */
 @media (max-width: 768px) {
 
-  /* Top bar mobile */
-  .top-bar {
-    display: none; /* nasconde la barra desktop */
-  }
+/* ===============================
+   FONT PERSONALIZZATI
+   =============================== */
+@font-face {
+  font-family: 'Almalik'; /* nome font */
+  src: url('../../fonts/Almalik.ttf') format('truetype'); /* percorso font */
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .top-bar-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #6B0F1A, #3A0A10);
-    border-bottom: 2px solid #BFAFAF;
-    height: 50px;
-    padding: 0 10px;
-  }
+@font-face {
+  font-family: 'Arabian'; /* nome font principale */
+  src: url('../../fonts/XXII\ ARABIAN-ONENIGHTSTAND.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arabiantext';
+  src: url('../../fonts/Yuzarsif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  /* Hamburger mobile */
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 18px;
-    cursor: pointer;
-  }
+/* ===============================
+   VARIABILI CSS
+   =============================== */
+:root {
+  --header-h: 70;  /* altezza dell'header fisso */
+  --footer-h: 150px; /* altezza footer (utile solo se serve) */
+}
 
-  .hamburger div {
-    height: 3px;
-    background-color: #EFAF9F;
-    border-radius: 2px;
-  }
+/* ===============================
+   RESET GENERALE
+   =============================== */
+html, body {
+  height: 100%;        /* altezza totale finestra */
+  margin: 0;           /* rimuove margini browser */
+  padding: 0;          /* rimuove padding browser */
+  overflow-x: hidden;  /* previene scroll orizzontale */
+  font-family: 'Arabian', sans-serif; /* font di base */
+}
 
-  /* Extra links mobile */
-  .extra-links {
-    justify-content: space-evenly;
-    flex: 1;
-    gap: 10px;
-    flex-wrap: nowrap;
-    min-width: 0;
-  }
+/* RESET COMPLETO PER TUTTI GLI ELEMENTI */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* include padding e border nelle dimensioni */
+}
 
-  .extra-links a {
-    font-size: clamp(10px, 2vw, 16px);
-  }
+/* ===============================
+   HEADER FISSO
+   =============================== */
+header {
+  position: fixed;      /* header sempre visibile */
+  top: 0;               /* in alto */
+  left: 0;
+  width: 100%;          /* occupa tutta la larghezza */
+  z-index: 9999;        /* sopra altri elementi */
+  height: var(--header-h); /* altezza dichiarata */
+}
 
-  /* Hero slider adattivo */
-  .hero {
-    height: auto; /* non fissiamo altezza */
-  }
+/* ===============================
+   MAIN CONTENT
+   =============================== */
+main {
+  margin-top: var(--header-h);             /* lascia spazio all’header fisso */
+  padding: 20px;                           /* spazio interno */
+  min-height: calc(100% - var(--header-h) - var(--footer-h)); /* minimo tutta finestra */
+  background: linear-gradient(to right, #4F0B13, #240508); /* sfondo */
+  color: #EFAF9F;                          /* colore testo */
+  text-align: center;                       /* centro orizzontale */
+  -webkit-overflow-scrolling: touch;        /* scroll fluido mobile */
+}
 
-  .hero-slider img {
-    width: 100%;  /* larghezza piena */
-    height: auto; /* altezza proporzionata */
-  }
+/* ===============================
+   PARAGRAFI SPECIALI
+   =============================== */
+.pretesto {
+  font-family: 'Arabiantext', sans-serif; /* font testi */
+  font-size: 1.2em;                        /* leggermente più grande */
+  margin-top: 7px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0;                        /* no extra spazio sotto */
+  line-height: 1.6;                        /* leggibilità */
+  text-align: justify;                      /* testo giustificato */
+}
 
-  .arrow {
-    font-size: 1.5rem;
-    padding: 0.4rem 0.8rem;
-  }
+/* ===============================
+   COLONNE SINISTRA / DESTRA
+   =============================== */
+.sinistra, .destra {
+  flex: 1;         /* occupano spazio equamente */
+}
 
-  /* Footer responsive */
+.sinistra {
+  overflow-y: auto; /* permette scroll interno se necessario */
+}
+
+/* ===============================
+   CONTENITORE MENU
+   =============================== */
+.menu-container {
+  display: flex;                 /* layout flex orizzontale */
+  align-items: center;           /* centro verticale */
+  justify-content: space-between;/* hamburger a sinistra, link a destra */
+  width: 100%;                   /* tutta la larghezza */
+  white-space: nowrap;            /* evita andare a capo */
+  gap: 20px;                      /* spazio tra elementi */
+  position: relative;             /* per eventuali absolute figli */
+}
+
+/* ===============================
+   FONT DYSLEXIA (toggle)
+   =============================== */
+body.dyslexia-font, 
+body.dyslexia-font * {
+  font-family: Arial, sans-serif !important; /* forza font leggibile */
+}
+
+body.dyslexia-font .pretesto {
+  font-family: Arial, sans-serif !important;
+}
+
+/* ===============================
+   FOOTER NORMALE
+   =============================== */
+footer {
+  width: 100%; /* occupa tutta la larghezza */
+  color: #EFAF9F; /* colore testo */
+  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* sfondo */
+  padding: 10px 20px; /* interno */
+  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
+  text-align: center; /* centro testo */
+  display: block; /* assicura espansione */
+}
+
+/* ===============================
+   LAYOUT INTERNO FOOTER
+   =============================== */
+footer .row {
+  display: flex;                 /* layout orizzontale interno */
+  justify-content: space-between;/* spaziatura tra sezioni */
+  align-items: center;           /* centratura verticale */
+  flex-wrap: wrap;               /* va a capo su schermi piccoli */
+  gap: 10px;                     /* spazio naturale tra sezioni */
+  padding: 0 15px;               /* padding laterale */
+}
+
+footer .footer-left img {
+  max-width: 120px; /* logo non esce fuori */
+  width: 100%;
+  height: auto;
+}
+
+footer .footer-center {
+  max-width: 80%; /* evita linee troppo lunghe */
+}
+
+footer .footer-right {
+  white-space: nowrap; /* evita a capo sbagliati */
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+   =============================== */
+@media (max-width: 768px) {
   footer .row {
-    flex-direction: column;
+    flex-direction: column; /* colonne verticali */
     text-align: center;
-    gap: 12px;
+    gap: 12px;             /* più spazio tra sezioni */
   }
 
   footer {
-    padding: 15px 20px;
+    padding: 15px 20px;    /* padding aumentato su mobile */
   }
 
   footer .footer-center {
-    max-width: 100%;
+    max-width: 100%;       /* larghezza piena su mobile */
   }
+}
+main *:first-child {
+  margin-top: 0;
+}
+/* HEADER: barra superiore */
+
+
+/* ===============================
+   Top bar mobile
+   =============================== */
+.top-bar-mobile {
+  color: #EFAF9F;                /*colore del carattere*/
+  display: flex;                 /* posiziona hamburger e logo in orizzontale */
+  justify-content: space-evenly; /* spinge gli elementi ai lati */
+  align-items: center; /* centra verticalmente gli elementi */
+  background: linear-gradient(to right, #6B0F1A, #3A0A10); /* Bordeaux */
+  border-bottom: 2px solid #BFAFAF; /* bordo inferiore */
+  height: 50px;                  /* altezza top bar */
+  padding: 0 10px;               /* margini laterali */
+}
+
+/* ===============================
+   Hamburger
+   =============================== */
+.hamburger {
+  display: flex;                 /* linee in colonna */
+  flex-direction: column;
+  justify-content: space-between;/* distribuisce le linee verticalmente */
+  width: 25px;
+  height: 18px;
+  cursor: pointer;               /* mano al passaggio */
+}
+
+.hamburger div {
+  height: 3px;                   /* spessore linea */
+  background-color: #EFAF9F;     /* colore linea */
+  border-radius: 2px;            /* bordi arrotondati */
+}
+
+.extra-links {
+  justify-content: space-evenly;
+  align-items: center; /* centra il testo verticalmente */
+  display: flex; /* flexbox */
+  flex: 1; /* prende tutto lo spazio */
+  gap: 10px; /* distanza tra link */
+  flex-wrap: nowrap;         /* evita che vadano a capo */
+  min-width: 0;              /* 🔹 permette ai figli di ridursi */
+}
+
+.extra-links a {
+  color: #EFAF9F;;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: clamp(10px, 2vw, 16px); /* riduce automaticamente se spazio stretto */
+}
+
+.extra-links a:hover {
+  color: #e91e63;
+}
+
+.extra-links > * {
+  flex: 1;             /* ogni link prende lo stesso spazio */
+  text-align: center;  /* centra il testo nel suo “blocco” */
+}
+
+ /* Stili per i container hover */
+    .hoverContainer {
+      position: relative;
+      width: 100%;
+      margin: 0;
+    }
+
+
+
+    .hoverBox {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    
+    .hoverContent {
+      display: none;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0; 
+    }
+
+    .hoverContainer2 {
+      color: #EFAF9F;
+      position: relative;
+      display: inline-block; /* in linea con contenuti top-bar */
+      /* non imposto larghezza fissa, si adatta al contenuto */
+      width: auto;
+      margin: 0;
+    }
+
+    .hoverContainer2, .hoverContainer2 * {
+      color: #EFAF9F;
+    }
+
+    .hoverBox2 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      cursor: pointer;               /* mano al passaggio */
+    }
+   
+/* MENU nascosto di default */
+.hoverContent2 {
+  position: fixed;            /* fisso sulla pagina */
+  top: 0;
+  left: -75%;                /* nascosto fuori dalla pagina a destra */
+  width: 75%;                 /* occupa 3/4 della larghezza */
+  height: 100vh;              /* altezza totale della finestra */
+  background: #6B0F1A;
+  border-left: 2px solid #BFAFAF;
+  padding: 20px;
+  box-sizing: border-box;
+  display: block;
+  flex-direction: column;
+  gap: 10px;
+  transition: right 0.3s ease; /* animazione apertura/chiusura */
+  z-index: 9999;
+}
+
+.hoverContent2 a {
+  font-size: clamp(35px, 2.5vw, 70px); /* min 40px, proporzionale, max 60px */
+  display: block;
+  color: #EFAF9F;
+  text-decoration: none;
+  padding: 6px 0;
+  white-space: nowrap;      /* impedisce che il testo vada a capo */
+}
+
+.hoverContent2 a:hover {
+  background: #555;
+}
+
+
+/* Classe active per mostrare il menu */
+.hoverContent2.active {
+  left: 0; /* porta il menu in vista */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
