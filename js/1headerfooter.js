@@ -63,7 +63,7 @@ function createHeaderDesktop() {
   const headerEl = document.getElementById("header");
   if(headerEl) headerEl.innerHTML = headerHTML;
 
-  // Hover desktop
+  // Hover desktop (apertura al passaggio del mouse)
   const dropdowns = headerEl.querySelectorAll('.hoverContainer2');
   dropdowns.forEach(container => {
     const box = container.querySelector('.hoverBox2');
@@ -134,7 +134,7 @@ function createHeaderMobile() {
   if(headerEl) headerEl.innerHTML = headerHTML;
 
   // Menu cliccabile mobile
-  initHeaderInteractions();
+  initMobileMenu();
   initDyslexiaToggle();
 }
 
@@ -164,10 +164,11 @@ function createFooter() {
 }
 
 // ===============================
-// MENU MOBILE CLICK
+// MENU MOBILE CLICK + CHIUSURA ALTRE TENDINE
 // ===============================
-function initHeaderInteractions() {
+function initMobileMenu() {
   const hoverContainers = document.querySelectorAll('.hoverContainer2');
+
   hoverContainers.forEach(container => {
     const trigger = container.querySelector('.hoverBox2');
     const content = container.querySelector('.hoverContent2');
@@ -175,16 +176,23 @@ function initHeaderInteractions() {
 
     trigger.addEventListener('click', e => {
       e.stopPropagation();
+      // chiude tutte le altre tendine
       hoverContainers.forEach(other => {
-        if(other !== container) other.querySelector('.hoverContent2').classList.remove('active');
+        if(other !== container) {
+          const otherContent = other.querySelector('.hoverContent2');
+          if(otherContent) otherContent.classList.remove('active');
+        }
       });
+      // apre/chiude la tendina cliccata
       content.classList.toggle('active');
     });
   });
+
+  // Cliccare fuori chiude tutte le tendine
   document.addEventListener('click', e => {
     hoverContainers.forEach(container => {
       const content = container.querySelector('.hoverContent2');
-      if(!container.contains(e.target)) content.classList.remove('active');
+      if(content && !container.contains(e.target)) content.classList.remove('active');
     });
   });
 }
@@ -224,10 +232,8 @@ function initDyslexiaToggle() {
     }
   }
 
-  // Applica subito il font corretto
   applyFontSetting();
 
-  // Aggiunge evento al pulsante
   if(toggleBtn){
     toggleBtn.addEventListener("click", () => {
       dyslexiaMode = !dyslexiaMode;
