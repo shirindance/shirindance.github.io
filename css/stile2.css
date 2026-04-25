@@ -255,15 +255,7 @@ footer .footer-right {
   opacity: 0;
 }
 
-/* =========================================
-   RESPONSIVE BASE (per desktop large fino a tablet)
-========================================= */
-@media (max-width: 1024px) {
-  .extra-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
+
 
 
 /* ===============================
