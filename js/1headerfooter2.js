@@ -276,7 +276,8 @@ function initHeaderFooter() {
   }
   
 }
-
+window.addEventListener("load", initHeaderFooter);
+window.addEventListener("resize", initHeaderFooter);
 // =====================================
 // AVVIO AUTOMATICO
 // =====================================
