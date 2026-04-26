@@ -24,8 +24,7 @@ function createHeaderDesktop() {
       </div>
 
       <!-- EXTRA LINKS -->
-      <div class="extra-links">
-        <a href="../../index.html">HOME</a>
+      
 
         <div class="hoverContainer2">
           <div class="hoverBox2">CHI SIAMO</div>
