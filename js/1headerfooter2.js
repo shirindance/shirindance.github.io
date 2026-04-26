@@ -274,7 +274,7 @@ function initHeaderFooter() {
     createHeaderDesktop();
     createFooter();
   }
-  createFooter();
+  
 }
 
 // =====================================
