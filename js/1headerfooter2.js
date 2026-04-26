@@ -137,7 +137,7 @@ function createHeaderMobile() {
           <div class="hoverBox2" style="font-family: Arial, Helvetica, sans-serif">Leggibilità</div>
           <div class="hoverContent2" style="font-family: Arial, Helvetica, sans-serif;">              
             <span id="toggleFont" style="cursor:pointer; text-decoration: underline; text-align: center; font-size: 150%">
-              Aumenta la leggibilità
+              Aaumenta la leggibilità
             </span>
           </div>
         </div>
@@ -224,7 +224,7 @@ function createFooterMobile() {
       </a>
     </div>
     <div class="footer-right">
-      <br><br>Sito a cura di<br>Laura Porceddu
+      <br><br>Sito a cura di<br>Laura Porcedddu
     </div>
   </div>
 </footer>
