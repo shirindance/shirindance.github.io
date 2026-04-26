@@ -89,23 +89,23 @@ function createHeaderMobile() {
   <div class="top-bar-mobile">
     <div class="menu-container">
 
-      <!-- MENU HAMBURGER -->
       <div class="hoverContainer2">
         <div class="hoverBox2">
-          <div class="hamburger"><div></div><div></div><div></div></div>
+          <div class="hamburger">
+            <div></div><div></div><div></div>
+          </div>
         </div>
-        <div class="hoverContent2">
-          <a href="../../index.html">Home</a>
+        <div class="hoverContent2">              
+          <a href="../1Home/index.html">Home</a>
           <a href="about.html">About</a>
           <a href="contacts.html">Contacts</a>
         </div>
       </div>
 
-      <!-- EXTRA LINKS -->
       <div class="extra-links">
         <div class="hoverContainer2">
-          <div class="hoverBox2">CHI SIAMO</div>
-          <div class="hoverContent2">
+          <div class="hoverBox2"><a>CHI SIAMO</a></div>
+          <div class="hoverContent2">              
             <a href="../chi siamo/lanostrastoria.html">La nostra storia</a>
             <a href="scuola.html">La Scuola</a>
             <a href="compagnia.html">La Compagnia</a>
@@ -114,8 +114,8 @@ function createHeaderMobile() {
         </div>
 
         <div class="hoverContainer2">
-          <div class="hoverBox2">GALLERY</div>
-          <div class="hoverContent2">
+          <div class="hoverBox2"><a>GALLERY</a></div>
+          <div class="hoverContent2">              
             <a href="foto.html">Foto</a>
             <a href="video.html">Video</a>
             <a href="interviste.html">Racconti</a>
@@ -123,22 +123,25 @@ function createHeaderMobile() {
         </div>
 
         <div class="hoverContainer2">
-          <div class="hoverBox2">BLOG</div>
-          <div class="hoverContent2">
+          <div class="hoverBox2"><a>BLOG</a></div>
+          <div class="hoverContent2"> 
+            <a href="../Blog/base.html">Base</a>             
             <a href="articoli.html">Articoli</a>
             <a href="reel.html">Reel</a>
             <a href="storie.html">Storie</a>
           </div>
         </div>
 
+
         <div class="hoverContainer2">
           <div class="hoverBox2" style="font-family: Arial, Helvetica, sans-serif">Leggibilità</div>
-          <div class="hoverContent2" style="font-family: Arial, Helvetica, sans-serif;">
+          <div class="hoverContent2" style="font-family: Arial, Helvetica, sans-serif;">              
             <span id="toggleFont" style="cursor:pointer; text-decoration: underline; text-align: center; font-size: 150%">
               Aumenta la leggibilità
             </span>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -148,8 +151,7 @@ function createHeaderMobile() {
   const headerEl = document.getElementById("header");
   if (headerEl) headerEl.innerHTML = headerHTML;
 
-  initHeaderInteractions(); // Attiva i click per mobile
-  initDyslexiaToggle();
+  initHeaderInteractions(); // Attiva i menu
 }
 
 // =====================================
@@ -207,6 +209,30 @@ function initHeaderInteractions() {
   });
 }
 
+function createFooterMobile() {
+  const footerHTML = `
+<footer>
+  <div class="row">
+    <div class="footer-left">
+      <img src="../../../img/home/logofoot.png">
+    </div>
+    <div class="footer-center">
+      <a style="font-size: 150%">®Shirin Dance di Silvana Difalco
+        <span style="display: block; line-height: 2;">
+          Compagnia di Danza Orientale, Folklore, Fusion, FCBD®, Bollywood.
+        </span>
+      </a>
+    </div>
+    <div class="footer-right">
+      <br><br>Sito a cura di<br>Laura Porceddu
+    </div>
+  </div>
+</footer>
+  `;
+  const footerEl = document.getElementById("footer");
+  if (footerEl) footerEl.innerHTML = footerHTML;
+}
+
 // =====================================
 // TOGGLE FONT DYSLEXIA
 // =====================================
@@ -243,8 +269,10 @@ function initHeaderFooter() {
   const isMobile = window.innerWidth <= 768;
   if (isMobile) {
     createHeaderMobile();
+    createFooterMobile();
   } else {
     createHeaderDesktop();
+    createFooter();
   }
   createFooter();
 }
