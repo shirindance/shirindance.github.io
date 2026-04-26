@@ -45,20 +45,20 @@
    
 /* MENU nascosto di default */
 .hoverContent2 {
-  position: fixed;            /* fisso sulla pagina */
-  top: 0;
-  left: -75%;                /* nascosto fuori dalla pagina a destra */
-  width: 75%;                 /* occupa 3/4 della larghezza */
-  height: 100vh;              /* altezza totale della finestra */
-  background: #6B0F1A;
-  border-left: 2px solid #BFAFAF;
-  padding: 20px;
-  box-sizing: border-box;
-  display: block;
-  flex-direction: column;
-  gap: 10px;
-  transition: right 0.3s ease; /* animazione apertura/chiusura */
-  z-index: 9999;
+  position: fixed;            /* fisso rispetto alla finestra del browser (non scrolla con la pagina) */
+  top: 0;                     /* parte dall’alto della viewport */
+  left: -75%;                /* lo sposta fuori dallo schermo a sinistra (menu nascosto) */
+  width: 75%;                 /* occupa il 75% della larghezza dello schermo */
+  height: 100vh;              /* occupa tutta l’altezza della finestra (viewport height) */
+  background: #6B0F1A;        /* colore di sfondo bordeaux */
+  border-left: 2px solid #BFAFAF; /* bordo sul lato sinistro per separarlo visivamente */
+  padding: 20px;              /* spazio interno tra bordi e contenuto */
+  box-sizing: border-box;     /* padding e bordo inclusi nella larghezza totale */
+  display: block;             /* comportamento da blocco (anche se flex-direction sotto è inutile così) */
+  flex-direction: column;     /* disposizione verticale (funziona solo se display: flex) */
+  gap: 10px;                  /* spazio tra elementi figli (solo con flex) */
+  transition: right 0.3s ease; /* animazione fluida quando cambia posizione (ma qui usi left → incoerenza) */
+  z-index: 9999;              /* lo mette sopra tutti gli altri elementi della pagina */
 }
 
 .hoverContent2 a {
