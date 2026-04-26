@@ -13,18 +13,8 @@ function createHeaderDesktop() {
 
       <!-- MENU HAMBURGER -->
       <div class="hoverContainer2">
-        <div class="hoverBox2">
-          <div class="hamburger"><div></div><div></div><div></div></div>
-        </div>
-        <div class="hoverContent2">
-          <a href="../../index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contacts.html">Contacts</a>
-        </div>
+        <div class="hoverBox2">HOME</div>
       </div>
-
-      <!-- EXTRA LINKS -->
-      
 
       <div class="hoverContainer2">
         <div class="hoverBox2">CHI SIAMO</div>
@@ -52,6 +42,10 @@ function createHeaderDesktop() {
             <a href="../Blog/base.html">Reel</a>
             <a href="../Blog/base.html">Storie</a>
           </div>
+        </div>
+    
+        <div class="hoverContainer2">
+            <div class="hoverBox2">CONTATTI</div>
         </div>
 
         <div class="hoverContainer2">
