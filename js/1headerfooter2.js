@@ -214,17 +214,17 @@ function createFooterMobile() {
 <footer>
   <div class="row">
     <div class="footer-left">
-      <img src="../../../img/home/logofoot.png">
+      <img src="../../img/home/logofoot.png">
     </div>
     <div class="footer-center">
-      <a style="font-size: 150%">®Shirin Dance di Silvana Difalco
-        <span style="display: block; line-height: 2;">
+      <a style="font-size: 100%">®Shirin Dance di Silvana Difalco
+        <span style="display: block; line-height: 2; font-size: 70%">
           Compagnia di Danza Orientale, Folklore, Fusion, FCBD®, Bollywood.
         </span>
       </a>
     </div>
     <div class="footer-right">
-      <br><br>Sito a cura di<br>Laura Porcedddu
+      <br><br><span style="font-size: 40%">Sito a cura di<br>Laura Porceeddu</span>
     </div>
   </div>
 </footer>
