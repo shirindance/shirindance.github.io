@@ -214,7 +214,7 @@ function createFooterMobile() {
 <footer>
   <div class="row">
     <div class="footer-left">
-      <img src="../../img/home/logofoot.png">
+      <img src="../../img/home/logofoot.png" width="60">
     </div>
     <div class="footer-center">
       <a style="font-size: 100%">®Shirin Dance di Silvana Difalco
@@ -224,7 +224,7 @@ function createFooterMobile() {
       </a>
     </div>
     <div class="footer-right">
-      <br><br><span style="font-size: 40%">Sito a cura di<br>Laura Porceeddu</span>
+      <br><br><span style="font-size: 50%">Sito a cura di<br>Laura Porcedddu</span>
     </div>
   </div>
 </footer>
