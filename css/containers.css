@@ -63,17 +63,17 @@
     
 /* MENU nascosto di default */
 .hoverContent2 {
-  display: none;
-  position: absolute;
+  display: none; /*lo nasconde di default (non si vede finché non viene attivato via JS o hover)*/
+  position: absolute; /*si posiziona rispetto al suo genitore*/
   top: 100%; /* subito sotto l’hamburger */
-  left: 0;
+  left: 0; /*allineato a sx rispetto al genitore*/
   white-space: nowrap;  /* forza il testo su una sola riga */
   background: #6B0F1A;
-  border: 1px solid #BFAFAF;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #BFAFAF; /*bordo sottile grigio chiaro attorno al menu*/
+  padding: 10px; /*spazio interno tra bordo e contenuto (più “respiro”)*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*ombra leggera sotto il box*/
   z-index: 9999; /* sopra tutto */
-  min-width: 150px;
+  min-width: 150px; /*larghezza minima del menu*/
 }
 
 .hoverContent2 a {
