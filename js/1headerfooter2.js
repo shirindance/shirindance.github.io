@@ -77,6 +77,7 @@ function createHeaderDesktop() {
     container.addEventListener('mouseleave', () => content.style.display = 'none');
   });
 
+  // FIX: il toggle "leggibilità" deve funzionare anche su desktop
   initDyslexiaToggle();
 }
 
@@ -137,7 +138,7 @@ function createHeaderMobile() {
           <div class="hoverBox2" style="font-family: Arial, Helvetica, sans-serif">Leggibilità</div>
           <div class="hoverContent2" style="font-family: Arial, Helvetica, sans-serif;">              
             <span id="toggleFont" style="cursor:pointer; text-decoration: underline; text-align: center; font-size: 150%">
-              Aaumenta la leggibilità
+              Aumenta la leggibilità
             </span>
           </div>
         </div>
@@ -151,11 +152,14 @@ function createHeaderMobile() {
   const headerEl = document.getElementById("header");
   if (headerEl) headerEl.innerHTML = headerHTML;
 
-  initHeaderInteractions(); // Attiva i menu
+  initHeaderInteractions(); // Attiva i menu (click mobile)
+
+  // FIX: mancava questa chiamata, per questo il toggle non funzionava su mobile
+  initDyslexiaToggle();
 }
 
 // =====================================
-// CREA FOOTER (COMUNE PER TUTTE LE VERSIONI)
+// CREA FOOTER DESKTOP
 // =====================================
 function createFooter() {
   const footerHTML = `
@@ -173,6 +177,33 @@ function createFooter() {
     </div>
     <div class="footer-right">
       <br><br>Sito a cura di<br>Laura Porceddu
+    </div>
+  </div>
+</footer>
+  `;
+  const footerEl = document.getElementById("footer");
+  if (footerEl) footerEl.innerHTML = footerHTML;
+}
+
+// =====================================
+// CREA FOOTER MOBILE
+// =====================================
+function createFooterMobile() {
+  const footerHTML = `
+<footer>
+  <div class="row">
+    <div class="footer-left">
+      <img src="../../img/home/logofoot.png" width="60">
+    </div>
+    <div class="footer-center">
+      <a style="font-size: 100%">®Shirin Dance di Silvana Difalco
+        <span style="display: block; line-height: 2; font-size: 70%">
+          Compagnia di Danza Orientale, Folklore, Fusion, FCBD®, Bollywood.
+        </span>
+      </a>
+    </div>
+    <div class="footer-right">
+      <br><br><span style="font-size: 50%">Sito a cura di<br>Laura Porceddu</span>
     </div>
   </div>
 </footer>
@@ -209,30 +240,6 @@ function initHeaderInteractions() {
   });
 }
 
-function createFooterMobile() {
-  const footerHTML = `
-<footer>
-  <div class="row">
-    <div class="footer-left">
-      <img src="../../img/home/logofoot.png" width="60">
-    </div>
-    <div class="footer-center">
-      <a style="font-size: 100%">®Shirin Dance di Silvana Difalco
-        <span style="display: block; line-height: 2; font-size: 70%">
-          Compagnia di Danza Orientale, Folklore, Fusion, FCBD®, Bollywood.
-        </span>
-      </a>
-    </div>
-    <div class="footer-right">
-      <br><br><span style="font-size: 50%">Sito a cura di<br>Laura Porcedddu</span>
-    </div>
-  </div>
-</footer>
-  `;
-  const footerEl = document.getElementById("footer");
-  if (footerEl) footerEl.innerHTML = footerHTML;
-}
-
 // =====================================
 // TOGGLE FONT DYSLEXIA
 // =====================================
@@ -244,7 +251,7 @@ function initDyslexiaToggle() {
   function applyFontSetting() {
     if (dyslexiaMode) {
       body.classList.add("dyslexia-font");
-      if (toggleBtn) toggleBtn.textContent = "Torna alle carattere predefinito";
+      if (toggleBtn) toggleBtn.textContent = "Torna al carattere predefinito";
     } else {
       body.classList.remove("dyslexia-font");
       if (toggleBtn) toggleBtn.textContent = "Aumenta la leggibilità";
@@ -265,8 +272,21 @@ function initDyslexiaToggle() {
 // =====================================
 // FUNZIONE PRINCIPALE
 // =====================================
-function initHeaderFooter() {
-  const isMobile = window.innerWidth <= 768;
+const MOBILE_BREAKPOINT = 768;
+
+// Tiene traccia di quale versione (mobile/desktop) è attualmente montata,
+// così ricostruiamo l'header/footer solo quando serve davvero.
+let currentLayout = null; // "mobile" | "desktop" | null
+
+function renderHeaderFooter() {
+  const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+  const targetLayout = isMobile ? "mobile" : "desktop";
+
+  // FIX: evita di ricostruire tutto se il layout non è cambiato
+  // (prima succedeva ad ogni singolo pixel di resize)
+  if (targetLayout === currentLayout) return;
+  currentLayout = targetLayout;
+
   if (isMobile) {
     createHeaderMobile();
     createFooterMobile();
@@ -274,13 +294,24 @@ function initHeaderFooter() {
     createHeaderDesktop();
     createFooter();
   }
-  
 }
-window.addEventListener("load", initHeaderFooter);
-window.addEventListener("resize", initHeaderFooter);
+
+// FIX: piccolo debounce sul resize, per non ricalcolare
+// centinaia di volte mentre l'utente ridimensiona la finestra
+// o ruota lo smartphone.
+function debounce(fn, delay) {
+  let timeoutId;
+  return function (...args) {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn.apply(this, args), delay);
+  };
+}
+
 // =====================================
 // AVVIO AUTOMATICO
 // =====================================
-document.addEventListener("DOMContentLoaded", () => {
-  initHeaderFooter();
-});
+// FIX: un solo punto di avvio (prima veniva chiamato due volte:
+// sia su DOMContentLoaded sia su "load", causando doppio lavoro
+// ad ogni apertura pagina).
+document.addEventListener("DOMContentLoaded", renderHeaderFooter);
+window.addEventListener("resize", debounce(renderHeaderFooter, 200));
