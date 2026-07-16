@@ -1,0 +1,115 @@
+/*header: barra superiore */
+.top-bar {
+    color: #EFAF9F;
+    display: flex; /*usa il layout flexbox */
+    justify-content: space-between; /*spinge gli elementi ai lati*/
+    align-items: center; /*centra verticalmente gli elementi */
+    background: linear-gradient(to right, #6B0f1a, #3a0a10);
+    padding: 10px 20px; /*spazio interno della barra */
+    border-bottom: 2px solid #bfafaf;
+    
+}
+
+.site-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Arabian', sans-serif;
+    font-size: 1.5rem;
+    color: #EFAF9F;
+    text-decoration: none;
+}
+
+.site-logo {
+    height: 40px;
+    width: auto;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px; /*spazio tra gli elementi*/
+    position: relative;
+}
+
+
+.hamburger {
+    display: flex; /*contenitore flessibile, che si adatta*/
+    flex-direction: column; /*dispone i figli uno sopra l'altro */
+    justify-content: space-between; /*distribuisce in altezza in modo equilibrato */
+    width: 30px; /*larghezza fissa */
+    height: 21px; /*altezza fissa*/
+    cursor: pointer; /*il puntatore diventa una manina se ci si passa il cursore */
+}
+
+.hamburger div { /*linee del menù hamburger*/
+    height: 3px;/*spessore linea*/
+    background-color: #efaf9f; /*colore linea*/
+    border-radius: 2px; /*angoli arrotondati*/
+}
+
+.mobile-menu {
+    position: relative;
+}
+
+.mobile-menu-list {
+    display: flex; /* ora sempre flex, non più none/flex al bisogno */
+    flex-direction:column;
+    position: fixed; /*lo posiziona rispetto al genitore più vicino */
+    top: 60px; /* altezza approssimativa della tua top-bar — aggiustiamo a occhio */ /*100%; /*subito sotto il genitore, appena finisce l'hamburger*/
+    left: 0; /*allineato al bordo sinistro del genitore*/
+    right: 0;
+    background: linear-gradient(to bottom, #751621, #2a070c);
+    /*background: linear-gradient(to right, #6B0f1a, #3a0a10);*/
+    /*width: 100vw; /* il menu occupa tutta la larghezza dello schermo*/
+    max-width: 100%; /*non permette mai che superi la larghezza del contenitore/schermo*/
+    box-sizing: border-box; /*fa sì che il padding che aggiungo sia incluso nel calcolo della larghezza totale, non sommato sopra*/
+    padding: 0 20px; /*un minimo di respiro interno per i contenuti, invece di attaccarli al bordo*/
+    z-index: 10; /*lo mette sopra gli altri elementi*/
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.mobile-menu-list.open {
+    max-height: 600px; /* valore abbastanza alto da contenere tutto il menu aperto */
+    padding: 10px 20px;
+}
+
+.menu-link {
+    color: #EFAF9F; /*stesso rosa/beige usato nel resto della barra, invece del blu di default dei link*/
+    text-decoration: none; /*toglie la sottolineatura automatica*/
+    font-family: 'Arabiantext', sans-serif;
+    padding: 10px 0; /*un po' di respiro verticale, utile visto che sarà un'area cliccabile nel menu mobile*/
+    display: block; /*fa sì che occupi tutta la riga disponibile*/
+}
+
+.accordion-header {
+    font-family: inherit; /*forza il bottone a prendere il font del genitore invece di quello di sistema*/
+    font-size: medium;
+    background: none; /*toglie lo sfondo grigio/bianco e il bordo di default del bottone*/
+    border: none;
+    color: #EFAF9F;
+    text-align: left; /*i bottoni di default centrano il testo, questo lo riallinea a sinistra come gli altri link*/
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: flex;
+    flex-direction: column;
+    max-height: 0; /* di default, l'altezza massima del contenuto è zero*/
+    overflow: hidden; /*nasconde qualsiasi contenuto che ecceda quel max-height*/
+    transition: max-height 0.3s ease; /*anima il cambiamento di max-height in 0.3 secondi, con una curva di accelerazione morbida*/
+}
+
+.accordion-section.open .accordion-content { /*quando la sezione genitore ha la classe .open (che aggiungerà il JS), il max-height sale a 500px — un valore abbastanza alto da contenere sicuramente tutte le sotto-voci, il browser anima la transizione da 0 a questo valore*/
+    max-height: 500px;
+}
+.accordion-content a { /*significa "tutti i tag <a> che si trovano dentro un elemento con classe accordion-content*/
+    padding-left: 20px;
+    color: #EFAF9F;
+    text-decoration: none; /*toglie la sottolineatura automatica*/
+}

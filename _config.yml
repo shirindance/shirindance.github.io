@@ -1,3 +1,7 @@
 title: Shirin Dance
 description: Scuola di danza orientale, folklore, fusion, FCBD®, Bollywood
 url: "https://shirindance.github.io"
+
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag

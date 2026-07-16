@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Arabian';
+    src: url(/fonts/XXII-ARABIAN-ONENIGHTSTAND.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arabiantext';
+    src: url(/fonts/Yuzarsif-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Arabiantext', sans-serif;
+}
+
+* { /*seleziona tutti gli elementi della pagina, senza eccezioni: reset css di base*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
