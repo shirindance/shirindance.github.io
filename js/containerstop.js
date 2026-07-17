@@ -32,3 +32,20 @@ accordionSections.forEach((section) => {
     }
   });
 });
+
+
+// ===== TOGGLE LEGGIBILITÀ =====
+const toggleFontButtons = document.querySelectorAll('#toggleFont'); /*trova entrambi i bottoni (mobile e desktop) che condividono lo stesso id="toggleFont"*/
+
+toggleFontButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    document.body.classList.toggle('readable-font'); /*aggiunge/toglie la classe sul body, attivando/disattivando il CSS di prima*/
+
+    const isReadable = document.body.classList.contains('readable-font'); /*controlla lo stato dopo il toggle, per sapere se ora è attivo o no*/
+    const newText = isReadable ? 'Versione originale' : 'Aumenta la leggibilità'; /*sceglie il testo giusto in base allo stato*/
+
+    toggleFontButtons.forEach((btn) => { /*aggiorna il testo su entrambi i bottoni*/
+      btn.textContent = newText;
+    });
+  });
+});

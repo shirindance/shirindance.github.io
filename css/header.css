@@ -113,3 +113,86 @@
     color: #EFAF9F;
     text-decoration: none; /*toglie la sottolineatura automatica*/
 }
+
+
+/* Base = mobile: mostra hamburger, nascondi menu esteso */
+.extra-links {
+    display: none;
+}
+
+/* Da 768px in su = desktop: mostra menu esteso, nascondi hamburger */
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+    .extra-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+.dropdown {
+    position: relative; /*serve da riferimento per posizionare l'etichetta sotto il padre*/
+}
+
+.dropdown-label {
+    cursor: pointer;
+    color: #EFAF9F;
+    font-family: 'Arabiantext', sans-serif;
+    padding: 10px 0;
+}
+
+.dropdown-menu {
+    display: flex; /* sempre presente nel flusso, visibilità gestita sotto */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+        background: linear-gradient(to bottom, #751621, #2a070c);
+    /*background: linear-gradient(to right, #6B0f1a, #3a0a10);*/
+    border: 1px solid #BFAFAF; /*bordo sottile grigio chiaro attorno al menu*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*ombra leggera sotto il box*/
+    min-width: 180px;
+    padding: 10px 0;
+    z-index: 10;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+}
+
+.extra-links .dropdown:last-child .dropdown-menu,
+.extra-links .dropdown:nth-last-child(2) .dropdown-menu { /*l'ultima tendina si apre a destra*/
+    cursor: pointer;
+    left: auto;
+    right: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    color: #EFAF9F;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-family: 'Arabiantext', sans-serif;
+}
+
+.dropdown:hover .dropdown-menu { /*seleziona .dropdown nel momento in cui il mouse ci sta sopra (su tutto il blocco, non solo sulla label — così il sottomenu non sparisce quando sposti il mouse dalla label verso le voci sotto)*/
+    /*display: flex; /*mentre il mouse è sopra .dropdown, il suo .dropdown-menu discendente passa da none a flex — puro CSS, nessun JS necessario*/
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.toggle-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.80rem;
+    padding: 10px 16px;
+    display: block;
+}

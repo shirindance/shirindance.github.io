@@ -14,10 +14,32 @@
 
 body {
     font-family: 'Arabiantext', sans-serif;
+        display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 * { /*seleziona tutti gli elementi della pagina, senza eccezioni: reset css di base*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+/*body.readable-font → seleziona il body solo quando ha questa classe aggiunta (dal JS)
+body.readable-font * → e tutti i suoi discendenti, cioè ogni elemento della pagina — 
+necessario perché molti elementi (come .site-title, .dropdown-label) 
+hanno un font-family scritto esplicitamente nelle loro regole specifiche, 
+che altrimenti vincerebbe su un semplice body { font-family: ... }*/
+body.readable-font,
+body.readable-font * {
+    font-family: Arial, Helvetica, sans-serif !important; /*vince su tutte le regole*/
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
 }

@@ -1,0 +1,87 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #6B0F1A, #3A0A10);
+    color: #EFAF9F;
+    padding: 20px 20px 10px;
+    border-top: 2px solid #BFAFAF;
+    text-align: center;
+}
+
+footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column; /* mobile: impilato in colonna */
+    text-align: center;
+}
+
+footer .footer-left img {
+    max-height: 70px; /* mobile: logo più piccolo */
+}
+
+footer .footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-title {
+    color: #EFAF9F;
+    text-decoration: none;
+    font-family: 'Arabian', sans-serif;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.footer-subtitle {
+    display: block;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.social-links a {
+    color: #EFAF9F;
+    transition: opacity 0.2s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+footer .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /* mobile: centrato */
+    font-size: 0.75rem; /* mobile: più piccolo */
+    opacity: 0.8;
+}
+
+/* ===== DESKTOP: da 768px in su ===== */
+@media (min-width: 768px) {
+    footer .row {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    footer .footer-left img {
+        max-height: 100px;
+    }
+
+    footer .footer-right {
+        text-align: right;
+        font-size: 0.85rem;
+        opacity: 1;
+    }
+}
