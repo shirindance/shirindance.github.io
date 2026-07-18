@@ -81,3 +81,17 @@ hoverContainers.forEach((container) => {
     }
   });
 });
+
+
+// Chiudi il box aperto se l'utente clicca fuori da entrambi i box
+document.addEventListener('click', (event) => {
+  const clickedInsideABox = Array.from(allCornerBoxes).some(box => box.contains(event.target));
+
+  if (!clickedInsideABox) {
+    hoverContainers.forEach((c) => c.classList.remove('open'));
+    allCornerBoxes.forEach((box) => {
+      box.classList.remove('open');
+      box.classList.remove('mobile-hidden');
+    });
+  }
+});
