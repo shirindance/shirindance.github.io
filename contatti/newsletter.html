@@ -1,19 +1,7 @@
 ---
 layout: default
-title: Home
+title: Newsletter
 ---
-<section id="newsletter" class="newsletter-section">
-  <h2>Iscriviti alla nostra Newsletter</h2>
-  <p>Rimani aggiornato sulle ultime novità!</p>
-
-  <div class="newsletter-form-wrapper">
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSfmSbm1Z-q_1IZKstK1rPqrCwx0z1Ark-HYWeBMHBooDxGu0Q/viewform?usp=header"
-      width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
-      Caricamento…
-    </iframe>
-  </div>
-</section>
 
 <style>
 .newsletter-section {
@@ -37,13 +25,73 @@ title: Home
     overflow-y: scroll;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.newsletter-archive {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.newsletter-list {
+    list-style: none;
+    max-width: 500px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+.newsletter-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #BFAFAF;
+}
+
+.newsletter-list a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.newsletter-list a:hover {
+    text-decoration: underline;
+}
+
+.newsletter-list-date {
+    opacity: 0.7;
+    font-size: 0.85rem;
+}
+
 @media (max-width: 767px) {
     .newsletter-form-wrapper {
         width: 90%;
+    }
+    .newsletter-list li {
+        flex-direction: column;
+        gap: 4px;
     }
 }
 </style>
 
 <section id="newsletter" class="newsletter-section">
-  ...
+  <h2>Iscriviti alla nostra Newsletter</h2>
+  <p>Rimani aggiornato sulle ultime novità!</p>
+
+  <div class="newsletter-form-wrapper">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfmSbm1Z-q_1IZKstK1rPqrCwx0z1Ark-HYWeBMHBooDxGu0Q/viewform?usp=header"
+      width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+      Caricamento…
+    </iframe>
+  </div>
+</section>
+
+<section class="newsletter-archive">
+  <h2>Archivio Newsletter</h2>
+
+  <ul class="newsletter-list">
+    {% for item in site.newsletters reversed %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        <span class="newsletter-list-date">{{ item.date | date: "%d %B %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
