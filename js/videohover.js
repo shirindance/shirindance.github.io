@@ -29,49 +29,62 @@ document.addEventListener("DOMContentLoaded", function() {
 
   } else {
 
-    // ===============================
-    // MOBILE: fa partire il video del box più vicino al centro dello schermo
-    // ===============================
-    let currentPlaying = null; // tiene traccia del video attualmente in riproduzione
+  // ===============================
+  // MOBILE: fa partire il video del box più vicino al centro dello schermo
+  // ===============================
 
-    // Controlla quale box è più centrato e, se è cambiato, avvia il suo video
-    function checkMostCenteredBox() {
-      const screenCenter = window.innerHeight / 2;
-      let closestBox = null;
-      let closestDistance = Infinity;
+  // Box di debug temporaneo, visibile sullo schermo
+  const debugBox = document.createElement('div');
+  debugBox.style.cssText = 'position:fixed; top:0; left:0; right:0; background:black; color:lime; padding:8px; font-size:11px; z-index:9999; word-wrap:break-word;';
+  document.body.appendChild(debugBox);
 
-      videoBoxes.forEach(box => {
-        const rect = box.getBoundingClientRect();
-        const boxCenter = rect.top + rect.height / 2;
-        const distance = Math.abs(boxCenter - screenCenter);
+  let currentPlaying = null;
 
-        if (distance < closestDistance) {
-          closestDistance = distance;
-          closestBox = box;
-        }
-      });
+  function checkMostCenteredBox() {
+    const screenCenter = window.innerHeight / 2;
+    let closestBox = null;
+    let closestDistance = Infinity;
 
-      // Se il box più centrato è cambiato rispetto a prima, ferma il vecchio e avvia il nuovo
-      if (closestBox && closestBox !== currentPlaying) {
-        if (currentPlaying) {
-          currentPlaying.pause();
-          currentPlaying.currentTime = 0;
-        }
-        const newVideo = closestBox.querySelector('video');
-        newVideo.play().catch(() => {});
-        currentPlaying = newVideo;
+    videoBoxes.forEach(box => {
+      const rect = box.getBoundingClientRect();
+      const boxCenter = rect.top + rect.height / 2;
+      const distance = Math.abs(boxCenter - screenCenter);
+
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestBox = box;
       }
-    }
-
-    // Ricalcola durante lo scroll, con un piccolo ritardo per non sovraccaricare
-    let scrollTimeout;
-    window.addEventListener('scroll', () => {
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(checkMostCenteredBox, 150);
     });
 
-    // Controllo iniziale, appena la pagina è pronta
-    checkMostCenteredBox();
+    debugBox.textContent = `Box totali: ${videoBoxes.length} | Più vicino: ${closestBox ? 'trovato' : 'NESSUNO'} | Distanza: ${Math.round(closestDistance)}`;
+
+    if (closestBox && closestBox !== currentPlaying) {
+      if (currentPlaying) {
+        currentPlaying.pause();
+        currentPlaying.currentTime = 0;
+      }
+      const newVideo = closestBox.querySelector('video');
+
+      if (newVideo) {
+        newVideo.play().then(() => {
+          debugBox.textContent += ' | PLAY OK';
+        }).catch(err => {
+          debugBox.textContent += ' | PLAY FALLITO: ' + err.message;
+        });
+        currentPlaying = newVideo;
+      } else {
+        debugBox.textContent += ' | VIDEO NON TROVATO NEL BOX';
+      }
+    }
   }
+
+  let scrollTimeout;
+  window.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(checkMostCenteredBox, 150);
+  });
+
+  checkMostCenteredBox();
+}
 
 });
