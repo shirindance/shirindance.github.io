@@ -66,7 +66,7 @@
     max-width: 100%; /*non permette mai che superi la larghezza del contenitore/schermo*/
     box-sizing: border-box; /*fa sì che il padding che aggiungo sia incluso nel calcolo della larghezza totale, non sommato sopra*/
     padding: 0 20px; /*un minimo di respiro interno per i contenuti, invece di attaccarli al bordo*/
-    z-index: 10; /*lo mette sopra gli altri elementi*/
+    z-index: 100; /*lo mette sopra gli altri elementi*/
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;

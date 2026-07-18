@@ -42,4 +42,23 @@ html, body {
 
 main {
     flex: 1;
+    margin-top: var(--header-h);             /* lascia spazio all’header fisso */
+    padding: 20px;                           /* spazio interno */
+    min-height: calc(100% - var(--header-h) - var(--footer-h)); /* minimo tutta finestra */
+    background: linear-gradient(to right, #4F0B13, #240508); /* sfondo */
+    color: #EFAF9F;                          /* colore testo */
+    text-align: center;                       /* centro orizzontale */
+    -webkit-overflow-scrolling: touch;        /* scroll fluido mobile */
+}
+
+.pretesto {
+  font-family: 'Arabiantext', sans-serif;
+  font-size: 1.2em;
+  margin: 7px 5% 0 5%;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+h2, h3 {
+    font-family: 'Arabian', sans-serif;
 }

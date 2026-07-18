@@ -49,3 +49,35 @@ toggleFontButtons.forEach((button) => {
     });
   });
 });
+
+// ===== NEWS/CALENDARIO MOBILE: apri/chiudi al click =====
+const hoverContainers = document.querySelectorAll('.hoverContainer');
+const allCornerBoxes = document.querySelectorAll('.news-calendar-mobile .corner-box');
+
+hoverContainers.forEach((container) => {
+  const label = container.querySelector('.hoverBox');
+  const cornerBox = container.closest('.corner-box');
+
+  label.addEventListener('click', () => {
+    const isAlreadyOpen = container.classList.contains('open');
+
+    // Chiudi tutto e mostra di nuovo entrambi i box
+    hoverContainers.forEach((c) => c.classList.remove('open'));
+    allCornerBoxes.forEach((box) => {
+      box.classList.remove('open');
+      box.classList.remove('mobile-hidden');
+    });
+
+    // Se non era già aperto, apri questo e nascondi l'altro
+    if (!isAlreadyOpen) {
+      container.classList.add('open');
+      cornerBox.classList.add('open');
+
+      allCornerBoxes.forEach((box) => {
+        if (box !== cornerBox) {
+          box.classList.add('mobile-hidden');
+        }
+      });
+    }
+  });
+});
