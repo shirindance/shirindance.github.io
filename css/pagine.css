@@ -385,6 +385,15 @@
     opacity: 0;
 }
 
+
+.video-box.playing video {
+    opacity: 1;
+}
+
+.video-box.playing img {
+    opacity: 0;
+}
+
 /* ===============================
    RESPONSIVE — MOBILE (sotto 768px)
 ================================ */
@@ -398,4 +407,5 @@
     .row {
         gap: 14px;
     }
+
 }
