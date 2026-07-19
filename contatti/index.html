@@ -3,7 +3,7 @@ layout: default
 title: Contatti
 ---
 
-<section class="contatti-section">
+<section class="page-section">
   <h1>Contatti</h1>
 
   <div class="contatti-info">
@@ -27,14 +27,14 @@ title: Contatti
     </div>
   </div>
 
-  <div class="contatti-sedi">
+  <div class="cards-row">
 
-    <div class="sede-box">
+    <div class="card-box">
       <h2>Palestra Longara Sport</h2>
       <p>Via Arbizzani, 5, 40012 Longara BO</p>
       <div class="sede-mappa">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2842.206367836606!2d11.302323075170507!3d44.572345992502484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd21e4a49bba5%3A0x893eadeba719330c!2sPalestra%20Longara.Sport!5e0!3m2!1sit!2sit!4v1784442207124!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2842.206367836606!2d11.302323075170507!3d44.572345992502484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd21e4a49bba5%3A0x893eadeba719330c!2sPalestra%20Longara.Sport!5e0!3m2!1sit!2sit!4v1784442207124!5m2!1sit!2sit"
           width="100%" height="300" style="border:0;"
           allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -42,12 +42,12 @@ title: Contatti
       </div>
     </div>
 
-    <div class="sede-box">
+    <div class="card-box">
       <h2>LA.Bo - Laboratorio delle Arti</h2>
       <p>Via Alfredo Panzini, 1, 40127 Bologna BO</p>
       <div class="sede-mappa">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d691.0693912918464!2d11.39275409836039!3d44.50947691013465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e2deb29fb24a3%3A0x8bcfd881e88124a4!2sLA.Bo%20-%20Laboratorio%20delle%20Arti!5e0!3m2!1sit!2sit!4v1784443071266!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d691.0693912918464!2d11.39275409836039!3d44.50947691013465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e2deb29fb24a3%3A0x8bcfd881e88124a4!2sLA.Bo%20-%20Laboratorio%20delle%20Arti!5e0!3m2!1sit!2sit!4v1784443071266!5m2!1sit!2sit"
           width="100%" height="300" style="border:0;"
           allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -59,51 +59,21 @@ title: Contatti
 </section>
 
 <style>
-.contatti-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.contatti-info {
+  .contatti-info {
     margin-bottom: 40px;
-}
+  }
 
-.contatti-info p {
+  .contatti-info p {
     font-size: 1.1rem;
     margin: 8px 0;
-}
+  }
 
-.contatti-info a {
+  .contatti-info a {
     color: #EFAF9F;
-}
+  }
 
-.contatti-sedi {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.sede-box {
-    flex: 1;
-    min-width: 300px;
-    max-width: 450px;
-    background: rgba(107, 15, 26, 0.15);
-    border: 1px solid #BFAFAF;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.sede-mappa iframe {
+  .sede-mappa iframe {
     border-radius: 8px;
     width: 100%;
-}
-
-@media (max-width: 767px) {
-    .contatti-sedi {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
+  }
 </style>

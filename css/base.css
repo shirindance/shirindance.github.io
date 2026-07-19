@@ -62,3 +62,106 @@ main {
 h2, h3, h1 {
     font-family: 'Arabian', sans-serif;
 }
+
+/* ===============================
+   ARCHIVIO GENERICO (liste di elementi con titolo + data)
+   Usato per: newsletter, news, corsi passati, ecc.
+================================ */
+.archive-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.archive-list {
+    list-style: none;
+    max-width: 500px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+.archive-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #BFAFAF;
+}
+
+.archive-list a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.archive-list a:hover {
+    text-decoration: underline;
+}
+
+.archive-list-date {
+    opacity: 0.7;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 767px) {
+    .archive-list li {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    
+}
+
+
+/* ===============================
+   SEZIONE CENTRALE GENERICA
+   Usata per: newsletter, e qualsiasi blocco con sfondo scuro centrato
+================================ */
+.section-block {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(to right, #4F0B13, #240508);
+    color: #EFAF9F;
+}
+
+.section-block h2 {
+    font-size: 2.2rem;
+}
+
+.section-block p {
+    font-size: 1.5rem;
+}
+
+
+/* ===============================
+   CARD GENERICA (box con bordo e sfondo tenue)
+   Usata per: sedi, corsi, staff, o qualsiasi elenco di "schede"
+================================ */
+.card-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    background: rgba(107, 15, 26, 0.15);
+    border: 1px solid #BFAFAF;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cards-row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ===============================
+   SEZIONE PAGINA GENERICA (padding + testo centrato)
+================================ */
+.page-section {
+    padding: 40px 20px;
+    text-align: center;
+}
