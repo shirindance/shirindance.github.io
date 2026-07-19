@@ -10,3 +10,7 @@ collections:
   newsletters:
     output: true
     permalink: /newsletter/:slug/
+
+  seminari:
+    output: true
+    permalink: /seminari/:slug/

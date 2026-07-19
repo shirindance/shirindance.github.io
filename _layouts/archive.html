@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="archive-single">
+  <h1>{{ page.title }}</h1>
+  <p class="archive-date">
+    {% if page.date_label %}
+      {{ page.date_label }}
+    {% else %}
+      {{ page.date | date: "%d %B %Y" }}
+    {% endif %}
+  </p>
+  <br> 
+  <h2>{{ page.subtitle}}</h2>
+  <br>
+  {{ content }}
+</article>

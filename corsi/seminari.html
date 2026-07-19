@@ -1,4 +1,23 @@
 ---
 layout: default
-title: Home
+title: Seminari
 ---
+
+<section class="archive-section">
+  <h2>Archivio Seminari</h2>
+
+  <ul class="archive-list">
+    {% for item in site.seminari reversed %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        <span class="archive-list-date">
+            {% if item.date_label %}
+                {{ item.date_label }}
+            {% else %}
+                {{ item.date | date: "%d %B %Y" }}
+            {% endif %}
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -10,6 +10,19 @@
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/pagine.css">
 </head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll('a[href^="http"]');
+  links.forEach(function (link) {
+    if (link.hostname !== window.location.hostname) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    }
+  });
+});
+</script>
+
 <body>
   {% include header.html %}
   <main>
