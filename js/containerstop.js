@@ -95,3 +95,34 @@ document.addEventListener('click', (event) => {
     });
   }
 });
+
+
+// ===== CARD RUOTABILI: tap per girare su mobile =====
+const flipCards = document.querySelectorAll('.card-flip');
+
+flipCards.forEach(card => {
+  card.addEventListener('click', (e) => {
+    e.stopPropagation();
+
+    // solo mobile/tablet senza hover
+    if (!window.matchMedia('(hover: hover)').matches) {
+
+      // chiude tutte le altre card
+      flipCards.forEach(otherCard => {
+        if (otherCard !== card) {
+          otherCard.classList.remove('flipped');
+        }
+      });
+
+      // gira/rigira quella cliccata
+      card.classList.toggle('flipped');
+    }
+  });
+});
+
+// clic fuori da tutte le card: reset
+document.addEventListener('click', () => {
+  flipCards.forEach(card => {
+    card.classList.remove('flipped');
+  });
+});

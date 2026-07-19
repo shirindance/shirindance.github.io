@@ -66,6 +66,23 @@ h2, h3, h1 {
     font-family: 'Arabian', sans-serif;
 }
 
+
+/* ===============================
+  INFO GENERICO INTRODUTTIVO PAGINE
+================================ */
+.info {
+    margin-bottom: 40px;
+}
+
+.info p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.info a {
+    color: #EFAF9F;
+}
+
 /* ===============================
    ARCHIVIO GENERICO (liste di elementi con titolo + data)
    Usato per: newsletter, news, corsi passati, ecc.
@@ -133,6 +150,12 @@ h2, h3, h1 {
 }
 
 
+  .mappa-google iframe {
+    border-radius: 8px;
+    width: 100%;
+  }
+
+
 /* ===============================
    CARD GENERICA (box con bordo e sfondo tenue)
    Usata per: sedi, corsi, staff, o qualsiasi elenco di "schede"
@@ -159,7 +182,56 @@ h2, h3, h1 {
         flex-direction: column;
         align-items: center;
     }
+
+    .card-box {
+        width: 100%;
+    }
+
+    .card-flip {
+        width: 100%;
+        height: 400px; /* altezza fissa necessaria per il flip */
+    }
 }
+
+/* ===============================
+   CARD RUOTABILE (fronte/retro)
+================================ */
+.card-flip {
+    flex: 1 1 300px;
+    max-width: 450px;
+    height: 200px; /* altezza fissa necessaria per il flip */
+    perspective: 1000px;
+}
+
+.card-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Ruota al passaggio del mouse (desktop) o con la classe "flipped" (mobile, via JS) */
+.card-flip:hover .card-flip-inner,
+.card-flip.flipped .card-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.card-flip-front,
+.card-flip-back {
+    position: absolute;
+    background: rgba(107, 15, 26, 0.15);
+    border: 1px solid #BFAFAF;
+    border-radius: 10px;
+    inset: 0;
+    backface-visibility: hidden;
+    overflow-y: auto; /* nel caso il contenuto sia più alto del box */
+}
+
+.card-flip-back {
+    transform: rotateY(180deg);
+}
+
 
 /* ===============================
    SEZIONE PAGINA GENERICA (padding + testo centrato)
