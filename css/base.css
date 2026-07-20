@@ -211,8 +211,12 @@ h2, h3, h1 {
     transform-style: preserve-3d;
 }
 
-/* Ruota al passaggio del mouse (desktop) o con la classe "flipped" (mobile, via JS) */
-.card-flip:hover .card-flip-inner,
+@media (hover: hover) {
+    .card-flip:hover .card-flip-inner {
+        transform: rotateY(180deg);
+    }
+}
+
 .card-flip.flipped .card-flip-inner {
     transform: rotateY(180deg);
 }

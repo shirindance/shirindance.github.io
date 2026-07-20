@@ -98,31 +98,26 @@ document.addEventListener('click', (event) => {
 
 
 // ===== CARD RUOTABILI: tap per girare su mobile =====
+// ===== CARD RUOTABILI: tap per girare su mobile =====
 const flipCards = document.querySelectorAll('.card-flip');
 
 flipCards.forEach(card => {
   card.addEventListener('click', (e) => {
     e.stopPropagation();
 
-    // solo mobile/tablet senza hover
-    if (!window.matchMedia('(hover: hover)').matches) {
+    const isCurrentlyFlipped = card.classList.contains('flipped');
 
-      // chiude tutte le altre card
-      flipCards.forEach(otherCard => {
-        if (otherCard !== card) {
-          otherCard.classList.remove('flipped');
-        }
-      });
+    // Chiude tutte le card (compresa quella cliccata)
+    flipCards.forEach(c => c.classList.remove('flipped'));
 
-      // gira/rigira quella cliccata
-      card.classList.toggle('flipped');
+    // Se NON era già aperta, la apre; se era già aperta, resta chiusa (l'abbiamo già tolta sopra)
+    if (!isCurrentlyFlipped) {
+      card.classList.add('flipped');
     }
   });
 });
 
-// clic fuori da tutte le card: reset
+// Click fuori da tutte le card: reset
 document.addEventListener('click', () => {
-  flipCards.forEach(card => {
-    card.classList.remove('flipped');
-  });
+  flipCards.forEach(card => card.classList.remove('flipped'));
 });
