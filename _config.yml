@@ -5,6 +5,7 @@ url: "https://shirindance.github.io"
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 collections:
   newsletters:
