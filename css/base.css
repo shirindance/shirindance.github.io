@@ -28,6 +28,11 @@ body {
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 /*body.readable-font → seleziona il body solo quando ha questa classe aggiunta (dal JS)
 body.readable-font * → e tutti i suoi discendenti, cioè ogni elemento della pagina — 
