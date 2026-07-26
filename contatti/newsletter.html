@@ -4,49 +4,218 @@ title: Newsletter
 ---
 
 <style>
-.newsletter-section {
+/* --- 1. Struttura e Sfondo della Sezione Principale --- */
+#newsletter.section-block {
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 20px;
     background: linear-gradient(to right, #4F0B13, #240508);
     color: #EFAF9F;
 }
-.newsletter-section h2 {
+#newsletter.section-block h2 {
     font-size: 2.2rem;
+    margin-bottom: 10px;
 }
-.newsletter-section p {
-    font-size: 1.5rem;
+#newsletter.section-block p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
 }
+
+/* --- 2. Il Contenitore del Modulo Brevo --- */
 .newsletter-form-wrapper {
-    width: 50%;
-    
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    overflow-y: scroll;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 35px 30px;
+    background-color: #5A1827; /* Sfondo bordeaux coordinato */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    font-family: 'Arabiantext', sans-serif;
+    overflow: hidden; /* Blocca la comparsa di qualsiasi barra di scorrimento */
 }
 
+/* --- 3. Dettagli interni del Modulo (Testi e Input) --- */
+.shirin-form-title {
+    font-family: "Arabian", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #F4D3CD; /* Rosa cipria */
+    text-align: center;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
-@media (max-width: 767px) {
-    .newsletter-form-wrapper {
-        width: 90%;
-    }
+.shirin-form-subtitle {
+    font-size: 14px;
+    color: #EFAF9F;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 20px;
+}
 
+.shirin-field-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.shirin-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #EFAF9F;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.shirin-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #A82C35;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #FFFFFF;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.shirin-input:focus {
+    outline: none;
+    border-color: #F4D3CD;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- 4. Checkbox Privacy e reCAPTCHA --- */
+.shirin-checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.shirin-checkbox {
+    width: 16px;
+    height: 16px;
+    margin: 3px 0 0 0;
+    accent-color: #F4D3CD;
+    cursor: pointer;
+}
+
+.shirin-checkbox-text {
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 18px;
+}
+
+.shirin-captcha-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- 5. Pulsante di Invio --- */
+.shirin-submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #F4D3CD;
+    color: #5A1827;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Arabian', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+.shirin-submit-btn:hover {
+    background-color: #EFAF9F;
+}
+
+.shirin-privacy-notice {
+    font-size: 11px;
+    color: #EFAF9F;
+    line-height: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* --- 6. Stile Sezione Archivio --- */
+.archive-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.archive-list {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+    text-align: left;
+}
+.archive-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
 }
 </style>
 
+<!-- Blocco Principale Newsletter -->
 <section id="newsletter" class="section-block">
   <h2>Iscriviti alla nostra Newsletter</h2>
   <p>Rimani aggiornato sulle ultime novità!</p>
 
   <div class="newsletter-form-wrapper">
-    <iframe width="540" height="305" src="https://764fb8bd.sibforms.com/v2/serve/MUIFAKR9ut0wnNbmeHTvE-z5PopYRSFcmuQInQz-HUtv1Xo7Ko8_NGw7BjONhBoJ-0JOBMCuU7n9XaplfrH3ryvJp29IopJw2jITMFShllGKdQ_vk4K2fJOJW_GWgQ60UZs7RQeH2we-rxoAyy-_OzzSReA0aIgJ72Ro53wy7w6ILh7xNM-8cBTTNqroMqBMyvxPHwnIfSAoxDS-ww==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+    <div class="shirin-form-title">Newsletter</div>
+    <div class="shirin-form-subtitle">Abbonati alla nostra newsletter e resta aggiornato.</div>
+    
+    <!-- NOTA: Sostituisci "https://sibforms.com" con il tuo link lungo completo di Brevo -->
+    <form action="https://764fb8bd.sibforms.com/v2/serve/MUIFAKR9ut0wnNbmeHTvE-z5PopYRSFcmuQInQz-HUtv1Xo7Ko8_NGw7BjONhBoJ-0JOBMCuU7n9XaplfrH3ryvJp29IopJw2jITMFShllGKdQ_vk4K2fJOJW_GWgQ60UZs7RQeH2we-rxoAyy-_OzzSReA0aIgJ72Ro53wy7w6ILh7xNM-8cBTTNqroMqBMyvxPHwnIfSAoxDS-ww==" method="POST" id="shirin-newsletter-form">
+      
+      <!-- Campo Email -->
+      <div class="shirin-field-group">
+        <label class="shirin-label">Indirizzo Email *</label>
+        <input type="email" name="EMAIL" class="shirin-input" required autocomplete="off" placeholder="Es. abc@xyz.com">
+      </div>
+      
+      <!-- Checkbox Privacy -->
+      <label class="shirin-checkbox-group">
+        <input type="checkbox" name="OPT_IN" class="shirin-checkbox" required>
+        <span class="shirin-checkbox-text">Accetto le condizioni generali e di ricevere le newsletter</span>
+      </label>
+
+      <!-- Blocco Google reCAPTCHA -->
+      <div class="shirin-captcha-container">
+        <!-- NOTA: Sostituisci questo testo inserendo la tua Chiave del Sito pubblica v2 -->
+        <div class="g-recaptcha" data-sitekey="6Ld7dWYtAAAAALIxmevPQZV_63hJPsncHvd3hJl7"></div>
+      </div>
+      
+      <!-- Pulsante Iscriviti -->
+      <button type="submit" class="shirin-submit-btn"><strong>Iscriviti</strong></button>
+      
+      <!-- Nota informativa Brevo -->
+      <div class="shirin-privacy-notice">
+        Puoi annullare l'iscrizione in qualsiasi momento utilizzando il link incluso nella nostra newsletter. <br><br>
+        Utilizziamo Brevo como piattaforma di marketing. Inviando questo modulo, accetti che i dati personali da te forniti vengano trasferiti a Brevo per il trattamento in conformità all'Informativa sulla privacy di Brevo.
+      </div>
+      
+    </form>
   </div>
 </section>
 
+<!-- Script ufficiale di Google per eseguire il reCAPTCHA -->
+<script src="https://google.com" async defer></script>
+
+<!-- Sezione Archivio Storico -->
 <section class="archive-section">
   <h2>Archivio Newsletter</h2>
-
   <ul class="archive-list">
     {% for item in site.newsletters reversed %}
       <li>
