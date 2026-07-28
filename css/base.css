@@ -34,6 +34,11 @@ img {
     display: block;
 }
 
+a {
+    color: #ad4eda; /* Questo colora di violetto il testo "Visita il sito" */
+}
+
+
 /*body.readable-font → seleziona il body solo quando ha questa classe aggiunta (dal JS)
 body.readable-font * → e tutti i suoi discendenti, cioè ogni elemento della pagina — 
 necessario perché molti elementi (come .site-title, .dropdown-label) 
