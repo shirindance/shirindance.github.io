@@ -25,7 +25,7 @@ Terra, Ritmo, Musica, Passione, elementi che guideranno il nostro viaggio tra le
 
 <br>La partecipazione allo spettacolo non è obbligatoria.
 
-<br>E' consigliata la presenza a tutti gli incontri.
+<br>È consigliata la presenza a tutti gli incontri.
 
 
     
