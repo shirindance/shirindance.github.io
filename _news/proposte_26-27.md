@@ -1,0 +1,83 @@
+---
+title: "La nuova stagione di Shirin Dance"
+date: 2026-08-29
+subtitle: "Danza Orientale, FCBD®, performance e nuovi progetti a Bologna e provincia"
+layout: news
+---
+
+<p>La nuova stagione Shirin Dance 2026-27 è pronta a partire a Bologna, con un programma ricco di danza, formazione, spettacolo e nuovi progetti.
+<br>Un percorso che attraversa diverse espressioni della danza e mette insieme tradizione, contaminazione, improvvisazione e ricerca, mantenendo sempre al centro la voglia di danzare e condividere.</p>
+<div class="media-box media-box--img-dx">
+    <h2 class='media-box-title'>I corsi di Danza Orientale</h2>
+    <div class="media-box-content">
+        <div class="media-box-image">
+            <img src="/images/news/proposta_26.27/Attività_2026.27.jpeg" alt="I corsi settimanali">
+        </div>
+        <div class="media-box-text" markdown="1">
+            <p>I corsi di livello medio-avanzato si terranno il mercoledì e il giovedì.
+            <br><br>Durante quest'anno esploreremo la grande trasformazione e contaminazione che la Danza Orientale ha 
+            attraversato nel tempo e nelle diverse culture, andando alla ricerca degli elementi che ne costituiscono 
+            il filo comune.
+            <br><br>Il percorso toccherà linguaggi e atmosfere molto diverse, con qualche sorpresa...
+            <br><br>I corsi base sono disponibili su richiesta e con un minimo di partecipanti.
+            <br><br><a href="/corsi/corsi-settimanali.html" style="color:rgb(80, 80, 180)">Più info</a></p>
+        </div>
+    </div>
+    <div class="media-box media-box--img-sx">
+        <h2 class='media-box-title'>Rainbow Tribe FCBD®</h2>
+        <div class="media-box-content">
+            <div class="media-box-image">
+                <img src="/images/news/proposta_26.27/Proposta_FCBD.jpeg" alt="Proposta FCBD®">
+            </div>
+        <div class="media-box-text">
+            <p>Prosegue anche il percorso della Rainbow Tribe FCBD®, con una formazione quindicinale aperta a tuttə.
+                <br><br>Il programma attraversa i livelli 1-2-3 dell'FCBD® Style e comprende anche il lavoro con 
+                diversi props, tra cui gonne, spade, ventagli, cesti e molto altro.
+                <br><br>Un percorso dedicato all'improvvisazione strutturata, all'ascolto e alla costruzione della danza insieme.
+                <br><br><a href="/chi-siamo/rainbow-tribe.html" style="color:rgb(80, 80, 180)">Più info</a>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="media-box media-box--img-dx">
+    <h2 class='media-box-title'>Shirin Dance Company</h2>
+    <div class="media-box-content">
+        <div class="media-box-image">
+            <img src="/images//news/proposta_26.27/Proposta_compagnia.jpeg" alt="La proposta per la COmpagnia">
+        </div>
+        <div class="media-box-text">
+        <p>Per le danzatrici di livello medio-avanzato torna anche la formazione quindicinale della Shirin Dance Company.
+            <br><br>Il lavoro sarà orientato alla preparazione di proposte per eventi, festival, cerimonie e 
+            rievocazioni, attraversando diversi linguaggi e atmosfere: Raqs Sharqi, Fusion, Fuoco, Props e nuove 
+            idee ancora in fase di progettazione.
+            <br><br>Perché la stagione non è fatta soltanto di lezioni: è anche un'occasione per portare la danza fuori dalla sala e trasformarla in spettacolo.
+            <br><br><a href="/chi-siamo/la-compagnia.html" style="color:rgb(80, 80, 180)">Più info</a>
+        </p>
+        </div>
+    </div>
+</div>
+<div class="media-box media-box--img-sx">
+    <h2 class='media-box-title'>La Divina Commedia Project</h2>
+    <div class="media-box-content">
+        <div class="media-box-image">
+            <img src="/images/news/proposta_26.27/Proposta_Divina_Commedia.jpeg" alt="Flashmob 2024">
+        </div>
+        <div class="media-box-text">
+           <p>E poi arriva un progetto speciale.
+            <br>A Bologna, da novembre a maggio, prenderà vita un ampio Performance Project insieme alla straordinaria <a href="https://www.francescapedretti.it/" style="color:rgb(80, 80, 180)">Francesca Pedretti</a>.
+            <br><br>Un viaggio attraverso l'Inferno, il Purgatorio e il Paradiso, nel quale linguaggi diversi della danza si incontreranno per dare vita ai diversi quadri dell'opera.
+            <br><br>La Tribal Fusion Dance di Francesca darà forma alle anime dell'Inferno e del Paradiso, mentre Silvana accompagnerà le anime del Purgatorio attraverso l'FCBD® Style e l'Oriental Fusion.
+            <br><br>Un percorso esteso nel tempo, fatto di formazione, ricerca, sperimentazione e costruzione scenica, che culminerà nella performance.
+            <br><br><a href="/corsi/seminari/tribal-fusion.html" style="color:rgb(80, 80, 180)">Più info</a>
+           </p> 
+        </div>
+    </div>
+</div>
+<h2>E non è finita qui...</h2>
+<p>La nuova stagione Shirin Dance è anche un punto di partenza per altri progetti che stanno prendendo forma.
+    <br>Nuove collaborazioni, nuovi spettacoli e nuove occasioni per danzare sono già in cantiere.
+    <br>Continuate a seguirci: nei prossimi mesi arriveranno tutte le informazioni, gli eventi ufficiali e i materiali per partecipare ai diversi percorsi.
+    <br><br>Per informazioni, iscriversi o prenotare una lezione di prova gratuita scrivici o contattaci</p>
+<p><strong>Email:</strong> <a href="mailto:shirindancecompany@gmail.com">shirindancecompany@gmail.com</a></p>
+<p><strong>Telefono:</strong> <a href="tel:+390000000000">+39 000 000 0001</a>
+</p>
