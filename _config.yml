@@ -15,3 +15,7 @@ collections:
   seminari:
     output: true
     permalink: /seminari/:slug/
+
+  news:
+    output: true
+    permalink: /news/:slug/
