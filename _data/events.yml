@@ -1,6 +1,6 @@
 - date: "2025-10-12"
   text: "Flashmob FCBD"
-  url: "fcbd.html"
+  url: "chi-siamo/rainbow-tribe.html"
   category: "Eventi"
 
 - date: "2025-10-16"
@@ -9,10 +9,6 @@
 
 - date: "2026-01-25"
   text: "Figli della Terra"
-  url: "pagine/Eventi/figlidellaterra.html"
+  url: "seminari/figlidellaterra/"
   category: "Eventi"
 
-- date: "2026-07-25"
-  text: "Figli della Terra"
-  url: "pagine/Eventi/figlidellaterra.html"
-  category: "Eventi"
