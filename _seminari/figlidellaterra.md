@@ -2,7 +2,7 @@
 title: Figli della Terra
 date: 2026-01-01
 date_label: gennaio-maggio 2026
-subtitle: Laboratorio di Oriental Fusion<br>Danze e Musica del Sud Italia
+subtitle: Laboratorio di Oriental Fusion - Danze e Musica del Sud Italia
 layout: archive
 ---
 
@@ -39,7 +39,7 @@ Terra, Ritmo, Musica, Passione, elementi che guideranno il nostro viaggio tra le
       <img src="/images/corsi/seminari/2026figlidellaterrainsegnanti.png" alt="Gruppo durante l'esercizio">
     </div>
     <div class="media-box-text">
-      <a href="https://www.facebook.com/silvana.difalco" style="color:rgb(80, 80, 180)">Silvana Difalco</a> Originaria di Ragusa e laureata al DAMS di Bologna, è insegnante, danzatrice e coreografa specializzata in Danza Orientale, Folklore Arabo, Fusion e FCBD®Style. Si è formata con maestri di riferimento come <strong>Wael Mansour</strong>, <strong>Nesma Al Andalus</strong>, <strong>Manca Pavli</strong> e <strong>Carolina Nericcio</strong>.
+      <a href="https://www.facebook.com/silvana.difalco" style="color:rgb(80, 80, 180)">Silvana Difalco</a> Originaria di Ragusa e laureata al DAMS di Bologna, è insegnante, danzatrice e coreografa specializzata in Danza Orientale, Folklore Arabo, Fusion e FCBD®Style. Si è formata con maestri di riferimento come <strong>Wael Mansour</strong>, <strong>Nesma Al Andalus</strong>, <strong>Manca Pavli</strong> e <strong>Carolena Nericcio</strong>.
       <br>È fondatrice della compagnia <strong>Shirin Dance</strong> e della <strong>Rainbow Tribe FCBD®Style</strong>, con cui si esibisce in festival ed eventi. In questo seminario propone una fusione tra le danze del Sud Italia, la tradizione siciliana e la Danza Mediorientale, valorizzandone affinità e contaminazioni.
       <br><br><a href="https://www.facebook.com/silvia.deronzo" style="color:rgb(80, 80, 180)">Silvia De Ronzo</a> Di origini salentine, è educatrice, pedagogista, danzatrice e direttrice della scuola TarantArte di Bologna. Da oltre vent'anni si dedica alla ricerca, all'insegnamento e alla diffusione della pizzica pizzica e delle danze popolari del Sud Italia. 
       <br>Fondatrice dell'associazione <strong>TarantArte</strong>, conduce corsi e laboratori in Italia e all'estero. Ha collaborato con importanti artisti e gruppi della musica popolare, tra cui <strong>Officina Zoè</strong>, <strong>Eugenio Bennato</strong>, <strong>Mascarimirì</strong> e <strong>Nidi d'Arac</strong>, partecipando anche a diverse edizioni de <strong>La Notte della Taranta</strong>.
