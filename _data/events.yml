@@ -36,3 +36,13 @@
   text: "Uroboro"
   url: "seminari/uroboro/"
   category: "Seminario"
+
+- date: "2026-09-19"
+  text: "Spettacolo: Barbarossa"
+  url: "news/barbarossa/"
+  category: "Eventi"
+
+- date: "2026-09-20"
+  text: "Spettacolo: Barbarossa"
+  url: "news/barbarossa/"
+  category: "Eventi"
