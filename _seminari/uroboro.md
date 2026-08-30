@@ -1,5 +1,5 @@
 ---
-title: Uroboro by Floreo in Florence
+title: Uroboro. The Sacred Dance Circle
 date: 2026-01-01
 date_label: febbraio-maggio 2026
 subtitle: FCBD® Style Performance Project a cura di Floreo in Florence
@@ -37,6 +37,7 @@ layout: archive
     </div>
 </div>
 <div class="media-box media-box--img-sx">
+    <h2>Le insegnanti</h2>
     <div class="media-box-content">
         <div class="media-box-image">
             <img src="/images/corsi/seminari/2026Uroboro3.png" alt="Locandina di Uroboro">
