@@ -60,10 +60,10 @@ layout: archive
             <img src="/images/corsi/seminari/2026Uroboro4.jpg" alt="I Props">
         </div>
         <div class="media-box-text">
-            Il percorso di <strong>Uroboro. The Sacred Dance Circle</strong> è culminato il 10 maggio 2026, nella suggestiva cornice del settecentesco Teatro Comunale di San Giovanni in Persiceto, con lo spettacolo <em>Ishtar</em>.
+            Il percorso di <strong>Uroboro. The Sacred Dance Circle</strong> è culminato il 10 maggio 2026, nella suggestiva cornice del settecentesco Teatro Comunale di San Giovanni in Persiceto, con lo spettacolo <em>Tanit</em>.
             <br>Ad aprire lo spettacolo è stato proprio Uroboro, a cui è stata dedicata la prima parte del primo tempo. I quattro quadri si sono susseguiti armoniosamente sul palco, dando forma al percorso costruito nei mesi precedenti e portando in scena i diversi colori, props e linguaggi esplorati durante gli incontri.
             <br>Nonostante la complessità delle coreografie e delle tecniche affrontate, ogni partecipante ha avuto modo di esprimersi pienamente, portando sul palco il proprio lavoro con entusiasmo e soddisfazione. La cura delle tre maestre ha accompagnato il gruppo nella costruzione di una performance corale, precisa e al tempo stesso ricca di personalità.
-            <br>Il pubblico è stato così condotto dentro un viaggio fatto di movimento, simboli e trasformazioni, in cui la forza dei props si è intrecciata alla presenza scenica delle danzatrici. Un'apertura intensa e suggestiva per <em>Ishtar</em>, capace di dare immediatamente alla serata il carattere rituale e immaginifico che ha accompagnato l'intero spettacolo.
+            <br>Il pubblico è stato così condotto dentro un viaggio fatto di movimento, simboli e trasformazioni, in cui la forza dei props si è intrecciata alla presenza scenica delle danzatrici. Un'apertura intensa e suggestiva per <em>Tanit</em>, capace di dare immediatamente alla serata il carattere rituale e immaginifico che ha accompagnato l'intero spettacolo.
         </div>
     </div>
 </div>
