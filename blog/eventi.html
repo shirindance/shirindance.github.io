@@ -35,7 +35,7 @@ title: Eventi
                     <br>40059 Medicina BO</p>
                     <br>Anche quest'anno Shirin Dance torna al Barbarossa di Medicina, la grande rievocazione storica che ogni anno trasforma il centro della città in un vero e proprio borgo medievale.
                     <br>Saremo presenti con le nostre danzatrici al Piazzale degli Eretici, all'interno della festa.<br>
-                    <br><a href="/eventi/barbarossa/" style="color:rgb(80, 80, 180)">Più info</a><br><br>
+                    <br><a href="/eventifuturi/barbarossa/" style="color:rgb(80, 80, 180)">Più info</a><br><br>
                     <div class="mappa-google">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.8897835077!2d11.639200975164217!3d44.476431898801074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e2798af00e04d%3A0x63a70a8c263254b9!2sParcheggio%20via%20Mazzini!5e0!3m2!1sit!2sit!4v1788107260158!5m2!1sit!2sit" 
                         width="100%" height="300" style="border:0;"
@@ -51,7 +51,7 @@ title: Eventi
             <div class="card-flip-inner">
                 <div class="card-flip-front card-box">
                     <h2>ATS®/FCBD®</h2>
-                    <p>Flash Mob Worlwide 2026</p>
+                    <p>Flash Mob Worldwide 2026</p>
                     <img src="/images/eventi/Rainbowtribe.jpg" style="position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); border-radius: 12px; width: calc(100% - 40px);">
                 </div>
                 <div class="card-flip-back card-box">
@@ -59,9 +59,9 @@ title: Eventi
                     <p><strong>Orario:</strong> mattina</p>
                     <p><strong>Dove:</strong> Da definire
                     <br>Provincia di Bologna BO</p>
-                    <br>Anche quest'anno la Rainbow Tribe di Shirin Dance parteciperà all'ATS®/FCBD® Flash Mob Worlwide 2026, registrando una performance per strada tra la gente.
+                    <br>Anche quest'anno la Rainbow Tribe di Shirin Dance parteciperà all'ATS®/FCBD® Flash Mob Worldwide 2026, registrando una performance per strada tra la gente.
                     <br>Stiamo ancora scegliendo la location: quale scorcio del nostro territorio sarà la cornice della nostra danza?<br>
-                    <br><a href="/chi-siamo/rainbow-tribe.html" style="color:rgb(80, 80, 180)">Più info</a><br><br>
+                    <br><a href="/eventifuturi/fcbdflashmob2026/" style="color:rgb(80, 80, 180)">Più info</a><br><br>
                     <div class="mappa-google">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.044342924811!2d11.340519575165349!3d44.49375819766408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd49586d65539%3A0x3ec4fc9a3ae6b51e!2sPiazza%20Maggiore!5e0!3m2!1sit!2sit!4v1788107544461!5m2!1sit!2sit" 
                         width="100%" height="300" style="border:0;"
@@ -75,6 +75,25 @@ title: Eventi
 
     </div>
 
+</section>
+
+<section class="archive-section">
+  <h2>I prossimi eventi</h2>
+
+  <ul class="archive-list">
+    {% for item in site.eventifuturi reversed %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        <span class="archive-list-date">
+            {% if item.date_label %}
+                {{ item.date_label }}
+            {% else %}
+                {{ item.date | date: "%d %B %Y" }}
+            {% endif %}
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
 
 

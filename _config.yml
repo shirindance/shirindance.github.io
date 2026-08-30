@@ -23,3 +23,7 @@ collections:
   eventi:
     output: true
     permalink: /eventi/:slug/
+
+  eventifuturi:
+    output: true
+    permalink: /eventifuturi/:slug/
