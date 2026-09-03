@@ -52,13 +52,13 @@ layout: archive
             <br>Nel 2017 si certifica insegnante ATS® FatChanceBellyDance® con <strong>Carolena Nericcio</strong> Bohlman e Megha Gavin, diventando FatChanceBellyDance Partner Studio®. È inoltre creatrice, insieme a Patrizia Pin, del <strong>200%ATS® FatChanceBellyDance Festival</strong>, festival nazionale interamente dedicato allo FCBD®Style, nato nel 2018 e oggi punto di riferimento nel panorama internazionale.
             <br>È ideatrice di numerosi performance project che intrecciano danza, teatro e ricerca artistica, tra cui <strong>La Divina Commedia Project®</strong>, attivo dal 2014 e presentato in Italia, Europa e Stati Uniti.
             <br>Nel Performance Project Esteso de <strong>La Divina Commedia Project®</strong> cura i quadri dedicati all'<strong>Inferno</strong> e al <strong>Paradiso</strong>, sviluppandolo attraverso il attraverso il proprio linguaggío coreografico.
-            <br><br><a href="https://www.facebook.com/shirindance" style="color:rgb(80, 80, 180)">Silvana Difalco</a> Originaria di Ragusa e laureata al DAMS di Bologna, è danzatrice, insegnante e coreografa. Dopo una formazione multidisciplinare nella danza classica, moderna e contemporanea, si dedica alla Danza Orientale, ai Folklori Arabi, alla Fusion e allo FCBD®Style, approfondendo negli anni il proprio percorso con maestri di riferimento internazionale tra cui <strong>Wael Mansour</strong>, <strong>Nesma Al Andalus</strong> e <strong>Manca Pavli</strong>.
+            <br><br><a href="https://www.facebook.com/shirindance" style="color:rgb(80, 80, 180)">Silvana Difalco</a> Originaria di Ragusa e laureata al DAMS di Bologna, è danzatrice, insegnante e coreografa. Dopo una formazione multidisciplinare nella danza classica, moderna e contemporanea, si dedica alla Danza Orientale, al Folklore Arabo, alla Fusion e allo FCBD®Style, approfondendo negli anni il proprio percorso con maestri di riferimento internazionale tra cui <strong>Wael Mansour</strong>, <strong>Nesma Al Andalus</strong> e <strong>Manca Pavli</strong>.
             <br>Nel 2024 ottiene da <strong>Carolena Nericcio</strong> la qualifica di Certified Studio in FCBD®Style, consolidando il proprio percorso nell'ambito di questa disciplina.
             <br>È fondatrice e direttrice di <strong>Shirin Dance</strong> e della <strong>Rainbow Tribe FCBD®Style</strong>, con cui partecipa a spettacoli, festival ed eventi. La sua ricerca intreccia danza, tradizione e contaminazione culturale, con particolare attenzione al dialogo tra le danze del Sud Italia, la tradizione siciliana e le danze mediorientali.
             <br>Nel Performance Project Esteso de <strong>La Divina Commedia Project®</strong> cura il quadro dedicato al <strong>Purgatorio</strong>, sviluppandolo attraverso il linguaggio dello FCBD®Style e della Fusion.
         </div>
     </div>
 </div>
-<br><p>Per iscriversi o avere informazioni scrivici o contattaci</p>
+<p>Per iscriversi o avere informazioni scrivici o contattaci</p>
 <p><strong>Email:</strong> <a href="mailto:shirindancecompany@gmail.com">shirindancecompany@gmail.com</a></p>
-<p><strong>Telefono:</strong> <a href="tel:+390000000000">+39 000 000 0001</a></p>
+<p><strong>Telefono:</strong> <a href="tel:+393472305709">+39 3472305709</a></p>
