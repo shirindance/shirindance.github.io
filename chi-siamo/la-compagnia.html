@@ -9,8 +9,18 @@ description: "Compagnia di Danza Orientale a Bologna: spettacoli di danza del ve
         portare in scena la ricchezza e la varietà della danza orientale nelle sue molteplici forme, con 
         spettacoli che uniscono tradizione, ricerca e contaminazione artistica.</p>
     <div class="page-section">
-        <div class="video-embed">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fppXqYR8jp4?si=fb_fHCkME-4s2J_l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-embed video-embed-lite" data-video="fppXqYR8jp4">
+            <img
+                src="https://i.ytimg.com/vi/fppXqYR8jp4/hqdefault.jpg"
+                alt="Video Shirin Dance Company"
+                loading="lazy"
+                decoding="async">
+            <button
+                type="button"
+                class="video-play"
+                aria-label="Riproduci il video">
+                ▶
+            </button>
         </div>
     </div>
     <p>Diretta da Silvana Difalco, danzatrice, insegnante e coreografa con oltre vent'anni di 
@@ -90,7 +100,7 @@ description: "Compagnia di Danza Orientale a Bologna: spettacoli di danza del ve
             </div>
         </div>
     </div>
-        <div class="media-box media-box--img-sn">
+        <div class="media-box media-box--img-sx">
         <h2 class='media-box-title'>Gli spettacoli</h2>
         <div class="media-box-content">
             <div class="media-box-image">
@@ -137,3 +147,37 @@ description: "Compagnia di Danza Orientale a Bologna: spettacoli di danza del ve
         </div>
     </div>
 </section>
+
+<script>
+document.querySelectorAll('.video-embed-lite').forEach(function(video) {
+
+    video.addEventListener('click', function() {
+
+        const videoId = this.dataset.video;
+
+        const iframe = document.createElement('iframe');
+
+        iframe.src =
+            'https://www.youtube.com/embed/' +
+            videoId +
+            '?autoplay=1';
+
+        iframe.title = 'Video Shirin Dance Company';
+
+        iframe.allow =
+            'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+
+        iframe.referrerPolicy =
+            'strict-origin-when-cross-origin';
+
+        iframe.allowFullscreen = true;
+
+        this.innerHTML = '';
+        this.appendChild(iframe);
+
+        this.classList.remove('video-embed-lite');
+
+    });
+
+});
+</script>
