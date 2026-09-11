@@ -61,4 +61,4 @@ layout: archive
 </div>
 <p>Per iscriversi o avere informazioni scrivici o contattaci</p>
 <p><strong>Email:</strong> <a href="mailto:shirindancecompany@gmail.com">shirindancecompany@gmail.com</a></p>
-<p><strong>Telefono:</strong> <a href="tel:+393472305709">+39 3472305709</a></p>
+<p><strong>Telefono:</strong> <a href="tel:+393472305709">+39 347 230 5709</a></p>
