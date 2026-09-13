@@ -89,7 +89,7 @@ layout: news
                 <br><br>
                 Un percorso esteso nel tempo, fatto di formazione, ricerca, sperimentazione e costruzione scenica, che culminerà nella performance.
                 <br><br>
-                <a href="/corsi/seminari/tribal-fusion.html">Più info</a>
+                <a href="/seminari/divinacommedia/">Più info</a>
             </p>
         </div>
     </div>
@@ -112,5 +112,5 @@ Per informazioni, iscriversi o prenotare una lezione di prova gratuita scrivici 
 
 <p style="font-size: 1.5rem;">
 <strong>Telefono:</strong>
-<a href="tel:+390000000000">+39 000 000 0001</a>
+<a href="tel:+393472305709">+39 347 230 5709</a>
 </p>
