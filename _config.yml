@@ -24,6 +24,10 @@ collections:
     output: true
     permalink: /eventi/:slug/
 
-  eventifuturi:
+  ultima_ora:
     output: true
-    permalink: /eventifuturi/:slug/
+    permalink: /ultima_ora/:slug/
+
+  archivio_notizie:
+    output: true
+    permalink: /archivio_notizie/:slug/
