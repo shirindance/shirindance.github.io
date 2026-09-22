@@ -38,13 +38,27 @@ attraverso i linguaggi del FCBD® Style e dell'Oriental Fusion.
         <div class="media-box-image">
             <img src="/images/corsi/seminari/2027DCP.jpg" alt="Informazioni utili">
         </div>
-        <div class="media-box-text"><strong>La Divina Commedia Project®</strong> è un viaggio attraverso il corpo e il movimento, un percorso di ricerca e creazione che porta sulla scena l'universo di Dante attraverso il linguaggio della Tribal Fusion Dance.
-        <br>L'edizione di Bologna nasce dall'incontro tra Francesca Pedretti e Silvana Di Falco e si sviluppa come un laboratorio di creazione performativa: un percorso in cui la tecnica non è fine a sé stessa, ma diventa lo strumento per esplorare atmosfere, personaggi, emozioni e trasformazioni e per dare forma a una narrazione attraverso la danza.
-        <br><br>Il progetto attraversa i tre regni della <em>Divina Commedia</em>. Francesca guiderà la costruzione dei quadri dedicati a Inferno e Paradiso, mentre Silvana accompagnerà il gruppo nella ricerca sul Purgatorio, attraverso il linguaggio dell'FCBD® Style e della Fusion. Due approcci differenti che si incontrano all'interno di un'unica visione scenica.
-        <br>Durante gli incontri si alterneranno tecnica, improvvisazione, ricerca del movimento, interpretazione e composizione coreografica. Il lavoro partirà dagli strumenti del singolo danzatore per arrivare progressivamente alla dimensione collettiva: costruire insieme immagini, atmosfere e scene capaci di raccontare senza bisogno di parole.
-        <br><br>Non si tratta quindi soltanto di imparare una coreografia, ma di entrare dentro un universo e contribuire a costruirlo. Un percorso in cui ogni danzatrice porta il proprio corpo, la propria sensibilità e il proprio modo di interpretare il movimento, fino a diventare parte di una creazione comune.
-        <br>Il viaggio comincia con il workshop introduttivo del 15 novembre, aperto e non vincolante, e prosegue poi attraverso gli appuntamenti mensili del Performance Project Esteso, fino alla costruzione dello spettacolo finale.
-        <br><br>Un viaggio dall'Inferno al Paradiso, passando per il Purgatorio. Un viaggio nella danza, nella scena e, forse, anche dentro noi stessi.
+        <div class="media-box-text">La Divina Commedia è un viaggio.
+Un attraversamento di paesaggi interiori, simboli archetipi e trasformazioni.
+Il Performance Project Esteso nasce per esplorare questo universo attraverso il linguaggio della Tribal Fusion Dance, in un percorso che intreccia tecnica, ricerca espressiva e creazione performativa.
+La Divina Commedia Project®, ideato e diretto da Francesca, in oltre undici anni di vita, é stato rappresentato in Italia e all’estero, coinvolgendo centinaia di danzatrici in un percorso di crescita artistica e umana, confermando la continua evoluzione del progetto.
+      L’edizione di Bologna si sviluppa come un laboratorio mensile di creazione performativa. Gli incontri, della durata di 2 ore (Inferno/Paradiso) + 2 (Purgatorio) si terranno una domenica al mese e saranno dedicati allo sviluppo degli strumenti necessari per dare vita alle visioni sceniche della Divina Commedia.
+Durante il percorso lavoreremo su:
+tecnica Tribal Fusion, improvvisazione, ricerca del movimento;
+costruzione delle scene e composizione coreografica;
+presenza scenica, interpretazione e lavoro corale.
+La direzione artistica nasce dall’incontro di due sensibilità differenti e complementari:
+•Francesca guiderà un rpimo gruppo nella creazione dei quadri dedicati all’Inferno e al Paradiso attraverso il proprio linguaggio coreografico;
+Silvana curerà con un secondo gruppo di danzatrici i quadri del Purgatorio, interpretandolo attraverso il suo personale FCBD® Style/OrientalFusion offrendo un punto di vista originale all’interno del progetto.
+      La lezione del 15 Novembre sarà un Seminario di tecnica Tribal Fusion aperto e non vincolante: un’occasione per conoscere l’insegnante, il metodo di lavoro e l’atmosfera del laboratorio prima dell’inizio del percorso
+      Dal 17 Gennaio inizierà il Laboratorio dedicato al “Purgatorio” condotto da Silvana, nelle stesse giornate e nelle 2 ore successive
+      Il gruppo “Purgatorio” sarà formato da danzatrici con un minimo di esperienza in Danza Orientale e/o FCBD@Style
+Il laboratorio si terrà presso “Longara Sport” Via Arbizzani 5 – Longara – BOLOGNA
+Calendario degli incontri:
+15 novembre – (workshop introduttivo di Tribal Fusion) •13 dicembre • 17 gennaio
+21 febbraio • 7 marzo • 18 aprile • maggio, da definire
+Per info e candidature
+Silvana Difalco tel. 3472305709 difalcosilvana@libero.it
         </div>
     </div>
 </div>
