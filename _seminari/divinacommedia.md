@@ -51,8 +51,8 @@ tecnica Tribal Fusion, improvvisazione, composizione coreografica, presenza scen
       <br>Dal 17 Gennaio inizierà il Laboratorio dedicato al “Purgatorio” condotto da Silvana, nelle stesse giornate e nelle 2 ore successive.
 <br>Il laboratorio si terrà presso “Longara Sport” Via Arbizzani 5, Longara, BOLOGNA
 <br>Calendario degli incontri:
- 15 novembre (workshop introduttivo di Tribal Fusion) 13 dicembre, 17 gennaio,
-21 febbraio, 7 marz, 18 aprile, maggio da definire. 
+ 15 novembre (workshop introduttivo di Tribal Fusion), 13 dicembre, 17 gennaio,
+21 febbraio, 7 marzo, 18 aprile, maggio da definire. 
 
         </div>
     </div>
