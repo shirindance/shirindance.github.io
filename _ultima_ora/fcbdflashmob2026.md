@@ -9,7 +9,7 @@ layout: archive
 <div class="media-box media-box--img-sx">
     <div class="media-box-content">
         <div class="media-box-image">
-            <img src="/images/rainbow-tribe/Rainbowtribe.jpg" alt="ATS®/FCBD® Flash Mob Worldwide 2024">
+            <img src="/images/rainbow-tribe/rainbow san luca.jpg" alt="ATS®/FCBD® Flash Mob Worldwide 2024">
         </div>
         <div class="media-box-text" style="text-align: left; margin-left: 30px;">
         <p>L’ATS®/FCBD® Flash Mob Worldwide è un appuntamento internazionale che riunisce danzatrici e danzatori di tutto il mondo sulle note dello stesso brano. Ogni anno viene scelto un nuovo pezzo, e tutti i gruppi partecipanti realizzano la propria performance per poi condividerla sul canale Youtube dedicato all'iniziativa.
