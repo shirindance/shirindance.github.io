@@ -23,7 +23,7 @@ attraverso i linguaggi del FCBD® Style e dell'Oriental Fusion.
       <p><strong>Titolo</strong>: <a href="https://www.francescapedretti.it/la-divina-commedia-project-a-bologna-progetto-esteso/" style="color:rgb(80, 80, 180)">La Divina Commedia Project® a Bologna</a>
       <br><br><strong>Organizzazione</strong>: Shirin Dance
       <br><br><strong>Insegnanti</strong>: Francesca Pedretti e Silvana Difalco
-      <br><br><strong>Luogo</strong>: Palestra Longara Sport (Bologna)
+      <br><br><strong>Luogo</strong>: ASD Longara Sport a Longara (Bologna)
       <br><br><strong>Periodo</strong>: novembre 2026-maggio 2027
       <br><br><strong>Incontri</strong>: una domenica al mese
       <br><br><strong>Livello</strong>: Open level
