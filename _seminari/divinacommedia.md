@@ -39,12 +39,12 @@ attraverso i linguaggi del FCBD® Style e dell'Oriental Fusion.
             <img src="/images/corsi/seminari/2027DCP.jpg" alt="Informazioni utili">
         </div>
         <div class="media-box-text">La Divina Commedia è un viaggio.
-Un attraversamento di paesaggi interiori, simboli archetipi e trasformazioni.
+<br>Un attraversamento di paesaggi interiori, simboli archetipi e trasformazioni.
 <br>Il Performance Project Esteso nasce per esplorare questo universo attraverso il linguaggio della Tribal Fusion Dance, in un percorso che intreccia tecnica, ricerca espressiva e creazione performativa.
 <br>La Divina Commedia Project®, ideato e diretto da Francesca, in oltre undici anni di vita, é stato rappresentato in Italia e all’estero, coinvolgendo centinaia di danzatrici in un percorso di crescita artistica e umana, confermando la continua evoluzione del progetto.
-      <br>L’edizione di Bologna si sviluppa come un laboratorio mensile di creazione performativa.<br>Gli incontri, della durata di 2 ore (Inferno/Paradiso) + 2 (Purgatorio) si terranno una domenica al mese e saranno dedicati allo sviluppo degli strumenti necessari per dare vita alle visioni sceniche della Divina Commedia. <br>Durante il percorso lavoreremo su:
+      <br><br>L’edizione di Bologna si sviluppa come un laboratorio mensile di creazione performativa. Gli incontri, della durata di 2 ore (Inferno/Paradiso) +2 (Purgatorio) si terranno una domenica al mese e saranno dedicati allo sviluppo degli strumenti necessari per dare vita alle visioni sceniche della Divina Commedia.<br>Durante il percorso lavoreremo su:
 tecnica Tribal Fusion, improvvisazione, composizione coreografica, presenza scenica, e lavoro corale.
-La direzione artistica nasce dall’incontro di due sensibilità differenti e complementari:
+<br>La direzione artistica nasce dall’incontro di due sensibilità differenti e complementari:
 <br>Francesca guiderà un primo gruppo nella creazione dei quadri dedicati all’Inferno e al Paradiso attraverso il proprio linguaggio coreografico;
 <br>Silvana curerà con un secondo gruppo di danzatrici i quadri del Purgatorio, interpretandolo attraverso il suo personale FCBD® Style/OrientalFusion offrendo un punto di vista originale all’interno del progetto.
       <br>La lezione del 15 Novembre sarà un Seminario di tecnica Tribal Fusion aperto e non vincolante: un’occasione per conoscere l’insegnante, il metodo di lavoro e l’atmosfera del laboratorio prima dell’inizio del percorso
