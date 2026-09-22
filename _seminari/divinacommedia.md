@@ -2,15 +2,22 @@
 title: La Divina Commedia Project® a Bologna
 date: 2026-08-01
 date_label: novembre 2026-maggio 2027
-subtitle: Performance Project a cura di Francesca Pedretti e Silvana Difalco
+subtitle: Performance Project esteso a cura di Francesca Pedretti e Silvana Difalco
 layout: archive
 ---
 
-<p style="font-size: 1.5rem;">La Divina Commedia è un viaggio. Un attraversamento di paesaggi interiori, simboli, archetipi e trasformazioni, raccontato attraverso il corpo, il movimento e la scena.<br>Da questa visione nasce <strong><a href="https://www.francescapedretti.it/ladivinacommediaproject/" style="color:rgb(80, 80, 180)">La Divina Commedia Project®</a></strong>, ideato e diretto da <a href="https://www.francescapedretti.it/" style="color:rgb(80, 80, 180)">Francesca Pedretti</a>, un progetto che da oltre undici anni porta la Divina Commedia nel linguaggio della Tribal Fusion Dance, in un percorso di ricerca, crescita e creazione performativa.<br>Il Performance Project Esteso arriva ora a Bologna, in collaborazione con <a href="https://www.facebook.com/shirindance" style="color:rgb(80, 80, 180)">Silvana Difalco</a>.</p>
+<p style="font-size: 1.5rem;"><br><strong><a href="https://www.francescapedretti.it/ladivinacommediaproject/" style="color:rgb(80, 80, 180)">La Divina Commedia Project®</a></strong> ideato e diretto da <a href="https://www.francescapedretti.it/" style="color:rgb(80, 80, 180)">Francesca Pedretti</a><br>un progetto che da oltre undici anni racconta la Divina Commedia col linguaggio della Tribal Fusion Dance
+in un percorso di ricerca, crescita e creazione performativa.
+Il Performance Project esteso arriva ora a Bologna, in collaborazione e con la partecipazione di <a href="https://www.facebook.com/shirindance" style="color:rgb(80, 80, 180)">Silvana Difalco</a>.</p>Francesca guiderà i quadri dell'Inferno e del Paradiso nello stile Tribal Fusion, mentre Silvana curerà i quadri del Purgatorio
+attraverso i linguaggi del FCBD® Style e dell'Oriental Fusion.
+Tecnica, improvvisazione, ricerca del movimento e composizione coreografica si intrecceranno in un percorso di creazione collettiva, dove la danza diventa strumento per costruire immagini, atmosfere ed emozioni.
+Un viaggio nella danza e nella scena, ma anche dentro noi stessi.
 <div class="media-box media-box--img-sx">
     <div class="media-box-content">
         <div class="media-box-image">
-            <img src="/images/news/proposta_26.27/Proposta_Divina_Commedia.jpeg" alt="Locandina de La Divina Commedia Project®">
+            <img src="/images/news/proposta_26.27/Proposta_Divina_Commedia.jpeg" alt="
+
+ Locandina de La Divina Commedia Project®">
         </div>
         <div class="media-box-text" style="text-align: left; font-size: 1.5rem;">
       <p><strong>Titolo</strong>: <a href="https://www.francescapedretti.it/la-divina-commedia-project-a-bologna-progetto-esteso/" style="color:rgb(80, 80, 180)">La Divina Commedia Project® a Bologna</a>
