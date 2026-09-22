@@ -8,10 +8,10 @@ layout: archive
 
 <p style="font-size: 1.5rem;"><br><strong><a href="https://www.francescapedretti.it/ladivinacommediaproject/" style="color:rgb(80, 80, 180)">La Divina Commedia Project®</a></strong> ideato e diretto da <a href="https://www.francescapedretti.it/" style="color:rgb(80, 80, 180)">Francesca Pedretti</a><br>un progetto che da oltre undici anni racconta la Divina Commedia col linguaggio della Tribal Fusion Dance
 in un percorso di ricerca, crescita e creazione performativa.
-Il Performance Project esteso arriva ora a Bologna, in collaborazione e con la partecipazione di <a href="https://www.facebook.com/shirindance" style="color:rgb(80, 80, 180)">Silvana Difalco</a>.</p>Francesca guiderà i quadri dell'Inferno e del Paradiso nello stile Tribal Fusion, mentre Silvana curerà i quadri del Purgatorio
+Il Performance Project esteso arriva ora a Bologna, in collaborazione e con la partecipazione di <a href="https://www.facebook.com/shirindance" style="color:rgb(80, 80, 180)">Silvana Difalco.</a>Francesca guiderà i quadri dell'Inferno e del Paradiso nello stile Tribal Fusion, mentre Silvana curerà i quadri del Purgatorio
 attraverso i linguaggi del FCBD® Style e dell'Oriental Fusion.
 Tecnica, improvvisazione, ricerca del movimento e composizione coreografica si intrecceranno in un percorso di creazione collettiva, dove la danza diventa strumento per costruire immagini, atmosfere ed emozioni.
-Un viaggio nella danza e nella scena, ma anche dentro noi stessi.
+Un viaggio nella danza e nella scena, ma anche dentro noi stessi.</p>
 <div class="media-box media-box--img-sx">
     <div class="media-box-content">
         <div class="media-box-image">
