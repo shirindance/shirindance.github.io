@@ -1,16 +1,15 @@
 ---
 title: "La nuova stagione di Shirin Dance"
 date: 2026-08-28
-subtitle: "Danza Orientale, FCBD®, performance e nuovi progetti a Bologna e provincia"
+subtitle: "Danza Orientale, FCBD®, Performance e nuovi progetti a Bologna e Provincia"
 layout: news
 ---
 
 <p style="font-size: 1.5rem;">
-<br>La nuova stagione Shirin Dance 2026-27 è pronta a partire a Bologna, con un programma ricco di danza, formazione, spettacolo e nuovi progetti.
 </p>
 
 <div class="media-box media-box--img-dx" >
-    <h2 class="media-box-title">I corsi di Danza Orientale</h2>
+    <h2 class="media-box-title">I CORSI DI DANZA ORIENTALE</h2>
     <div class="media-box-content">
         <div class="media-box-image">
             <img src="/images/news/proposta_26.27/Attività_2026.27.jpeg" alt="I corsi settimanali">
@@ -32,18 +31,18 @@ layout: news
 </div>
 
 <div class="media-box media-box--img-sx">
-    <h2 class="media-box-title">Rainbow Tribe FCBD®</h2>
+    <h2 class="media-box-title">RAINBOW TRIBE FCBD®</h2>
     <div class="media-box-content">
         <div class="media-box-image">
             <img src="/images/news/proposta_26.27/Proposta_FCBD.jpeg" alt="Proposta FCBD®">
         </div>
         <div class="media-box-text" style="font-size: 1.5rem;">
             <p>
-                Prosegue anche il percorso della Rainbow Tribe FCBD®, con una formazione quindicinale aperta a tuttə.
+                Prosegue anche il percorso della Rainbow Tribe FCBD®, con una<BR>formazione quindicinale aperta a tuttə.
                 <br><br>
-                Il programma attraversa i livelli 1-2-3 dell'FCBD® Style e comprende anche il lavoro con diversi props, tra cui gonne, spade, ventagli, cesti e molto altro.
+                Il programma attraversa i livelli 1-2-3 dell'FCBD® Style e comprende<BR>anche il lavoro con diversi props, tra cui gonne, spade<BR>ventagli, cesti, fuoco e molto altro.
                 <br><br>
-                Un percorso dedicato all'improvvisazione strutturata, all'ascolto e alla costruzione della danza insieme.
+                Un percorso dedicato all'improvvisazione strutturata, all'ascolto e alla costruzione collettiva della performance.
                 <br><br>
                 <a href="/chi-siamo/rainbow-tribe.html">Più info</a>
             </p>
@@ -52,7 +51,7 @@ layout: news
 </div>
 
 <div class="media-box media-box--img-dx">
-    <h2 class="media-box-title">Shirin Dance Company</h2>
+    <h2 class="media-box-title">SHIRIN DANCE COMPANY</h2>
     <div class="media-box-content">
         <div class="media-box-image">
             <img src="/images/news/proposta_26.27/Proposta_compagnia.jpeg" alt="La proposta per la Compagnia">
@@ -72,7 +71,7 @@ layout: news
 </div>
 
 <div class="media-box media-box--img-sx">
-    <h2 class="media-box-title">La Divina Commedia Project</h2>
+    <h2 class="media-box-title">LA DIVINA COMMEDIA PROJECT</h2>
     <div class="media-box-content">
         <div class="media-box-image">
             <img src="/images/news/proposta_26.27/Proposta_Divina_Commedia.jpeg" alt="La Divina Commedia Project">
