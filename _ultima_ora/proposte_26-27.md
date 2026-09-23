@@ -1,6 +1,7 @@
 ---
 title: "La nuova stagione di Shirin Dance"
 date: 2026-08-28
+date_label: 28 agosto 2026
 subtitle: "Danza Orientale, FCBD®, Performance e nuovi progetti a Bologna e Provincia"
 layout: news
 ---
