@@ -6,7 +6,7 @@ subtitle: Laboratorio di Oriental Fusion - Danze e Musica del Sud Italia
 layout: archive
 ---
 
-Un laboratorio esperienziale di danza, musica e canto che intreccia le tradizioni del Sud Italia con quelle del Mediterraneo e dell'Oriente, valorizzando creatività, condivisione e contaminazione.
+Un laboratorio esperienziale di danza, musica e canto che intreccia le tradizioni del Sud Italia con quelle del Mediterraneo<br>e dell'Oriente, valorizzando creatività, condivisione e contaminazione.
 
 <div class="media-box media-box--img-dx">
   <div class="media-box-content">
@@ -19,9 +19,9 @@ Terra, Ritmo, Musica, Passione, elementi che guideranno il nostro viaggio tra le
 
 <br><i>Figli della Terra</i> è un Laboratorio-percorso in 3 incontri (Domenica 25/1, 15/3, 19/4 dalle 10 alle 18) finalizzato alla realizzazione di una performance che sarà proposta durante lo Spettacolo di fine anno della Scuola e Compagnia di Danze Orientali "Shirin Dance", il 10 Maggio, nello splendido Teatro Comunale di S.Giovanni in Persiceto (BO).
 
-<br>Silvia De Ronzo, insegnante e danzatrice della Scuola "Tarantarte" di Bologna, Maurizio Messore, insegnante di Tamburi a Cornice per "Allargate il Cerchio", e Silvana Difalco, insegnante siciliana di Danze Orientali e Fusion, accompagneranno i partecipanti dentro la tecnica delle danze, della musica e del canto, ma lasciando aperta la porta della creatività e della fusione, mettendo in luce quanto di comune c'è in questo viaggio tra tradizioni diverse ma "sorelle".
+<br>Silvia De Ronzo, direttrice della Scuola e Compagnia "Tarantarte" di Bologna, Maurizio Messore, insegnante di Tamburi a Cornice per "Allargate il Cerchio", e Silvana Difalco, insegnante siciliana di Danze Orientali e Fusion, accompagneranno i partecipanti dentro la tecnica delle danze, della musica e del canto, ma lasciando aperta la porta della creatività e della fusione, mettendo in luce quanto di comune c'è in questo viaggio tra tradizioni diverse ma "sorelle".
 
-<br>La partecipazione al Laboratorio è aperta a tuttx, sarà incentrata sulla danza ma anche sulla musica (percussioni) e sul canto.
+<br>La partecipazione al Laboratorio è aperta a tuttx, sarà incentrata sulla danza ma<br>anche sulla musica (percussioni) e sul canto.
 
 <br>La partecipazione allo spettacolo non è obbligatoria.
 
@@ -41,7 +41,7 @@ Terra, Ritmo, Musica, Passione, elementi che guideranno il nostro viaggio tra le
     <div class="media-box-text">
       <a href="https://www.facebook.com/silvana.difalco" style="color:rgb(80, 80, 180)">Silvana Difalco</a> Originaria di Ragusa e laureata al DAMS di Bologna, è insegnante, danzatrice e coreografa specializzata in Danza Orientale, Folklore Arabo, Fusion e FCBD®Style. Si è formata con maestri di riferimento come <strong>Wael Mansour</strong>, <strong>Nesma Al Andalus</strong>, <strong>Manca Pavli</strong> e <strong>Carolena Nericcio</strong>.
       <br>È fondatrice della compagnia <strong>Shirin Dance</strong> e della <strong>Rainbow Tribe FCBD®Style</strong>, con cui si esibisce in festival ed eventi. In questo seminario propone una fusione tra le danze del Sud Italia, la tradizione siciliana e la Danza Mediorientale, valorizzandone affinità e contaminazioni.
-      <br><br><a href="https://www.facebook.com/silvia.deronzo" style="color:rgb(80, 80, 180)">Silvia De Ronzo</a> Di origini salentine, è educatrice, pedagogista, danzatrice e fondatrice della scuola TarantArte di Bologna. Da oltre vent'anni si dedica alla ricerca, all'insegnamento e alla diffusione della pizzica pizzica e delle danze popolari del Sud Italia, e conduce corsi e laboratori in Italia e all'estero. Ha collaborato con importanti artisti e gruppi della musica popolare, tra cui <strong>Officina Zoè</strong>, <strong>Eugenio Bennato</strong>, <strong>Mascarimirì</strong> e <strong>Nidi d'Arac</strong>, partecipando anche a diverse edizioni de <strong>La Notte della Taranta</strong>.
+      <br><br><a href="https://www.facebook.com/silvia.deronzo" style="color:rgb(80, 80, 180)">Silvia De Ronzo</a> Di origini salentine, è educatrice, pedagogista, danzatrice e fondatrice della scuola TarantArte di Bologna. Da oltre vent'anni si dedica alla ricerca, all'insegnamento e alla diffusione della "pizzica pizzica" e delle danze popolari del Sud Italia, e conduce corsi e laboratori in Italia e all'estero. Ha collaborato con importanti artisti e gruppi della musica popolare, tra cui <strong>Officina Zoè</strong>, <strong>Eugenio Bennato</strong>, <strong>Mascarimirì</strong> e <strong>Nidi d'Arac</strong>, partecipando anche a diverse edizioni de <strong>La Notte della Taranta</strong>.
      <br> <br><a href="https://www.facebook.com/maurizio.messore.5" style="color:rgb(80, 80, 180)">Maurizio Messore</a> Musicista, musicoterapeuta e docente dell'associazione <strong>Allargate il Cerchio</strong>. Percussionista, organettista e chitarrista, si è formato con il Maestro <strong>Franco Faraldo</strong> e fin da bambino ha vissuto le tradizioni musicali e popolari della Campania. 
       <br>Ha collaborato con numerose formazioni e interpreti della musica tradizionale, tra cui <strong>Marcello Colasurdo</strong>, <strong>Antonio Matrone</strong> e <strong>Luca Rossi</strong>. In questo seminario guiderà i partecipanti alla scoperta dei ritmi, del canto e delle percussioni della tradizione campana, con un approccio coinvolgente e aperto a tuttx.
       <br><br>
@@ -68,17 +68,17 @@ Terra, Ritmo, Musica, Passione, elementi che guideranno il nostro viaggio tra le
       </div>
     </div>
     <div class="media-box-text">
-      Quando abbiamo immaginato <strong>Figli della Terra</strong>, sapevamo di proporre qualcosa di insolito, ma nessuno, insegnanti compresi, poteva prevedere quanto questo percorso ci avrebbe coinvolti. Tre intense giornate di lavoro ci hanno accompagnato dalla Puglia alla Campania fino alla Sicilia, intrecciando danza, musica e canto in un viaggio che ha richiesto curiosità, impegno e tanta voglia di mettersi in gioco.
+      Quando abbiamo immaginato <strong>"Figli della Terra"</strong>, sapevamo di proporre qualcosa di insolito, ma nessuno, insegnanti compresi, poteva prevedere quanto questo percorso ci avrebbe coinvolti. Tre intense giornate di lavoro ci hanno accompagnato dalla Puglia alla Campania fino alla Sicilia, intrecciando danza, musica e canto in un viaggio che ha richiesto curiosità, impegno e tanta voglia di mettersi in gioco.
       <br>Per molti partecipanti è stato un vero salto nel vuoto: non solo avvicinarsi a danze mai praticate prima, ma anche cimentarsi con il canto e con le percussioni, uscendo dalla propria zona di comfort. Merito della competenza, della passione e della capacità di coinvolgere di <strong>Silvana Difalco</strong>, <strong>Maurizio Messore</strong> e <strong>Silvia De Ronzo</strong>, che hanno saputo trasmettere non solo tecnica, ma anche il significato culturale e umano di queste tradizioni.
       <br>Le giornate erano intense: un seminario al mattino, il pranzo condiviso (ognuno portava qualcosa da mangiare) e poi altri due laboratori nel pomeriggio. Momenti di studio alternati a convivialità, risate, fatica e nuove amicizie, che hanno trasformato un gruppo di persone in un gruppo affiatato.
       <br>L'obiettivo finale era la performance sul palco del Teatro Comunale di San Giovanni in Persiceto. Tutti hanno scelto di partecipare, tranne una persona che purtroppo ha dovuto rinunciare per motivi di salute. Per ciascuno è stata una sfida importante, affrontata con entusiasmo e determinazione.
-      <br>Alla fine, oltre allo spettacolo, ciò che è rimasto è un bagaglio di esperienze condivise: nuovi ritmi, nuove danze, nuove competenze, ma soprattutto la consapevolezza che tradizioni apparentemente lontane possono incontrarsi e dialogare. E forse è proprio questo il significato più bello di <strong>Figli della Terra</strong>.
+      <br>Alla fine, oltre allo spettacolo, ciò che è rimasto è un bagaglio di esperienze condivise: nuovi ritmi, nuove danze, nuove competenze, ma soprattutto la consapevolezza che tradizioni apparentemente lontane possono incontrarsi e dialogare.<br>E forse è proprio questo il significato più bello di <strong>"Figli della Terra"</strong>.
     </div>
   </div>
 </div>
 
 <div class="media-box media-box--img-sx">
-  <h2 class='media-box-title'>Il teatro</h2>
+  <h2 class='media-box-title'>In Teatro</h2>
   <div class="media-box-content">
     <div class="media-box-image" style='flex: 0 0 65%'>
       <img src="/images/corsi/seminari/2026figlidellaterra3.png" alt="Figli della Terra a teatro">
