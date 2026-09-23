@@ -1,7 +1,7 @@
 ---
 title: "La nuova stagione di Shirin Dance"
 date: 2026-08-28
-subtitle: "Danza Orientale, FCBD®, Performance e nuovi progetti a Bologna e Provincia"
+<br>subtitle: "Danza Orientale, FCBD®, Performance e nuovi progetti a Bologna e Provincia"
 layout: news
 ---
 
@@ -99,7 +99,7 @@ La nuova stagione Shirin Dance è anche un punto di partenza per altri progetti 
 <br>
 Nuove collaborazioni, nuovi spettacoli e nuove occasioni per danzare sono già in cantiere.
 <br>
-Continuate a seguirci: nei prossimi mesi arriveranno tutte le informazioni, gli eventi ufficiali e i materiali per partecipare ai diversi percorsi.
+Continuate a seguirci: nei prossimi mesi arriveranno tutte le informazioni<br>gli eventi ufficiali e i materiali per partecipare ai diversi percorsi.
 <br><br>
 Per informazioni, iscriversi o prenotare una lezione di prova gratuita scrivici o contattaci.
 </p>
