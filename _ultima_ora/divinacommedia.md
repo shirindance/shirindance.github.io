@@ -23,9 +23,7 @@ attraverso i linguaggi del FCBD® Style e dell'Oriental Fusion.
 <div class="media-box media-box--img-sx">
     <div class="media-box-content">
         <div class="media-box-image">
-            <img src="/images/news/proposta_26.27/Proposta_Divina_Commedia.jpeg" alt="
-
- Locandina de La Divina Commedia Project®">
+            <img src="/images/news/proposta_26.27/Proposta_Divina_Commedia.jpeg" alt=" Locandina de La Divina Commedia Project®">
         </div>
         <div class="media-box-text" style="text-align: left; font-size: 1.5rem;">
       <p><strong>Titolo</strong>: <a href="https://www.francescapedretti.it/la-divina-commedia-project-a-bologna-progetto-esteso/" style="color:rgb(80, 80, 180)">La Divina Commedia Project® a Bologna</a>
