@@ -326,7 +326,7 @@ h2, h3, h1 {
 .video-embed {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* proporzione 16:9 */
+    aspect-ratio: 16 / 9; /* proporzione 16:9 */
     border-radius: 10px;
     overflow: hidden;
     margin: 20px 0;
