@@ -9,6 +9,16 @@ layout: news
 <p style="font-size: 1.5rem;">
 </p>
 
+<div class="video-embed video-embed-singolo">
+    <iframe
+        src="https://www.youtube.com/embed/6flykn48oq8"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</div>
+
 <div class="media-box media-box--img-dx" >
     <h2 class="media-box-title">I CORSI DI DANZA ORIENTALE</h2>
     <div class="media-box-content">

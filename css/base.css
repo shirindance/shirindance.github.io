@@ -373,6 +373,26 @@ h2, h3, h1 {
     cursor: pointer;
 }
 
+/* Video singolo centrato */
+.video-embed-singolo {
+    width: 35%;
+    margin: 20px auto;
+}
+
+/* Su tablet */
+@media (max-width: 1000px) {
+    .video-embed-singolo {
+        width: 60%;
+    }
+}
+
+/* Su telefono */
+@media (max-width: 767px) {
+    .video-embed-singolo {
+        width: 100%;
+    }
+}
+
 /* ===============================
    link non visibile
 ================================ */
