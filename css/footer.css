@@ -85,3 +85,37 @@ footer .footer-right {
         opacity: 1;
     }
 }
+
+.footer-credit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.footer-spisotti-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  text-decoration: none;
+  color: inherit;
+
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.footer-spisotti-link:hover {
+  opacity: 1;
+}
+
+.footer-spisotti-link img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
