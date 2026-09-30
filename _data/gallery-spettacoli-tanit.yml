@@ -1,5 +1,11 @@
 # folder: /images/fotogallery/spettacoli/tanit/
 
+- image: /images/fotogallery/spettacoli/tanit/0 LOCANDINA.PNG
+  title:
+  description:
+  link:
+  link_text:
+
 - image: /images/fotogallery/spettacoli/tanit/1 spada senza titolo-26 ok.jpg
   title:
   description:
@@ -115,6 +121,12 @@
   link_text:
 
 - image: /images/fotogallery/spettacoli/tanit/5 senza titolo-286.jpg
+  title:
+  description:
+  link:
+  link_text:
+
+- image: /images/fotogallery/spettacoli/tanit/5a LOCANDINA.jpg
   title:
   description:
   link:
