@@ -125,7 +125,7 @@ def create_entry(image_path):
         f"- image: {image_path}\n"
         f"  title:\n"
         f"  description:\n"
-        f"  link:\n"
+        f"  link: {image_path}\n"
         f"  link_text:"
     )
 

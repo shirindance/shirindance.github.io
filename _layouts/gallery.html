@@ -24,19 +24,16 @@ layout: default
 
         <article class="gallery-card">
 
-            {% if item.link %}
-                <a href="{{ item.link }}"
-                   target="_blank"
-                   rel="noopener noreferrer">
-            {% endif %}
+            <a class="gallery-image-link"
+               href="{{ item.image | relative_url }}"
+               target="_blank"
+               rel="noopener noreferrer">
 
                 <img src="{{ item.image | relative_url }}"
                      alt="{{ item.title | default: page.title }}"
                      loading="lazy">
 
-            {% if item.link %}
-                </a>
-            {% endif %}
+            </a>
 
             {% if item.title or item.description %}
 
@@ -50,15 +47,6 @@ layout: default
                         <p>{{ item.description }}</p>
                     {% endif %}
 
-                    {% if item.link %}
-                        <a class="gallery-link"
-                           href="{{ item.link }}"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            {{ item.link_text | default: "Scopri di più" }} →
-                        </a>
-                    {% endif %}
-
                 </div>
 
             {% endif %}
@@ -68,58 +56,128 @@ layout: default
     {% endfor %}
 
 </section>
+
 <style>
+
 /* ==============================
    GALLERY
 ============================== */
 
-.gallery-page{
+.gallery-page {
     margin: 40px auto;
     max-width: 1200px;
 }
 
-.gallery-grid{
+.gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
 }
 
-.gallery-card{
+.gallery-card {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 280px;
+    min-width: 0;
 }
 
-.gallery-card img{
+
+/* ==============================
+   FOTO CLICCABILE
+============================== */
+
+.gallery-image-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
-    height: auto;
+    height: 300px;
+
+    overflow: hidden;
     border-radius: 10px;
-    transition: .3s ease;
-    display: block;
+
+    background: rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.gallery-card img:hover{
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+    border-radius: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+.gallery-card img:hover {
     transform: scale(1.02);
 }
 
-.gallery-card h3{
-    margin: 16px 0 8px;
+
+/* ==============================
+   CONTENUTO CARD
+============================== */
+
+.gallery-content {
+    margin-top: 14px;
+}
+
+.gallery-card h3 {
+    margin: 0 0 8px;
     font-size: 1.2rem;
 }
 
-.gallery-card p{
+.gallery-card p {
     margin: 0;
-    color: #555;
     line-height: 1.6;
-    flex-grow: 1;
 }
 
-.gallery-link{
-    margin-top: 18px;
-    font-weight: 600;
-    text-decoration: none;
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 1000px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 767px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+        gap: 25px;
+    }
+
+    .gallery-image-link {
+        height: auto;
+        background: none;
+    }
+
+    .gallery-card img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+}
+
 </style>
