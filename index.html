@@ -166,13 +166,36 @@ description: Scopri la scuola di danza orientale danza del ventre Shirin Dance a
 </script>
 <script src="/js/calendar.js" defer></script>
 <script>
-    // Mostra il popup automaticamente all'apertura della pagina
-    window.addEventListener('load', () => {
-      document.getElementById('popup-container').classList.remove('hidden');
-    });
+  function getDataOggi() {
+    const oggi = new Date();
+    const anno = oggi.getFullYear();
+    const mese = String(oggi.getMonth() + 1).padStart(2, '0');
+    const giorno = String(oggi.getDate()).padStart(2, '0');
 
-    // Chiudi il popup al click sulla X
-    document.getElementById('closePopup').addEventListener('click', () => {
-      document.getElementById('popup-container').classList.add('hidden');
-    });
+    return `${anno}-${mese}-${giorno}`;
+  }
+
+  window.addEventListener('load', () => {
+    const popup = document.getElementById('popup-container');
+    const oggi = getDataOggi();
+    const ultimaVisualizzazione = localStorage.getItem('shirinPopupUltimaVisualizzazione');
+
+    // Mostra il popup solo se oggi non è ancora stato visualizzato
+    if (ultimaVisualizzazione !== oggi) {
+      popup.classList.remove('hidden');
+    }
+  });
+
+  // Chiudi il popup al click sulla X
+  document.getElementById('closePopup').addEventListener('click', () => {
+    const popup = document.getElementById('popup-container');
+
+    popup.classList.add('hidden');
+
+    // Memorizza che il popup è stato visto oggi
+    localStorage.setItem(
+      'shirinPopupUltimaVisualizzazione',
+      getDataOggi()
+    );
+  });
 </script>
