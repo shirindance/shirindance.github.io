@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/pagine.css">
+  <link rel="stylesheet" href="https://glispisotti.github.io/consent/consent.css">
 </head>
 
 <script>
@@ -29,7 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
     {{ content }}
   </main>
   {% include footer.html %}
+<script>
+window.SpisottiConsentConfig = {
+    services: [
+        "youtube"
+    ]
+};
+</script>
 
+<script src="https://glispisotti.github.io/consent/consent.js"></script>
 <script src="/js/containerstop.js"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d97eb896a60c48e48a0ce10cb80629e4"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

@@ -62,9 +62,10 @@ footer .footer-center {
 footer .footer-right {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center; /* mobile: centrato */
-    font-size: 0.75rem; /* mobile: più piccolo */
+    text-align: center;
+    font-size: 0.75rem;
     opacity: 0.8;
 }
 

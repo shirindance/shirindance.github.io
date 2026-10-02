@@ -341,7 +341,7 @@ h2, h3, h1 {
     border: 0;
 }
 
-.video-embed-lite img {
+.spisotti-consent-youtube img {
     position: absolute;
     top: 0;
     left: 0;
@@ -352,7 +352,7 @@ h2, h3, h1 {
     object-fit: cover;
 }
 
-.video-embed-lite .video-play {
+.spisotti-consent-youtube .video-play {
     position: absolute;
     top: 50%;
     left: 50%;
