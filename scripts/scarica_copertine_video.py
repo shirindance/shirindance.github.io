@@ -33,7 +33,7 @@ def trova_video():
         )
 
         ids = re.findall(
-            r'^\s*-\s*id:\s*["\']?([^"\'\s]+)["\']?\s*$',
+            r'^\s*-\s*id:\s*["\']([^"\']+)["\']\s*$',
             testo,
             flags=re.MULTILINE
         )
@@ -64,6 +64,14 @@ def scarica(url):
         timeout=15
     ) as response:
 
+        content_type = response.headers.get(
+            "Content-Type",
+            ""
+        )
+
+        if not content_type.startswith("image/"):
+            return None
+
         return response.read()
 
 
@@ -86,7 +94,7 @@ def scarica_copertina(video_id):
 
     destinazione = (
         OUTPUT_DIR /
-        f"{video_id}.jpg"
+        f"youtube-{video_id}.jpg"
     )
 
 
