@@ -9,14 +9,22 @@ layout: archive
 <p style="font-size: 1.5rem;">
 </p>
 
-<div class="video-embed video-embed-singolo">
-    <iframe
-        src="https://www.youtube.com/embed/6flykn48oq8"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
+<div class="video-embed-singolo">
+    <div
+        class="video-embed spisotti-consent-youtube"
+        data-video="6flykn48oq8">
+        <img
+            src="{{ '/images/video/youtube-6flykn48oq8.jpg' | relative_url }}"
+            alt="Video Shirin Dance Company"
+            loading="lazy"
+            decoding="async">
+        <button
+            type="button"
+            class="video-play"
+            aria-label="Riproduci il video">
+            ▶
+        </button>
+    </div>
 </div>
 
 <div class="media-box media-box--img-dx" >

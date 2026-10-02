@@ -5,14 +5,22 @@ date_label: novembre 2026-maggio 2027
 subtitle: Performance Project esteso a cura di Francesca Pedretti e Silvana Difalco
 layout: archive
 ---
-<div class="video-embed video-embed-singolo">
-    <iframe
-        src="https://www.youtube.com/embed/ufEyRzr38lo"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
+<div class="video-embed-singolo">
+    <div
+        class="video-embed spisotti-consent-youtube"
+        data-video="ufEyRzr38lo">
+        <img
+            src="{{ '/images/video/youtube-ufEyRzr38lo.jpg' | relative_url }}"
+            alt="Video Shirin Dance Company"
+            loading="lazy"
+            decoding="async">
+        <button
+            type="button"
+            class="video-play"
+            aria-label="Riproduci il video">
+            ▶
+        </button>
+    </div>
 </div>
 <p style="font-size: 1.5rem;"><br><strong><a href="https://www.francescapedretti.it/ladivinacommediaproject/" style="color:rgb(80, 80, 180)">La Divina Commedia Project®</a></strong> ideato e diretto da <a href="https://www.francescapedretti.it/" style="color:rgb(80, 80, 180)">Francesca Pedretti</a><br>un progetto che da oltre undici anni racconta la Divina Commedia col linguaggio della Tribal Fusion Dance
 <br>in un percorso di ricerca, crescita e creazione performativa.
