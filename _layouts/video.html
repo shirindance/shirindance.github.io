@@ -18,14 +18,22 @@ layout: default
 
             <div class="video-gallery-item">
 
-                <div class="video-embed">
+                <div
+                    class="video-embed spisotti-consent-youtube"
+                    data-video="{{ video.id }}">
 
-                    <iframe
-                        src="https://www.youtube.com/embed/{{ video.id }}"
-                        title="{{ video.title }}"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+                    <img
+                        src="{{ '/images/video/' | append: video.id | append: '.jpg' | relative_url }}"
+                        alt="{{ video.title | default: 'Video Shirin Dance Company' }}"
+                        loading="lazy"
+                        decoding="async">
+
+                    <button
+                        type="button"
+                        class="video-play"
+                        aria-label="Riproduci {{ video.title | default: 'il video' }}">
+                        ▶
+                    </button>
 
                 </div>
 
