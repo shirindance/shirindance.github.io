@@ -121,3 +121,36 @@ flipCards.forEach(card => {
 document.addEventListener('click', () => {
   flipCards.forEach(card => card.classList.remove('flipped'));
 });
+
+
+document.querySelectorAll('.video-embed-lite').forEach(function(video) {
+
+    video.addEventListener('click', function() {
+
+        const videoId = this.dataset.video;
+
+        const iframe = document.createElement('iframe');
+
+        iframe.src =
+            'https://www.youtube.com/embed/' +
+            videoId +
+            '?autoplay=1';
+
+        iframe.title = 'Video Shirin Dance Company';
+
+        iframe.allow =
+            'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+
+        iframe.referrerPolicy =
+            'strict-origin-when-cross-origin';
+
+        iframe.allowFullscreen = true;
+
+        this.innerHTML = '';
+        this.appendChild(iframe);
+
+        this.classList.remove('video-embed-lite');
+
+    });
+
+});
