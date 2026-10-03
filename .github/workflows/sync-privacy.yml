@@ -43,4 +43,4 @@ jobs:
 
           git add privacy.html
           git commit -m "Aggiorna informativa privacy"
-          git push-
+          git push
