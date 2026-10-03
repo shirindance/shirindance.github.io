@@ -7,6 +7,28 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+consent:
+
+  version: "1.0"
+
+  privacy_template:
+    url: "https://raw.githubusercontent.com/glispisotti/glispisotti/main/consent/privacy.html"
+
+  privacy:
+    titolare: "Laura Porceddu"
+    sede: ""
+    email: "glispisotti@gmail.com"
+    pec: ""
+
+  hosting:
+    provider: "GitHub Pages"
+    privacy_url: "https://docs.github.com/it/site-policy/privacy-policies/github-general-privacy-statement"
+
+  services:
+    analytics: true
+    youtube: true
+    maps: true
+
 collections:
   newsletters:
     output: true
