@@ -27,7 +27,7 @@ consent:
   services:
     analytics: false
     youtube: true
-    maps: true
+    googlemaps: true
     brevo: true
 
 collections:
