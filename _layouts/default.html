@@ -30,13 +30,24 @@ document.addEventListener("DOMContentLoaded", function () {
     {{ content }}
   </main>
   {% include footer.html %}
+<body>
+  {% include header.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+
 <script>
 window.SpisottiConsentConfig = {
-
-    version: 1,
-    
+    version: "{{ site.consent.version }}",
     services: [
-        "youtube"
+        {% if site.consent.services.youtube %}
+        "youtube",
+        {% endif %}
+
+        {% if site.consent.services.maps %}
+        "googlemaps",
+        {% endif %}
     ]
 };
 </script>
