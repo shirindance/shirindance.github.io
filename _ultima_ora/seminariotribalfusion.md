@@ -2,7 +2,7 @@
 title: "Francesca Pedretti a Bologna"
 date: 2026-10-02
 date_label: 15 novembre
-subtitle: "Seminario di Tribal Fusion"
+subtitle: "Workshop di Tribal Fusion"
 layout: archive
 ---
 
