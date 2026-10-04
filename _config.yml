@@ -9,7 +9,7 @@ plugins:
 
 consent:
 
-  version: "2.0"
+  version: "2.1"
 
   privacy_template:
     url: "https://raw.githubusercontent.com/glispisotti/glispisotti/main/consent/privacy.html"
