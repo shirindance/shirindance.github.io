@@ -25,7 +25,7 @@ consent:
     privacy_url: "https://docs.github.com/it/site-policy/privacy-policies/github-general-privacy-statement"
 
   services:
-    analytics: true
+    analytics: false
     youtube: true
     maps: true
     brevo: true

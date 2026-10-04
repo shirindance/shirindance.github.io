@@ -33,11 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
 window.SpisottiConsentConfig = {
-    version: "{{ site.consent.version }}",
+    version: {{ site.consent.version | jsonify }},
     services: [
+        {% assign first_service = true %}
         {% for service in site.consent.services %}
-            {% if service[1] %}
-                "{{ service[0] }}"{% unless forloop.last %},{% endunless %}
+            {% if service[1] == true %}
+                {% unless first_service %},{% endunless %}
+                {{ service[0] | jsonify }}
+                {% assign first_service = false %}
             {% endif %}
         {% endfor %}
     ]
