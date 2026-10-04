@@ -53,7 +53,7 @@
 
 #cancella i cancelletti all'inizio delle righe qui sotto per far apparire l'evento nel calendario
 
-#- date: "2026-11-15"
-#  text: "Flashmob FCBD"
-#  url: "ultima_ora/seminariotribalfusion/"
-#  category: "Seminario"
+- date: "2026-11-15"
+  text: "seminario tribal fusion"
+  url: "ultima_ora/seminariotribalfusion/"
+  category: "Seminario"

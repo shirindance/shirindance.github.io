@@ -13,7 +13,10 @@ layout: archive
         </div>
         <div class="media-box-text" style="text-align: left; margin-left: 30px; font-size: 1.5rem;">
         <p>
-        INSERIRE TESTO SEMINARIO/NOTIZIA
+        La nostra grande Francesca Pedretti sarà a Bologna, domenica 15 Novembre, per un Workshop di Tribal Fusion aperto a tutte.
+        <br>nell'occasione presenteremo il nuovo Performance Project esteso "La Divina Commedia" in collaborazione con Silvana Difalco, che terminerà a Maggio con lo spettacolo a teatro!
+        <br>Il Workshop non è vincolante per l'adesione al progetto.
+        <br>Info e iscrizioni: difalcosilvana@libero.it
         </p>
         </div>
     </div>
