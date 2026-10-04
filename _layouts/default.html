@@ -35,13 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
 window.SpisottiConsentConfig = {
     version: "{{ site.consent.version }}",
     services: [
-        {% if site.consent.services.youtube %}
-        "youtube",
-        {% endif %}
-
-        {% if site.consent.services.maps %}
-        "googlemaps",
-        {% endif %}
+        {% for service in site.consent.services %}
+            {% if service[1] %}
+                "{{ service[0] }}"{% unless forloop.last %},{% endunless %}
+            {% endif %}
+        {% endfor %}
     ]
 };
 </script>

@@ -33,19 +33,7 @@ title: Newsletter
     }
 
 }
-</style>
 
-<section class="section-block">
-  <h2>Iscriviti alla nostra Newsletter</h2>
-  <p>Rimani aggiornato sulle ultime novità!</p>
-
-  <section class="section-block">
-    <!-- Begin Brevo Form -->
-
-
-<!-- START - We recommend to place the below code in head tag of your website html  -->
-
-<style>
   :where(.sib-form-message-panel) {
     display: none;
   }
@@ -78,8 +66,653 @@ title: Newsletter
     text-decoration: underline;
     color: #2BB2FC;
   }
+
+/* Contenitore complessivo */
+.spisotti-consent-brevo {
+    position: relative;
+}
+
+/* Sfoca SOLO il modulo inerte */
+.spisotti-consent-brevo > .sib-form {
+    filter: blur(3px);
+}
+
+/* Sovrapposizione sopra al modulo */
+.spisotti-consent-brevo-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+}
+
+/* Finestrella centrale */
+.spisotti-consent-brevo-message {
+    background: #4F0B13;
+    padding: 24px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* ==========================================
+   STILI LOCALI - FACSIMILE MODULO BREVO
+   ========================================== */
+
+.sib-form *,
+.sib-form *::after,
+.sib-form *::before {
+    box-sizing: border-box;
+}
+
+.sib-form {
+    font-size: 16px;
+    font-family: 'Arabiantext', sans-serif;
+    padding: 32px 12px;
+    margin: 0;
+}
+
+
+/* CONTENUTO DEL MODULO */
+
+#sib-form {
+    text-align: left;
+}
+
+.sib-form-block {
+    padding: 0 16px;
+    word-wrap: break-word;
+    outline: none;
+}
+
+.sib-form-block p {
+    text-align: inherit;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+
+/* RIGHE */
+
+.form__label-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.form__entry {
+    position: relative;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+/* ETICHETTE */
+
+.entry__label {
+    margin-bottom: 10px;
+    width: 100%;
+    font-weight: 500;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.entry__specification {
+    display: block;
+    color: #687484;
+    margin: 0;
+}
+
+.entry__label + .entry__specification {
+    margin-top: 4px;
+}
+
+
+/* CAMPO EMAIL */
+
+.entry__field {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #c0ccda;
+    border-radius: 3px;
+    display: inline-flex;
+    margin: .25rem 0;
+    max-width: 100%;
+}
+
+.input {
+    width: calc(100% - 1rem);
+    background: none;
+    border: 0;
+    box-shadow: none;
+    color: inherit;
+    font: inherit;
+    min-width: 1px;
+    outline: 0;
+    padding: 0;
+}
+
+.input:not(textarea) {
+    height: calc(2.5rem - 2px);
+}
+
+.input:first-child {
+    padding-left: .5rem;
+}
+
+.input:last-child {
+    padding-right: .5rem;
+}
+
+.input[readonly] {
+    background-color: #f9fafc;
+}
+
+.sib-form ::placeholder {
+    color: #c0ccda;
+    opacity: 1;
+}
+
+
+/* CHECKBOX */
+
+.entry__choice {
+    width: 100%;
+    margin-bottom: 3px;
+    word-wrap: break-word;
+}
+
+#sib-form .entry__choice label {
+    display: unset;
+}
+
+.entry__choice label p {
+    display: inline;
+}
+
+.sib-form .entry__choice {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+
+.sib-form .checkbox {
+    background: #fff;
+    border: 1px solid #687484;
+    border-radius: 3px;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    position: relative;
+    vertical-align: -0.125em;
+    margin-right: .5em;
+}
+
+.sib-form .input_replaced {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.checkbox.checkbox_tick_positive::before {
+    left: calc(50% - 1px);
+}
+
+
+/* DICHIARAZIONE PRIVACY */
+
+.sib-form__declaration {
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+}
+
+.sib-form__declaration .declaration-block-icon {
+    display: flex;
+    padding: 0 16px 0 0;
+    margin: 0;
+}
+
+.sib-form__declaration .declaration-block-icon [class^="svgIcon"] {
+    width: 65px;
+    height: 65px;
+}
+
+.sib-form__declaration p {
+    line-height: 1.5em;
+    margin: 0;
+}
+
+
+/* PULSANTE */
+
+.sib-form-block__button {
+    display: inline-block;
+    padding: 8px 18px;
+    border: none;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.sib-form-block__button-with-loader {
+    min-height: 40px;
+    line-height: 23px;
+}
+
+.sib-hide-loader-icon {
+    display: none;
+}
+
+
+/* LINK */
+
+.sib-form-container a {
+    text-decoration: underline;
+    color: #2bb2fc;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 500px) {
+    .form__label-row--horizontal {
+        flex-direction: column;
+    }
+
+    .form__label-row--horizontal > * {
+        width: 100%;
+    }
+}
 </style>
-<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+<section class="section-block">
+  <h2>Iscriviti alla nostra Newsletter</h2>
+  <p>Rimani aggiornato sulle ultime novità!</p>
+
+  <!-- =========================================================
+      MODULO NEWSLETTER INERTE
+      Copia visiva del modulo originale, non compilabile
+  ========================================================= -->
+  <div class="spisotti-consent-brevo">
+    <div
+      class="sib-form"
+      style="text-align: center; font-family: 'Arabiantext';">
+
+      <div
+        id="sib-form-container"
+        class="sib-form-container">
+
+
+        <!-- =====================================================
+            CONTENITORE
+        ====================================================== -->
+
+        <div
+          class="card-box"
+          style="max-width: 700px; margin: 0 auto;">
+
+
+          <!--
+              Non è un vero <form>.
+              Manteniamo l'id sib-form per conservare gli stili CSS.
+          -->
+
+          <div id="sib-form">
+
+
+            <!-- =================================================
+                TITOLO
+            ================================================== -->
+
+            <div style="padding: 8px 0;">
+
+              <div>
+
+                <h1
+                  style="
+                    text-align: center;
+                    font-size: 45px;
+                  ">
+                  Newsletter
+                </h1>
+
+              </div>
+
+            </div>
+
+
+            <!-- =================================================
+                INTRODUZIONE
+            ================================================== -->
+
+            <div style="padding: 8px 0;">
+
+              <p>
+                Abbonati alla nostra newsletter e resta aggiornato.
+              </p>
+
+            </div>
+
+
+            <!-- =================================================
+                EMAIL
+            ================================================== -->
+
+            <div style="padding: 8px 0;">
+
+              <div class="sib-input sib-form-block">
+
+                <div class="form__entry entry_block">
+
+                  <div class="form__label-row">
+
+
+                    <label
+                      class="entry__label"
+                      style="
+                        font-weight: 700;
+                        text-align: left;
+                        font-size: 16px;
+                      ">
+
+                      Inserisci il tuo indirizzo email per iscriverti
+
+                    </label>
+
+
+                    <div class="entry__field">
+
+                      <input
+                        class="input"
+                        type="text"
+                        value=""
+                        placeholder="EMAIL"
+                        readonly
+                        tabindex="-1"
+                        aria-disabled="true"
+                        style="
+                          color: black;
+                          pointer-events: none;
+                        ">
+
+                    </div>
+
+                  </div>
+
+
+                  <label
+                    class="entry__specification"
+                    style="
+                      font-size: 12px;
+                      text-align: left;
+                    ">
+
+                    Indica il tuo indirizzo email per iscriverti.
+                    Es. abc@xyz.com
+
+                  </label>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- =================================================
+                CONSENSO NEWSLETTER
+            ================================================== -->
+
+            <div style="padding: 8px 0;">
+
+              <div class="sib-optin sib-form-block">
+
+                <div class="form__entry entry_mcq">
+
+                  <div class="form__label-row">
+
+                    <div class="entry__choice">
+
+                      <label>
+
+                        <input
+                          type="checkbox"
+                          class="input_replaced"
+                          disabled
+                          tabindex="-1">
+
+                        <span
+                          class="checkbox checkbox_tick_positive">
+                        </span>
+
+                        <span
+                          style="
+                            font-family: 'Arabiantext', sans-serif;
+                            font-size: 10px;
+                            text-align: left;
+                            background-color: transparent;
+                          ">
+
+                          <p style="font-size: 14px;">
+                            Accetto le condizioni generali e di ricevere
+                            le newsletter
+                          </p>
+
+                        </span>
+
+                      </label>
+
+                    </div>
+
+                  </div>
+
+
+                  <label
+                    class="entry__specification"
+                    style="
+                      font-family: 'Arabiantext', sans-serif;
+                      font-size: 12px;
+                      text-align: left;
+                    ">
+
+                    Puoi annullare l'iscrizione in qualsiasi momento
+                    utilizzando il link incluso nella nostra newsletter.
+
+                  </label>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- =================================================
+                INFORMATIVA
+            ================================================== -->
+
+            <div style="padding: 8px 0;">
+
+              <div
+                class="sib-form__declaration"
+                style="direction: ltr;">
+
+
+                <!-- ICONA -->
+
+                <div class="declaration-block-icon">
+
+                  <svg
+                    class="icon__SVG"
+                    width="0"
+                    height="0"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+
+                      <symbol
+                        id="svgIcon-sphere"
+                        viewBox="0 0 63 63">
+
+                        <path
+                          class="path1"
+                          d="M31.54 0l1.05 3.06 3.385-.01-2.735 1.897 1.05 3.042-2.748-1.886-2.738 1.886 1.044-3.05-2.745-1.897h3.393zm13.97 3.019L46.555 6.4l3.384.01-2.743 2.101 1.048 3.387-2.752-2.1-2.752 2.1 1.054-3.382-2.745-2.105h3.385zm9.998 10.056l1.039 3.382h3.38l-2.751 2.1 1.05 3.382-2.744-2.091-2.743 2.091 1.054-3.381-2.754-2.1h3.385zM58.58 27.1l1.04 3.372h3.379l-2.752 2.096 1.05 3.387-2.744-2.091-2.75 2.092 1.054-3.387-2.747-2.097h3.376zm-3.076 14.02l1.044 3.364h3.385l-2.743 2.09 1.05 3.392-2.744-2.097-2.743 2.097 1.052-3.377-2.752-2.117 3.385-.01zm-9.985 9.91l1.045 3.364h3.393l-2.752 2.09 1.05 3.393-2.745-2.097-2.743 2.097 1.05-3.383-2.751-2.1 3.384-.01zM31.45 55.01l1.044 3.043 3.393-.008-2.752 1.9L34.19 63l-2.744-1.895-2.748 1.891 1.054-3.05-2.743-1.9h3.384zm-13.934-3.98l1.036 3.364h3.402l-2.752 2.09 1.053 3.393-2.747-2.097-2.752 2.097 1.053-3.382-2.743-2.1 3.384-.01zm-9.981-9.91l1.045 3.364h3.398l-2.748 2.09 1.05 3.392-2.753-2.1-2.752 2.096 1.053-3.382-2.743-2.102 3.384-.009zM4.466 27.1l1.038 3.372H8.88l-2.752 2.097 1.053 3.387-2.743-2.09-2.748 2.09 1.053-3.387L0 30.472h3.385zm3.069-14.025l1.045 3.382h3.395L9.23 18.56l1.05 3.381-2.752-2.09-2.752 2.09 1.053-3.381-2.744-2.1h3.384zm9.99-10.056L18.57 6.4l3.393.01-2.743 2.1 1.05 3.373-2.754-2.092-2.751 2.092 1.053-3.382-2.744-2.1h3.384zm24.938 19.394l-10-4.22a2.48 2.48 0 00-1.921 0l-10 4.22A2.529 2.529 0 0019 24.75c0 10.47 5.964 17.705 11.537 20.057a2.48 2.48 0 001.921 0C36.921 42.924 44 36.421 44 24.75a2.532 2.532 0 00-1.537-2.336zm-2.46 6.023l-9.583 9.705a.83.83 0 01-1.177 0l-5.416-5.485a.855.855 0 010-1.192l1.177-1.192a.83.83 0 011.177 0l3.65 3.697 7.819-7.916a.83.83 0 011.177 0l1.177 1.191a.843.843 0 010 1.192z"
+                          fill="#0092FF">
+                        </path>
+
+                      </symbol>
+
+                    </defs>
+
+                  </svg>
+
+
+                  <svg
+                    class="svgIcon-sphere"
+                    style="
+                      width: 63px;
+                      height: 63px;
+                    ">
+
+                    <use xlink:href="#svgIcon-sphere"></use>
+
+                  </svg>
+
+                </div>
+
+
+                <!-- TESTO INFORMATIVA -->
+
+                <div
+                  style="
+                    font-family: 'Arabiantext', sans-serif;
+                    font-size: 10px;
+                    text-align: left;
+                    background-color: transparent;
+                  ">
+
+                  <p style="font-size: 14px;">
+
+                    Utilizziamo Brevo come piattaforma di marketing. 
+                    Inviando questo modulo, accetti che i dati personali 
+                    da te forniti vengano trasferiti a Brevo per il trattamento 
+                    in conformità all'<a target="_blank"  rel="nofollow noopener" style="color: #ad4eda;">
+                      Informativa sulla privacy di Brevo</a>.
+
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- =================================================
+                PULSANTE ISCRIVITI INERTE
+            ================================================== -->
+
+            <div style="padding: 15px 0;">
+
+              <div
+                class="sib-form-block"
+                style="text-align: center;">
+
+                <button
+                  class="sib-form-block__button sib-form-block__button-with-loader"
+                  type="button"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  style="
+                    font-family: 'Arabiantext', sans-serif;
+                    font-size: 25px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #FFFFFF;
+                    background-color: #ad4eda;
+                    border-width: 0;
+                    border-radius: 8px;
+                    pointer-events: none;
+                  ">
+
+                  <svg
+                    class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                    viewBox="0 0 512 512">
+
+                    <path
+                      d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z">
+                    </path>
+
+                  </svg>
+
+                  ISCRIVITI
+
+                </button>
+
+              </div>
+
+            </div>
+
+
+          </div>
+          <!-- /#sib-form -->
+
+
+        </div>
+        <!-- /.card-box -->
+
+
+      </div>
+      <!-- /.sib-form-container -->
+
+
+
+    </div>
+    <!-- /.sib-form -->
+    <!-- FINESTRA DI CONSENSO -->
+    <div class="spisotti-consent-brevo-overlay">
+
+        <div class="spisotti-consent-brevo-message">
+
+            <p>
+                Per utilizzare il modulo di iscrizione alla newsletter
+                è necessario consentire il caricamento di Brevo.
+            </p>
+
+            <button
+                type="button"
+                class="spisotti-consent-allow-brevo"
+                    style="
+                    font-family: 'Arabiantext', sans-serif;
+                    padding: 8px 20px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #FFFFFF;
+                    background-color: #ad4eda;
+                    border-width: 0;
+                    border-radius: 8px;
+                    pointer-events: none;
+                  ">
+                Consenti e visualizza
+            </button>
+
+        </div>
+
+    </div>
+
+  </div>
+
+<template id="spisotti-consent-brevo-template">
+  <section class="section-block">
+    <!-- Begin Brevo Form -->
+
+
+<!-- START - We recommend to place the below code in head tag of your website html --> 
 
 <!--  END - We recommend to place the above code in head tag of your website html -->
 
@@ -174,7 +807,7 @@ title: Newsletter
               </svg>
             </div>
             <div style="font-family:'Arabiantext', sans-serif; font-size:10px; text-align:left; background-color:transparent;">
-              <p style="font-size:14px">Utilizziamo Brevo come piattaforma di marketing. Inviando questo modulo, accetti che i dati personali da te forniti vengano trasferiti a Brevo per il trattamento in conformità <a target="_blank" href="https://www.brevo.com/it/legal/privacypolicy/" rel="nofollow noopener" style="color: #ad4eda;">all&#39;Informativa sulla privacy di Brevo.</a></p>
+              <p style="font-size:14px">Utilizziamo Brevo come piattaforma di marketing. Inviando questo modulo, accetti che i dati personali da te forniti vengano trasferiti a Brevo per il trattamento in conformità all&#39;<a target="_blank" href="https://www.brevo.com/it/legal/privacypolicy/" rel="nofollow noopener" style="color: #ad4eda;">Informativa sulla privacy di Brevo</a>.</p>
             </div>
           </div>
         </div>
@@ -218,64 +851,33 @@ title: Newsletter
 </div>
 <!-- END - We recommend to place the above code where you want the form in your website html  -->
 
-<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
-<script>
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Scegli un prefisso paese';
-  window.LOCALE = 'it';
-
-
-
-
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Le informazioni fornite non sono valide. Controlla il formato del campo e riprova.";
-
-
-
-
-
-  window.REQUIRED_ERROR_MESSAGE = "Questo campo non può essere lasciato vuoto. ";
-
-  window.GENERIC_INVALID_MESSAGE = "Le informazioni fornite non sono valide. Controlla il formato del campo e riprova.";
-
-
-  window.INVALID_NUMBER = "Le informazioni fornite non sono valide. Controlla il formato del campo e riprova.";
-
-
-
-
-  window.INVALID_DATE = "Inserisci una data valida";
-
-
-
-  window.REQUIRED_MULTISELECT_MESSAGE = 'Seleziona almeno 1 opzione';
-
-
-  window.translation = {
-    common: {
-      selectedList: '{quantity} lista selezionata',
-      selectedLists: '{quantity} liste selezionate',
-      selectedOption: '{quantity} selezionato',
-      selectedOptions: '{quantity} selezionati',
-    }
-  };
-
-  var AUTOHIDE = Boolean(0);
-</script>
-
-
-
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-
-
-
-<script src="https://www.google.com/recaptcha/api.js?hl=it"></script>
-
-
 
 
 <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
 
 <!-- End Brevo Form -->
   </section>
+  </template>
+  <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Scegli un prefisso paese';
+    window.LOCALE = 'it';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Le informazioni fornite non sono valide. Controlla il formato del campo e riprova.";
+    window.REQUIRED_ERROR_MESSAGE = "Questo campo non può essere lasciato vuoto. ";
+    window.GENERIC_INVALID_MESSAGE = "Le informazioni fornite non sono valide. Controlla il formato del campo e riprova.";
+    window.INVALID_NUMBER = "Le informazioni fornite non sono valide. Controlla il formato del campo e riprova.";
+    window.INVALID_DATE = "Inserisci una data valida";
+    window.REQUIRED_MULTISELECT_MESSAGE = 'Seleziona almeno 1 opzione';
+    window.translation = {
+      common: {
+        selectedList: '{quantity} lista selezionata',
+        selectedLists: '{quantity} liste selezionate',
+        selectedOption: '{quantity} selezionato',
+        selectedOptions: '{quantity} selezionati',
+      }
+    };
+    var AUTOHIDE = Boolean(0);
+  </script>
 </section>
 
 <section class="archive-section">

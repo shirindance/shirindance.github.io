@@ -28,6 +28,7 @@ consent:
     analytics: true
     youtube: true
     maps: true
+    brevo: true
 
 collections:
   newsletters:
