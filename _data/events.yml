@@ -38,12 +38,12 @@
 
 - date: "2026-09-19"
   text: "Spettacolo: Barbarossa"
-  url: "news/barbarossa/"
+  url: "archivio_notizie/barbarossa/"
   category: "Eventi"
 
 - date: "2026-09-20"
   text: "Spettacolo: Barbarossa"
-  url: "news/barbarossa/"
+  url: "archivio_notizie/barbarossa/"
   category: "Eventi"
 
 - date: "2026-10-10"
@@ -51,7 +51,6 @@
   url: "ultima_ora/fcbdflashmob2026/"
   category: "FCBD"
 
-#cancella i cancelletti all'inizio delle righe qui sotto per far apparire l'evento nel calendario
 
 - date: "2026-11-15"
   text: "seminario tribal fusion"
