@@ -20,4 +20,4 @@ layout: archive
         </div>
     </div>
 </div>
-<p style="font-size: 1.5rem;">Quest’anno abbiamo scelto i Guardini Margherita di Bologna, una oasi verde in città, dove prati, acqua, alberi e persone convivono creando una atmosfera rilassante e piacevole. Cesti dorati, Spade, Gonne colorate e cimbali hanno accompagnato la nostra Danza, suscitando curiosità e interesse in chi era presente. Guarda il nostri Videoclip nella sezione Gallery, o sul nostro canale YT "Shirin Dance" !  </p>
+<p style="font-size: 1.1rem;">Quest’anno abbiamo scelto i Giardini Margherita di Bologna, una oasi verde in città, dove prati, acqua, alberi e persone convivono creando una atmosfera rilassante e piacevole. Cesti dorati, Spade, Gonne colorate e cimbali hanno accompagnato la nostra Danza, suscitando curiosità e interesse in chi era presente. Guarda il nostri Videoclip nella sezione Gallery, o sul nostro canale YT "Shirin Dance" !  </p>
