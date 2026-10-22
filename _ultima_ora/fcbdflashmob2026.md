@@ -20,5 +20,4 @@ layout: archive
         </div>
     </div>
 </div>
-<p style="font-size: 1.5rem;">Quest’anno, invece, la location è ancora da decidere!<br>Avete in mente un luogo speciale del nostro territorio che potrebbe diventare la cornice della nostra danza?</p>
-<p style="font-size: 1.5rem;">Scriveteci a <a href="mailto:shirindancecompany@gmail.com">shirindancecompany@gmail.com</a> e fateci la vostra proposta: potremmo scegliere proprio il vostro scorcio!<br><br></p>
+<p style="font-size: 1.5rem;">Quest’anno abbiamo scelto i Guardini Margherita di Bologna, una oasi verde in città, dove prati, acqua, alberi e persone convivono creando una atmosfera rilassante e piacevole. Cesti dorati, Spade, Gonne colorate e cimbali hanno accompagnato la nostra Danza, suscitando curiosità e interesse in chi era presente. Guarda il nostri Videoclip nella sezione Gallery, o sul nostro canale YT "Shirin Dance" !  </p>
