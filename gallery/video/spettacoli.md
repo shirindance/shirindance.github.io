@@ -11,7 +11,11 @@ videos:
 
   - id: "lYxR03KUjoo"
     title: "Hator - 8/3/2025"
-    description: 
+    description:  
+
+  - id: "_T7b2FgANDg"
+    title: "Ishtar - 2023-2024"
+    description:
 
   - id: "rBYQX0TQr10"
     title: "The Best Of Una Nessuna Centomila 2017-2022"
